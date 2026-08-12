@@ -1,0 +1,2517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>DIU Faculty Finder — Home</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <style>
+        :root{
+          --navy:#003366;
+          --navy-deep:#00234a;
+          --gold:#FFCC00;
+          --bg:#F4F6F9;
+          --ink:#0F1C2E;
+          --sub:#6B7A90;
+          --line:#E7EBF1;
+        }
+        *{box-sizing:border-box;margin:0;padding:0;}
+        html,body{height:100%;}
+        body{
+          font-family:'Inter',sans-serif;
+          background:var(--bg);
+          color:var(--ink);
+          -webkit-font-smoothing:antialiased;
+        }
+        h1,h2,h3{font-family:'Poppins',sans-serif;}
+
+        .app{
+          width:100%;
+          min-height:100vh;
+          background:var(--bg);
+          display:flex;
+          flex-direction:column;
+          position:relative;
+        }
+
+        /* ---------- Header ---------- */
+        .header{
+          background:linear-gradient(160deg,#003d73,#00234a);
+          flex-shrink:0;
+          border-radius:0 0 26px 26px;
+          padding:18px 22px 16px;
+          box-shadow:0 10px 24px -12px rgba(0,20,50,.5);
+        }
+        .greet-row{ display:flex; align-items:center; justify-content:space-between; }
+        .greet-sub{color:#9FBBDA;font-size:11.5px;font-weight:500;}
+        .greet-name{color:#fff;font-size:19px;font-weight:700;margin-top:1px;}
+        .avatar-badge{
+          width:40px;height:40px;border-radius:50%;
+          background:var(--gold);
+          display:flex;align-items:center;justify-content:center;
+          font-weight:700;color:var(--navy-deep);
+          font-family:'Poppins',sans-serif;font-size:14px;
+          border:2px solid rgba(255,255,255,.5);
+          flex-shrink:0;
+          overflow:hidden;
+        }
+        .avatar-badge img{ width:100%; height:100%; object-fit:cover; }
+        .search-bar{
+          margin-top:16px;
+          background:#fff;
+          border-radius:14px;
+          padding:12px 14px;
+          display:flex;
+          align-items:center;
+          gap:10px;
+          box-shadow:0 10px 18px -8px rgba(0,20,50,.35);
+        }
+        .search-bar input{
+          border:none;outline:none;background:transparent;
+          font-size:13.5px;color:var(--ink);width:100%;
+          font-family:'Inter',sans-serif;
+        }
+        .search-bar input::placeholder{color:#9AA6B4;}
+
+        /* ---------- 5 department chips ---------- */
+        .chips{
+          display:flex;
+          gap:8px;
+          margin-top:14px;
+          overflow-x:auto;
+          scrollbar-width:none;
+          padding-bottom:2px;
+        }
+        .chips::-webkit-scrollbar{display:none;}
+        .chip{
+          font-weight:600;
+          font-size:12px;
+          padding:8px 14px;
+          border-radius:99px;
+          white-space:nowrap;
+          border:1px solid rgba(255,255,255,.25);
+          background:rgba(255,255,255,.14);
+          color:#fff;
+          cursor:pointer;
+          flex-shrink:0;
+        }
+        .chip.active{
+          background:var(--gold);
+          color:var(--navy-deep);
+          font-weight:700;
+          border-color:var(--gold);
+        }
+
+        /* ---------- List ---------- */
+        .list-wrap{ flex:1; padding:16px 20px 40px; }
+        .list-heading{ display:flex; align-items:center; justify-content:space-between; margin-bottom:10px; }
+        .list-heading h3{font-size:13.5px;font-weight:700;color:var(--ink);}
+        .sort{ font-size:12px;color:var(--navy);font-weight:600; }
+
+        .faculty-card{
+          background:#fff;
+          border-radius:18px;
+          padding:14px;
+          display:flex;
+          align-items:center;
+          gap:13px;
+          margin-bottom:12px;
+          box-shadow:0 8px 20px -12px rgba(0,20,50,.18);
+          border:1px solid #EEF1F5;
+          position:relative;
+        }
+        .avatar-wrap{position:relative;flex-shrink:0;}
+        .avatar-sq{
+          width:54px;height:54px;border-radius:16px;
+          display:flex;align-items:center;justify-content:center;
+          color:#fff;font-family:'Poppins',sans-serif;font-weight:700;font-size:16px;
+        }
+        .avatar-navy{background:linear-gradient(150deg,#0a4a86,#003366);}
+        .avatar-gold{background:linear-gradient(150deg,#c99400,#8a6800);}
+        .status-dot{
+          position:absolute;bottom:-3px;right:-3px;
+          width:14px;height:14px;border:2px solid #fff;border-radius:50%;
+        }
+        .online{background:#2ECC71;}
+        .offline{background:#C4CCD6;}
+        .card-info{flex:1;min-width:0;}
+        .card-info h4{font-size:14.5px;font-weight:700;color:var(--ink);}
+        .card-info p{font-size:12px;color:var(--sub);margin-top:1px;}
+        .room-badge{
+          display:inline-block;
+          background:#FFF6DA;color:#8A6D00;font-weight:700;font-size:11px;
+          padding:3px 9px;border-radius:8px;margin-top:6px;
+        }
+        .empty-state{ text-align:center;color:#AEB8C4;font-size:13px;margin-top:40px; }
+        .empty-state-rich{
+    text-align:center; padding:50px 24px 30px; display:flex; flex-direction:column; align-items:center;
+  }
+  .empty-state-rich .es-icon{
+    width:88px;height:88px;border-radius:50%; background:#EEF3FA;
+    display:flex;align-items:center;justify-content:center; margin-bottom:18px;
+  }
+  body.dark .empty-state-rich .es-icon{ background:#16202C; }
+  .empty-state-rich h4{ font-size:15px; font-weight:700; color:var(--ink); margin-bottom:6px; }
+  .empty-state-rich p{ font-size:12.5px; color:var(--sub); max-width:250px; line-height:1.6; }
+  .empty-state-rich .es-action{
+    margin-top:16px; padding:10px 20px; border-radius:99px; border:none;
+    background:var(--navy); color:#fff; font-weight:700; font-size:12.5px; cursor:pointer;
+  }
+
+        /* ---------- FAB (Add Teacher) ---------- */
+        .fab{
+          position:fixed; right:20px; bottom:24px;
+          width:56px;height:56px;border-radius:50%;
+          background:var(--gold); color:var(--navy-deep);
+          display:flex;align-items:center;justify-content:center;
+          box-shadow:0 10px 22px -8px rgba(0,20,50,.5);
+          cursor:pointer; z-index:50; border:none;
+        }
+
+        /* ---------- Overlay + modals ---------- */
+        .overlay{
+          position:fixed; inset:0; background:rgba(4,14,28,.55);
+          display:none; align-items:flex-end; justify-content:center;
+          z-index:100;
+        }
+        .overlay.show{ display:flex; }
+        .sheet{
+          background:#fff; width:100%; max-width:480px;
+          border-radius:22px 22px 0 0; padding:22px 20px 26px;
+          max-height:88vh; overflow-y:auto;
+          animation:slideUp .18s ease-out;
+        }
+        @keyframes slideUp{ from{transform:translateY(24px);opacity:0;} to{transform:translateY(0);opacity:1;} }
+        .sheet-handle{ width:40px;height:4px;background:#E3E7ED;border-radius:99px;margin:0 auto 16px; }
+        .sheet-close{
+          position:absolute; top:18px; right:18px; width:30px;height:30px;
+          border-radius:50%; background:#F1F3F6; border:none;
+          display:flex;align-items:center;justify-content:center; cursor:pointer;
+        }
+
+        /* Detail page (full screen, navy header like reference design) */
+        .detail-page{
+          position:fixed; inset:0; background:var(--bg);
+          display:none; flex-direction:column; z-index:100;
+          overflow-y:auto;
+        }
+        .detail-page.show{ display:flex; }
+        .detail-topbar{
+          display:flex; align-items:center; justify-content:space-between;
+          padding:16px 18px 0;
+          background:linear-gradient(160deg,#003d73,#00234a);
+        }
+        .detail-back, .detail-menu{
+          width:34px;height:34px;display:flex;align-items:center;justify-content:center;
+          background:none;border:none;cursor:pointer;
+        }
+        .detail-topbar-title{ color:#fff; font-size:15px; font-weight:600; }
+        .detail-hero{
+          background:linear-gradient(160deg,#003d73,#00234a);
+          padding:6px 20px 46px; text-align:center;
+          border-radius:0 0 30px 30px;
+        }
+        .detail-avatar{
+          width:96px;height:96px;border-radius:50%;margin:14px auto 16px;
+          display:flex;align-items:center;justify-content:center;
+          color:#fff;font-family:'Poppins',sans-serif;font-weight:700;font-size:30px;
+          border:3px solid rgba(255,255,255,.35);
+        }
+        .detail-hero h2{ color:#fff; font-size:19px; font-weight:700; }
+        .detail-hero .d-title{ color:var(--gold); font-size:13.5px; font-weight:700; margin-top:4px; }
+        .detail-hero .d-dept{ color:#CDDCEF; font-size:12.5px; font-weight:500; margin-top:2px; }
+
+        .detail-card{
+          background:#fff; margin:-26px 16px 24px; border-radius:20px;
+          padding:20px 18px 22px; box-shadow:0 12px 26px -14px rgba(0,20,50,.25);
+          position:relative; flex:1;
+        }
+        .detail-card h3{ font-size:14px; font-weight:700; color:var(--ink); margin-bottom:14px; }
+        .detail-row{
+          display:flex; align-items:center; gap:12px;
+          padding:11px; border-radius:14px; background:#F7F9FC;
+          text-decoration:none; color:var(--ink); margin-bottom:10px;
+        }
+        .detail-icon{
+          width:38px;height:38px;border-radius:50%;flex-shrink:0;
+          background:var(--navy); display:flex;align-items:center;justify-content:center;
+        }
+        .detail-text{ min-width:0; }
+        .detail-label{ font-size:11px; color:var(--sub); font-weight:600; }
+        .detail-value{ font-size:13.5px; font-weight:700; color:var(--ink); word-break:break-word; }
+        .detail-actions{ margin-top:18px; display:flex; flex-direction:column; gap:10px; }
+        .btn-email{
+          width:100%; padding:14px; border-radius:14px; border:none;
+          background:var(--gold); color:var(--navy-deep); font-weight:700; font-size:14.5px;
+          display:flex; align-items:center; justify-content:center; gap:8px; cursor:pointer;
+        }
+        .btn-call{
+          width:100%; padding:13px; border-radius:14px; border:1.5px solid var(--navy);
+          background:#fff; color:var(--navy); font-weight:700; font-size:14px;
+          display:flex; align-items:center; justify-content:center; gap:8px; cursor:pointer;
+        }
+        .btn-danger{
+          width:100%; padding:13px; border-radius:14px; border:1.5px solid #E03B3B;
+          background:#fff; color:#E03B3B; font-weight:700; font-size:14px;
+          display:flex; align-items:center; justify-content:center; gap:8px; cursor:pointer;
+        }
+
+        /* ---------- Overlay + modals (used for Add Teacher form) ---------- */
+        .overlay{
+          position:fixed; inset:0; background:rgba(4,14,28,.55);
+          display:none; align-items:flex-end; justify-content:center;
+          z-index:100;
+        }
+        .overlay.show{ display:flex; }
+        .sheet{
+          background:#fff; width:100%; max-width:480px;
+          border-radius:22px 22px 0 0; padding:22px 20px 26px;
+          max-height:88vh; overflow-y:auto;
+          animation:slideUp .18s ease-out;
+        }
+        @keyframes slideUp{ from{transform:translateY(24px);opacity:0;} to{transform:translateY(0);opacity:1;} }
+        .sheet-handle{ width:40px;height:4px;background:#E3E7ED;border-radius:99px;margin:0 auto 16px; }
+        .sheet-close{
+          position:absolute; top:18px; right:18px; width:30px;height:30px;
+          border-radius:50%; background:#F1F3F6; border:none;
+          display:flex;align-items:center;justify-content:center; cursor:pointer;
+        }
+
+        /* Add-teacher form */
+        .field{ margin-bottom:14px; }
+        .field label{ font-size:12.5px; font-weight:600; color:var(--ink); display:block; margin-bottom:6px; }
+        .field input, .field select{
+          width:100%; padding:11px 13px; border-radius:11px;
+          border:1px solid var(--line); font-size:13.5px; font-family:'Inter',sans-serif;
+          color:var(--ink); outline:none; background:#FAFBFC;
+        }
+        .field input:focus, .field select:focus{ border-color:var(--navy); }
+        .submit-btn{
+          width:100%; padding:13px; border-radius:12px; border:none;
+          background:var(--navy); color:#fff; font-weight:700; font-size:14px;
+          cursor:pointer; margin-top:6px;
+        }
+        .cancel-btn{
+          width:100%; padding:12px; border-radius:12px; border:none;
+          background:none; color:var(--sub); font-weight:600; font-size:13.5px;
+          cursor:pointer; margin-top:4px;
+        }
+
+        /* ---------- Hamburger + greet-left wrapper ---------- */
+        .greet-left{ display:flex; align-items:center; gap:10px; }
+        .hamburger-btn{
+          width:34px;height:34px;flex-shrink:0; border:none; background:rgba(255,255,255,.12);
+          border-radius:10px; display:flex;align-items:center;justify-content:center; cursor:pointer;
+        }
+
+        /* ---------- Sidebar drawer ---------- */
+        .drawer-overlay{
+          position:fixed; inset:0; background:rgba(4,14,28,.55);
+          display:none; z-index:300;
+        }
+        .drawer-overlay.show{ display:block; }
+        .drawer-panel{
+          position:fixed; top:0; left:0; bottom:0; width:78%; max-width:300px;
+          background:var(--navy-deep); z-index:301;
+          transform:translateX(-100%); transition:transform .2s ease-out;
+          display:flex; flex-direction:column; padding:20px 0 16px;
+        }
+        .drawer-overlay.show .drawer-panel{ transform:translateX(0); }
+        .drawer-head{ padding:6px 20px 18px; border-bottom:1px solid rgba(255,255,255,.1); margin-bottom:8px; }
+        .drawer-avatar{
+          width:52px;height:52px;border-radius:50%; background:var(--gold); color:var(--navy-deep);
+          display:flex;align-items:center;justify-content:center; font-family:'Poppins',sans-serif;
+          font-weight:700; font-size:17px; margin-bottom:10px; overflow:hidden;
+        }
+        .drawer-avatar img{ width:100%; height:100%; object-fit:cover; }
+        .drawer-uname{ color:#fff; font-weight:700; font-size:14.5px; }
+        .drawer-uemail{ color:#9FB2C9; font-size:11.5px; margin-top:2px; }
+        .drawer-item{
+          display:flex; align-items:center; gap:14px; padding:13px 20px;
+          color:#DCE6F2; font-size:13.5px; font-weight:600; cursor:pointer;
+          background:none; border:none; width:100%; text-align:left;
+        }
+        .drawer-item:active{ background:rgba(255,255,255,.06); }
+        .drawer-item .d-icon{ width:20px; display:flex; align-items:center; justify-content:center; flex-shrink:0; }
+        .drawer-item.danger{ color:#FF8A80; }
+
+        /* ---------- Generic info sub-page (Profile/About/Contact/Settings/Maker) ---------- */
+        .info-page{
+          position:fixed; inset:0; background:var(--bg);
+          display:none; flex-direction:column; z-index:200;
+          transform:translateX(100%); transition:transform .2s ease-out;
+        }
+        .info-page.show{ display:flex; transform:translateX(0); }
+        .info-topbar{
+          background:var(--navy); flex-shrink:0; padding:16px 18px;
+          display:flex; align-items:center; gap:14px;
+        }
+        .info-topbar button{
+          width:34px;height:34px;border-radius:50%; background:rgba(255,255,255,.12);
+          border:none; display:flex;align-items:center;justify-content:center; cursor:pointer;
+        }
+        .info-topbar-title{ color:#fff; font-size:15.5px; font-weight:700; }
+        .info-body{ flex:1; overflow-y:auto; padding:20px; }
+        .info-card{
+          background:#fff; border-radius:16px; padding:18px; margin-bottom:14px;
+          border:1px solid var(--line);
+        }
+        .info-card h4{ font-size:13px; font-weight:700; color:var(--sub); text-transform:uppercase; letter-spacing:.3px; margin-bottom:12px; }
+        .info-card p{ font-size:13.5px; color:var(--ink); line-height:1.6; }
+
+        .profile-hero{ display:flex; flex-direction:column; align-items:center; padding:8px 0 22px; }
+        .profile-avatar-wrap{ position:relative; }
+        .profile-avatar{
+          width:88px;height:88px;border-radius:50%; background:var(--navy); color:#fff;
+          display:flex;align-items:center;justify-content:center; font-family:'Poppins',sans-serif;
+          font-weight:700; font-size:26px; overflow:hidden;
+        }
+        .profile-avatar img{ width:100%; height:100%; object-fit:cover; }
+        .profile-cam-btn{
+          position:absolute; bottom:-2px; right:-2px; width:30px;height:30px;border-radius:50%;
+          background:var(--gold); border:2px solid var(--bg); display:flex;align-items:center;justify-content:center;
+          cursor:pointer;
+        }
+        .profile-name{ font-size:16.5px; font-weight:700; color:var(--ink); margin-top:12px; }
+        .profile-email{ font-size:12.5px; color:var(--sub); margin-top:2px; }
+
+        .settings-row{
+          display:flex; align-items:center; justify-content:space-between;
+          padding:13px 0; border-bottom:1px solid var(--line);
+        }
+        .settings-row:last-child{ border-bottom:none; }
+        .settings-row .s-label{ font-size:13.5px; font-weight:600; color:var(--ink); }
+        .settings-row .s-sub{ font-size:11.5px; color:var(--sub); margin-top:1px; }
+        .toggle-switch{
+          width:44px;height:25px;border-radius:99px; background:#D7DCE3; position:relative;
+          cursor:pointer; flex-shrink:0; border:none; transition:background .15s;
+        }
+        .toggle-switch.on{ background:var(--navy); }
+        .toggle-switch .knob{
+          position:absolute; top:2.5px; left:3px; width:20px;height:20px;border-radius:50%;
+          background:#fff; transition:transform .15s;
+        }
+        .toggle-switch.on .knob{ transform:translateX(19px); }
+        .fs-btn-row{ display:flex; gap:8px; }
+        .fs-btn{
+          flex:1; padding:9px; border-radius:10px; border:1.5px solid var(--line);
+          background:#fff; font-weight:700; font-size:13px; color:var(--ink); cursor:pointer;
+        }
+        .fs-btn.active{ background:var(--navy); color:#fff; border-color:var(--navy); }
+
+        .contact-row{
+          display:flex; align-items:center; gap:12px; padding:12px 0;
+          text-decoration:none; color:var(--ink); border-bottom:1px solid var(--line);
+        }
+        .contact-row:last-of-type{ border-bottom:none; }
+
+        .cf-field{ margin-bottom:12px; }
+        .cf-field label{ font-size:12.5px; font-weight:600; color:var(--ink); display:block; margin-bottom:6px; }
+        .cf-field input, .cf-field textarea{
+          width:100%; padding:11px 13px; border-radius:11px;
+          border:1px solid var(--line); font-size:13.5px; font-family:'Inter',sans-serif;
+          color:var(--ink); outline:none; background:#FAFBFC; resize:vertical;
+        }
+
+        /* ---------- Confirm modal (used for Logout / Delete) ---------- */
+        .confirm-overlay{
+          position:fixed; inset:0; background:rgba(4,14,28,.55);
+          display:none; align-items:center; justify-content:center; z-index:400;
+        }
+        .confirm-overlay.show{ display:flex; }
+        .confirm-box{
+          background:#fff; border-radius:18px; padding:22px 20px; width:82%; max-width:320px;
+          text-align:center;
+        }
+        .confirm-box h3{ font-size:15.5px; font-weight:700; color:var(--ink); margin-bottom:6px; }
+        .confirm-box p{ font-size:12.5px; color:var(--sub); margin-bottom:18px; }
+        .confirm-actions{ display:flex; gap:10px; }
+        .confirm-actions button{
+          flex:1; padding:11px; border-radius:12px; font-weight:700; font-size:13.5px; cursor:pointer;
+        }
+        .confirm-cancel{ border:1.5px solid var(--line); background:#fff; color:var(--ink); }
+        .confirm-ok{ border:none; background:#E03B3B; color:#fff; }
+
+        /* ---------- Dark mode ---------- */
+        body.dark{ --bg:#0E1620; --ink:#F1F4F8; --sub:#8C97A6; --line:#232E3B; }
+        body.dark .app{ background:var(--bg); }
+        body.dark .faculty-card, body.dark .info-card, body.dark .detail-panel, body.dark .detail-card{
+          background:#16202C; border-color:#232E3B;
+        }
+        body.dark .search-bar{ background:#16202C; }
+        body.dark .search-bar input{ color:#F1F4F8; }
+        body.dark .profile-name, body.dark .card-info h4{ color:#F1F4F8; }
+
+        /* ---------- Sort dropdown ---------- */
+        .sort{ cursor:pointer; user-select:none; }
+        .sort-menu{
+          position:absolute; top:26px; right:0; background:#fff; border-radius:12px;
+          box-shadow:0 10px 28px -8px rgba(0,20,50,.35); border:1px solid var(--line);
+          display:none; z-index:60; min-width:150px; overflow:hidden;
+        }
+        .sort-menu.show{ display:block; }
+        .sort-option{ padding:11px 14px; font-size:13px; font-weight:600; color:var(--ink); cursor:pointer; }
+        .sort-option.active{ color:var(--navy); background:#EEF3FA; }
+        .sort-option:hover{ background:#F7F9FC; }
+
+        /* ---------- Favorite star on card ---------- */
+        .fav-btn{
+          position:absolute; top:10px; right:10px; width:28px;height:28px;
+          display:flex;align-items:center;justify-content:center; cursor:pointer; z-index:2;
+        }
+
+        /* ---------- Theme color swatches ---------- */
+        .theme-row{ display:flex; gap:12px; flex-wrap:wrap; }
+        .theme-swatch{
+          width:44px;height:44px;border-radius:50%; cursor:pointer; border:3px solid transparent;
+          display:flex; overflow:hidden;
+        }
+        .theme-swatch.active{ border-color:var(--ink); }
+        .theme-swatch span{ flex:1; }
+
+        /* ---------- QR modal ---------- */
+        .qr-box{ background:#fff; border-radius:16px; padding:20px; text-align:center; }
+        .qr-box canvas, .qr-box img{ margin:0 auto; }
+
+        /* ---------- Rate this app: stars ---------- */
+        .star-row{ display:flex; gap:8px; justify-content:center; margin:14px 0; }
+        .star-row .star{ font-size:34px; color:#D7DCE3; cursor:pointer; line-height:1; }
+        .star-row .star.filled{ color:var(--gold); }
+        /* ---------- Voice search mic ---------- */
+        #voiceSearchBtn.listening svg circle,
+        #voiceSearchBtn.listening svg rect,
+        #voiceSearchBtn.listening svg path{ stroke:#D8302F; }
+        #voiceSearchBtn.listening{ animation:micPulse 1s infinite; }
+        @keyframes micPulse{ 0%,100%{opacity:1;} 50%{opacity:.4;} }
+
+        /* ---------- Meet the Developer — redesigned ---------- */
+        .maker-hero{
+          background:linear-gradient(150deg,#003d73,#00234a);
+          border-radius:0 0 28px 28px;
+          padding:26px 20px 52px;
+          text-align:center;
+          position:relative;
+          overflow:hidden;
+        }
+        .maker-hero::before{
+          content:"";
+          position:absolute; inset:0;
+          background:
+            radial-gradient(circle at 85% 0%, rgba(255,204,0,.16), transparent 55%),
+            radial-gradient(circle at 10% 100%, rgba(255,255,255,.08), transparent 45%);
+          pointer-events:none;
+        }
+        .maker-avatar{
+          width:92px;height:92px;border-radius:50%;margin:4px auto 14px;
+          display:flex;align-items:center;justify-content:center;
+          color:#fff;font-family:'Poppins',sans-serif;font-weight:700;font-size:28px;
+          border:3px solid rgba(255,255,255,.4);
+          box-shadow:0 10px 24px -8px rgba(0,0,0,.4);
+          position:relative; z-index:1;
+        }
+        .maker-name{ color:#fff; font-size:19px; font-weight:700; position:relative; z-index:1; }
+        .maker-role-badge{
+          display:inline-block; margin-top:8px;
+          background:var(--gold); color:var(--navy-deep);
+          font-size:11.5px; font-weight:700; letter-spacing:.2px;
+          padding:5px 14px; border-radius:99px;
+          position:relative; z-index:1;
+        }
+        .maker-highlight{
+          margin:14px auto 0; max-width:300px;
+          background:rgba(255,255,255,.1); border:1px solid rgba(255,255,255,.18);
+          border-radius:14px; padding:12px 16px;
+          position:relative; z-index:1;
+        }
+        .maker-highlight p{
+          color:#E7EEF7; font-size:12.5px; line-height:1.6; font-weight:500;
+        }
+        .maker-highlight strong{ color:#fff; }
+        .maker-social-row{
+          display:flex; gap:10px; justify-content:center; margin-top:16px;
+          position:relative; z-index:1;
+        }
+        .maker-social-btn{
+          width:36px;height:36px;border-radius:50%;
+          background:rgba(255,255,255,.14); border:1px solid rgba(255,255,255,.25);
+          display:flex;align-items:center;justify-content:center;
+          text-decoration:none; cursor:pointer;
+        }
+
+        .maker-quickcard{
+          background:#fff; margin:-30px 4px 18px; border-radius:20px;
+          padding:8px; box-shadow:0 12px 26px -14px rgba(0,20,50,.25);
+          position:relative; z-index:2;
+        }
+        .maker-quickrow{
+          display:flex; align-items:center; gap:12px;
+          padding:12px 10px; text-decoration:none; color:var(--ink);
+          border-bottom:1px solid var(--line);
+        }
+        .maker-quickrow:last-child{ border-bottom:none; }
+        .maker-quickrow .detail-icon{ width:36px;height:36px; }
+
+        .maker-section-label{
+          font-size:11.5px; font-weight:700; color:var(--sub);
+          text-transform:uppercase; letter-spacing:.5px;
+          margin:4px 4px 10px;
+        }
+
+        .team-card{ padding:6px 4px; }
+        .team-member{
+          display:flex; gap:13px; align-items:flex-start;
+          padding:14px 4px; border-bottom:1px solid var(--line);
+        }
+        .team-member:last-child{ border-bottom:none; }
+        .team-avatar{
+          width:42px;height:42px;border-radius:50%;flex-shrink:0;
+          display:flex;align-items:center;justify-content:center;
+          color:#fff; font-family:'Poppins',sans-serif; font-weight:700; font-size:14px;
+        }
+        .team-info{ min-width:0; }
+        .team-info .t-name{ font-size:13.5px; font-weight:700; color:var(--ink); }
+        .team-info .t-role{
+          display:inline-block; margin-top:3px;
+          font-size:10.5px; font-weight:700; color:var(--navy);
+          background:#EEF3FA; padding:2px 9px; border-radius:99px;
+        }
+        body.dark .team-info .t-role{ background:#16202C; color:#9FBBDA; }
+        .team-info .t-desc{ font-size:12.5px; color:var(--sub); margin-top:6px; line-height:1.55; }
+        .maker-footnote{
+          margin-top:16px; padding-top:14px; border-top:1px solid var(--line);
+          font-size:12.5px; font-style:italic; color:var(--sub); line-height:1.6;
+        }
+
+        /* ---------- Milestone badge (Easter egg) ---------- */
+        .milestone-badge{
+          position:fixed; left:50%; top:-80px; transform:translate(-50%,0);
+          background:var(--navy-deep); color:#fff; border-radius:16px;
+          padding:14px 18px; display:flex; align-items:center; gap:12px;
+          box-shadow:0 12px 26px -8px rgba(0,0,0,.45); z-index:500;
+          transition:top .3s ease-out; max-width:88%;
+        }
+        .milestone-badge.show{ top:20px; }
+        .milestone-badge-icon{ font-size:26px; }
+        .milestone-badge-title{ font-weight:700; font-size:14px; }
+        .milestone-badge-sub{ font-size:11.5px; color:#CBDCF0; margin-top:2px; }
+    </style>
+    <script src="qrcode.js"></script>
+    <script src="emailjs.min.js"></script>
+    <!-- Teacher data now lives in its own file (assets/teachers-data.js), which must
+         define: const FACULTY_DATA = [ {...}, {...}, ... ];
+         This MUST load before the main <script> block at the bottom of this file. -->
+    <script src="teachers-data.js"></script>
+</head>
+<body>
+
+<div class="app">
+    <div class="header">
+        <div class="greet-row">
+            <div class="greet-left">
+                <button class="hamburger-btn" id="hamburgerBtn" aria-label="Menu">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M4 6h16M4 12h16M4 18h16" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+                </button>
+                <div>
+                    <p class="greet-sub">Welcome back,</p>
+                    <h1 class="greet-name" id="greetName">User</h1>
+                </div>
+            </div>
+            <div class="avatar-badge" id="greetAvatar" style="cursor:pointer;">U</div>
+        </div>
+
+        <div class="search-bar">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="11" cy="11" r="7" stroke="#003366" stroke-width="1.8"/><path d="M20 20L16.5 16.5" stroke="#003366" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <input type="text" id="searchInput" placeholder="Search by Name, Dept, Room..." />
+            <button id="voiceSearchBtn" style="border:none;background:none;padding:2px;display:flex;cursor:pointer;flex-shrink:0;" aria-label="Voice search">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="9" y="2" width="6" height="12" rx="3" stroke="#003366" stroke-width="1.8"/><path d="M5 11a7 7 0 0014 0M12 18v3" stroke="#003366" stroke-width="1.8" stroke-linecap="round"/></svg>
+            </button>
+        </div>
+
+        <!-- 5 departments: CSE, SWE, ITM, MCT, CIS -->
+        <div class="chips" id="chipRow">
+            <div class="chip active" data-filter="all">All</div>
+            <div class="chip" data-filter="cse">CSE</div>
+            <div class="chip" data-filter="swe">SWE</div>
+            <div class="chip" data-filter="itm">ITM</div>
+            <div class="chip" data-filter="mct">MCT</div>
+            <div class="chip" data-filter="cis">CIS</div>
+        </div>
+    </div>
+
+    <div class="list-wrap">
+        <div class="list-heading">
+            <h3 id="countLabel">Faculty Members</h3>
+            <div style="position:relative;">
+                <span class="sort" id="sortBtn">Sort: A–Z ▾</span>
+                <div class="sort-menu" id="sortMenu">
+                    <div class="sort-option active" data-sort="az">Name (A–Z)</div>
+                    <div class="sort-option" data-sort="za">Name (Z–A)</div>
+                    <div class="sort-option" data-sort="designation">Designation</div>
+                </div>
+            </div>
+        </div>
+        <div id="facultyList"></div>
+    </div>
+</div>
+
+<!-- Floating Import CSV button (sits just above Add Teacher) -->
+<button class="fab" id="fabImportCsv" aria-label="Import CSV" style="bottom:88px;background:#fff;border:2px solid var(--gold);">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none"><path d="M12 3v12m0 0l-4-4m4 4l4-4M4 17v2a2 2 0 002 2h12a2 2 0 002-2v-2" stroke="#00234a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+<input type="file" id="csvFileInput" accept=".csv,text/csv" style="display:none" />
+
+<!-- Floating Add Teacher button -->
+<button class="fab" id="fabAdd" aria-label="Add teacher">
+    <svg width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M12 5v14M5 12h14" stroke="#00234a" stroke-width="2.4" stroke-linecap="round"/></svg>
+</button>
+
+<!-- CSV Import result sheet -->
+<div class="overlay" id="csvResultOverlay">
+    <div class="sheet" style="position:relative;">
+        <button class="sheet-close" id="csvResultCloseBtn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 6L18 18M18 6L6 18" stroke="#5A6473" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <div class="sheet-handle"></div>
+        <h2 style="font-size:16.5px;font-weight:700;margin-bottom:10px;">CSV Import Result</h2>
+        <p id="csvResultSummary" style="font-size:13px;color:var(--sub);margin-bottom:12px;"></p>
+        <div id="csvResultErrors" style="font-size:12px;color:#D8302F;max-height:180px;overflow-y:auto;margin-bottom:14px;"></div>
+        <button type="button" class="confirm-cancel" id="csvResultOkBtn" style="width:100%;">OK</button>
+    </div>
+</div>
+
+<!-- Faculty detail page (full screen, matches reference design) -->
+<div class="detail-page" id="detailOverlay">
+    <div class="detail-topbar">
+        <button class="detail-back" id="detailCloseBtn" aria-label="Back">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="detail-topbar-title">Faculty Details</div>
+        <div style="width:34px;"></div>
+    </div>
+    <div class="detail-hero">
+        <div class="detail-avatar" id="dAvatar"></div>
+        <h2 id="dName"></h2>
+        <p class="d-title" id="dTitle"></p>
+        <p class="d-dept" id="dDept"></p>
+    </div>
+    <div class="detail-card">
+        <h3>Details</h3>
+
+        <div class="detail-row" id="dRoomRow">
+            <div class="detail-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><rect x="4" y="3" width="16" height="18" rx="2" stroke="#fff" stroke-width="1.6"/><path d="M9 8h6M9 12h6M9 16h3" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+            <div class="detail-text"><div class="detail-label">Room Number</div><div class="detail-value" id="dRoomVal"></div></div>
+        </div>
+
+        <div class="detail-row" id="dDeptRow">
+            <div class="detail-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M4 21V7l8-4 8 4v14" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 21v-6h6v6" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+            <div class="detail-text"><div class="detail-label">Department</div><div class="detail-value" id="dDeptVal"></div></div>
+        </div>
+
+        <a class="detail-row" id="dPhoneRow" href="#">
+            <div class="detail-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.2 3 2.6 3.4 2.2 4 2.2h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1.1l-2.1 2.2z" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+            <div class="detail-text"><div class="detail-label">Phone</div><div class="detail-value" id="dPhoneVal"></div></div>
+        </a>
+
+        <a class="detail-row" id="dEmailRow" href="#">
+            <div class="detail-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><path d="M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z" stroke="#fff" stroke-width="1.6"/><path d="M3 6l9 7 9-7" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+            <div class="detail-text"><div class="detail-label">Email</div><div class="detail-value" id="dEmailVal"></div></div>
+        </a>
+
+        <a class="detail-row" id="dWebRow" href="#" target="_blank">
+            <div class="detail-icon"><svg width="17" height="17" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#fff" stroke-width="1.6"/><path d="M3 12h18M12 3c2.5 2.5 3.8 5.7 3.8 9s-1.3 6.5-3.8 9c-2.5-2.5-3.8-5.7-3.8-9S9.5 5.5 12 3z" stroke="#fff" stroke-width="1.6"/></svg></div>
+            <div class="detail-text"><div class="detail-label">Website</div><div class="detail-value" id="dWebVal"></div></div>
+        </a>
+
+        <div class="detail-actions">
+            <button class="btn-email" id="dSendEmailBtn">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z" stroke="#00234a" stroke-width="1.8"/><path d="M3 6l9 7 9-7" stroke="#00234a" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                Send Email
+            </button>
+            <button class="btn-call" id="dCallBtn">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.2 3 2.6 3.4 2.2 4 2.2h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.3 1.1l-2.1 2.2z" stroke="#003366" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                Call
+            </button>
+            <button class="btn-call" id="dQrBtn" style="margin-top:10px;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="7" height="7" stroke="#003366" stroke-width="1.6"/><rect x="14" y="3" width="7" height="7" stroke="#003366" stroke-width="1.6"/><rect x="3" y="14" width="7" height="7" stroke="#003366" stroke-width="1.6"/><path d="M14 14h3v3h-3zM19 14h2v2h-2zM14 19h2v2h-2zM19 19h2v2h-2z" fill="#003366"/></svg>
+                Show QR Code
+            </button>
+            <button class="btn-call" id="dMeetingBtn" style="margin-top:10px;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="17" rx="2" stroke="#003366" stroke-width="1.6"/><path d="M3 9h18M8 2v4M16 2v4" stroke="#003366" stroke-width="1.6" stroke-linecap="round"/></svg>
+                Request Meeting
+            </button>
+            <button class="btn-call" id="dShareBtn" style="margin-top:10px;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><circle cx="18" cy="5" r="2.4" stroke="#003366" stroke-width="1.6"/><circle cx="6" cy="12" r="2.4" stroke="#003366" stroke-width="1.6"/><circle cx="18" cy="19" r="2.4" stroke="#003366" stroke-width="1.6"/><path d="M8.1 10.8l7.8-4.4M8.1 13.2l7.8 4.4" stroke="#003366" stroke-width="1.6"/></svg>
+                Share Profile
+            </button>
+            <button class="btn-call" id="dEditBtn" style="margin-top:10px;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M12 20h9" stroke="#003366" stroke-width="1.6" stroke-linecap="round"/><path d="M16.5 3.5a2.1 2.1 0 013 3L7 19l-4 1 1-4 12.5-12.5z" stroke="#003366" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                Edit Info
+            </button>
+            <button class="btn-danger" id="dDeleteBtn" style="margin-top:10px;">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M4 7h16M9 7V4h6v3M6 7l1 13a2 2 0 002 2h6a2 2 0 002-2l1-13" stroke="#E03B3B" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Delete Teacher
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- ================= QR Code modal ================= -->
+<div class="confirm-overlay" id="qrOverlay">
+    <div class="qr-box">
+        <h3 style="margin-bottom:4px;">Scan to view profile</h3>
+        <p style="color:var(--sub);font-size:12px;margin-bottom:14px;" id="qrName"></p>
+        <div id="qrCanvasHolder"></div>
+        <button class="confirm-cancel" id="qrCloseBtn" style="width:100%;margin-top:16px;">Close</button>
+    </div>
+</div>
+
+<!-- ================= Delete Teacher confirm modal ================= -->
+<div class="confirm-overlay" id="deleteConfirmOverlay">
+    <div class="confirm-box">
+        <h3>Delete this teacher?</h3>
+        <p id="deleteConfirmName">This will permanently remove them from the list on this device.</p>
+        <div class="confirm-actions">
+            <button class="confirm-cancel" id="deleteCancelBtn">Cancel</button>
+            <button class="confirm-ok" id="deleteOkBtn">Delete</button>
+        </div>
+    </div>
+</div>
+
+<!-- ================= Duplicate Teacher warning modal ================= -->
+<div class="confirm-overlay" id="duplicateWarnOverlay">
+    <div class="confirm-box">
+        <div style="width:56px;height:56px;border-radius:50%;background:#FFF6DA;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3.5L2 20h20L12 3.5z" stroke="#C99400" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 9.5v4.5M12 17v.1" stroke="#C99400" stroke-width="2" stroke-linecap="round"/></svg>
+        </div>
+        <h3>Already in the list</h3>
+        <p id="duplicateWarnText">This teacher already exists.</p>
+        <div class="confirm-actions">
+            <button class="confirm-ok" id="duplicateWarnOkBtn" style="background:var(--navy);flex:1;">Got it</button>
+        </div>
+    </div>
+</div>
+
+<!-- ================= Generic result/info modal (Clean Up Duplicates, Owner-only notices, etc.) ================= -->
+<div class="confirm-overlay" id="infoResultOverlay">
+    <div class="confirm-box">
+        <div id="infoResultIconWrap" style="width:56px;height:56px;border-radius:50%;background:#E6F6EC;display:flex;align-items:center;justify-content:center;margin:0 auto 14px;">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#1E8E5A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 id="infoResultTitle">Done</h3>
+        <p id="infoResultText"></p>
+        <div class="confirm-actions">
+            <button class="confirm-ok" id="infoResultOkBtn" style="background:var(--navy);flex:1;">OK</button>
+        </div>
+    </div>
+</div>
+
+<!-- Add Teacher sheet -->
+<div class="overlay" id="addOverlay">
+    <div class="sheet" style="position:relative;">
+        <button class="sheet-close" id="addCloseBtn">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M6 6L18 18M18 6L6 18" stroke="#5A6473" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+        <div class="sheet-handle"></div>
+        <h2 style="font-size:16.5px;font-weight:700;margin-bottom:16px;" id="addSheetTitle">Add New Teacher</h2>
+        <form id="addForm">
+            <div class="field">
+                <label>Full Name</label>
+                <input type="text" id="f_name" placeholder="e.g. Dr. Rahim Uddin" required />
+            </div>
+            <div class="field">
+                <label>Designation</label>
+                <input type="text" id="f_title" placeholder="e.g. Assistant Professor" required />
+            </div>
+            <div class="field">
+                <label>Department</label>
+                <select id="f_dept">
+                    <option value="cse">CSE</option>
+                    <option value="swe">SWE</option>
+                    <option value="itm">ITM</option>
+                    <option value="mct">MCT</option>
+                    <option value="cis">CIS</option>
+                </select>
+            </div>
+            <div class="field">
+                <label>Gender</label>
+                <select id="f_gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+            <div class="field">
+                <label>Room No.</label>
+                <input type="text" id="f_room" placeholder="e.g. KT-505" />
+            </div>
+            <div class="field">
+                <label>Email</label>
+                <input type="email" id="f_email" placeholder="e.g. name.dept@diu.edu.bd" />
+            </div>
+            <div class="field">
+                <label>Phone</label>
+                <input type="tel" id="f_phone" placeholder="e.g. 8801xxxxxxxxx" />
+            </div>
+            <div class="field">
+                <label>Personal Webpage</label>
+                <input type="url" id="f_webpage" placeholder="https://faculty.daffodilvarsity.edu.bd/..." />
+            </div>
+            <button type="submit" class="submit-btn" id="addSubmitBtn">Add Teacher</button>
+            <button type="button" class="cancel-btn" id="addCancelBtn">Cancel</button>
+        </form>
+    </div>
+</div>
+
+<!-- ================= Sidebar Drawer ================= -->
+<div class="drawer-overlay" id="drawerOverlay">
+    <div class="drawer-panel">
+        <div class="drawer-head">
+            <div class="drawer-avatar" id="drawerAvatar">U</div>
+            <div class="drawer-uname" id="drawerName">User</div>
+            <div class="drawer-uemail" id="drawerEmail">—</div>
+        </div>
+
+        <button class="drawer-item" data-open="favorites">
+            <span class="d-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 3.5l2.9 6 6.6.9-4.8 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.8-4.6 6.6-.9z" stroke="#DCE6F2" stroke-width="1.7" stroke-linejoin="round"/></svg></span>
+            Favorites
+        </button>
+        <button class="drawer-item" data-open="about">
+            <span class="d-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="9" stroke="#DCE6F2" stroke-width="1.7"/><path d="M12 11v6M12 7.5v.1" stroke="#DCE6F2" stroke-width="1.9" stroke-linecap="round"/></svg></span>
+            About
+        </button>
+        <button class="drawer-item" data-open="contact">
+            <span class="d-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z" stroke="#DCE6F2" stroke-width="1.7"/><path d="M3 6l9 7 9-7" stroke="#DCE6F2" stroke-width="1.7" stroke-linejoin="round"/></svg></span>
+            Contact / Help
+        </button>
+        <button class="drawer-item" data-open="settings">
+            <span class="d-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="3" stroke="#DCE6F2" stroke-width="1.7"/><path d="M19.4 13.5a7.6 7.6 0 000-3l2-1.4-2-3.4-2.3.7a7.5 7.5 0 00-2.6-1.5L14 2.5h-4l-.5 2.4a7.5 7.5 0 00-2.6 1.5l-2.3-.7-2 3.4 2 1.4a7.6 7.6 0 000 3l-2 1.4 2 3.4 2.3-.7c.75.65 1.63 1.16 2.6 1.5l.5 2.4h4l.5-2.4a7.5 7.5 0 002.6-1.5l2.3.7 2-3.4-2-1.4z" stroke="#DCE6F2" stroke-width="1.4" stroke-linejoin="round"/></svg></span>
+            Settings
+        </button>
+        <button class="drawer-item" data-open="maker">
+            <span class="d-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><rect x="3" y="4" width="18" height="14" rx="2" stroke="#DCE6F2" stroke-width="1.7"/><path d="M3 9h18M8 14h4" stroke="#DCE6F2" stroke-width="1.7" stroke-linecap="round"/></svg></span>
+            Meet the Developer
+        </button>
+        <button class="drawer-item" data-open="rateapp">
+            <span class="d-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M12 2.5l2.9 6 6.6.9-4.8 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.8-4.6 6.6-.9z" stroke="#DCE6F2" stroke-width="1.5" stroke-linejoin="round"/></svg></span>
+            Rate this App
+        </button>
+
+        <div style="flex:1;"></div>
+        <button class="drawer-item danger" id="logoutBtn">
+            <span class="d-icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none"><path d="M9 21H5a1 1 0 01-1-1V4a1 1 0 011-1h4" stroke="#FF8A80" stroke-width="1.7" stroke-linecap="round"/><path d="M16 17l5-5-5-5M21 12H9" stroke="#FF8A80" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            Logout
+        </button>
+    </div>
+</div>
+
+<!-- ================= Profile page ================= -->
+<div class="info-page" id="page-profile">
+    <div class="info-topbar">
+        <button class="page-back" data-close="profile"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="info-topbar-title">Profile</div>
+    </div>
+    <div class="info-body">
+        <div class="profile-hero">
+            <div class="profile-avatar-wrap">
+                <div class="profile-avatar" id="profileAvatar">U</div>
+                <div class="profile-cam-btn" id="profilePhotoBtn">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M4 8h3l1.5-2h7L17 8h3a1 1 0 011 1v10a1 1 0 01-1 1H4a1 1 0 01-1-1V9a1 1 0 011-1z" stroke="#00234a" stroke-width="1.6" stroke-linejoin="round"/><circle cx="12" cy="13.5" r="3.2" stroke="#00234a" stroke-width="1.6"/></svg>
+                </div>
+                <input type="file" id="profilePhotoInput" accept="image/*" style="display:none;" />
+            </div>
+            <div class="profile-name" id="profileName">User</div>
+            <div class="profile-email" id="profileEmail">—</div>
+        </div>
+
+        <div class="info-card">
+            <h4>Your Name</h4>
+            <div class="cf-field" style="margin-bottom:8px;">
+                <input type="text" id="profileNameInput" placeholder="e.g. Aysha Siddika Esha" />
+            </div>
+            <button class="submit-btn" id="saveNameBtn" style="margin-top:0;">Save</button>
+            <p id="nameSavedMsg" style="display:none;color:#1E8E5A;font-size:12px;font-weight:600;margin-top:8px;">✓ Saved — you'll see this name in "Welcome" from now on</p>
+        </div>
+
+        <div class="info-card">
+            <h4>Student ID</h4>
+            <div class="cf-field" style="margin-bottom:8px;">
+                <input type="text" id="studentIdInput" placeholder="e.g. 221-15-4567" />
+            </div>
+            <button class="submit-btn" id="saveStudentIdBtn" style="margin-top:0;">Save</button>
+            <p id="studentIdSavedMsg" style="display:none;color:#1E8E5A;font-size:12px;font-weight:600;margin-top:8px;">✓ Saved</p>
+        </div>
+
+        <div class="info-card">
+            <h4>Phone Number</h4>
+            <div class="cf-field" style="margin-bottom:8px;">
+                <input type="tel" id="phoneInput" placeholder="e.g. 01xxxxxxxxx" />
+            </div>
+            <button class="submit-btn" id="savePhoneBtn" style="margin-top:0;">Save</button>
+            <p id="phoneSavedMsg" style="display:none;color:#1E8E5A;font-size:12px;font-weight:600;margin-top:8px;">✓ Saved</p>
+        </div>
+
+        <div class="info-card">
+            <h4>Address</h4>
+            <div class="cf-field" style="margin-bottom:8px;">
+                <textarea id="addressInput" rows="3" placeholder="e.g. Dhanmondi, Dhaka"></textarea>
+            </div>
+            <button class="submit-btn" id="saveAddressBtn" style="margin-top:0;">Save</button>
+            <p id="addressSavedMsg" style="display:none;color:#1E8E5A;font-size:12px;font-weight:600;margin-top:8px;">✓ Saved</p>
+        </div>
+
+        <div class="info-card">
+            <h4>Blood Group</h4>
+            <div class="cf-field" style="margin-bottom:8px;">
+                <select id="bloodGroupInput">
+                    <option value="">Select</option>
+                    <option value="A+">A+</option>
+                    <option value="A-">A-</option>
+                    <option value="B+">B+</option>
+                    <option value="B-">B-</option>
+                    <option value="AB+">AB+</option>
+                    <option value="AB-">AB-</option>
+                    <option value="O+">O+</option>
+                    <option value="O-">O-</option>
+                </select>
+            </div>
+            <button class="submit-btn" id="saveBloodGroupBtn" style="margin-top:0;">Save</button>
+            <p id="bloodGroupSavedMsg" style="display:none;color:#1E8E5A;font-size:12px;font-weight:600;margin-top:8px;">✓ Saved</p>
+        </div>
+    </div>
+</div>
+
+<!-- ================= Favorites page ================= -->
+<div class="info-page" id="page-favorites">
+    <div class="info-topbar">
+        <button class="page-back" data-close="favorites"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="info-topbar-title">Favorites</div>
+    </div>
+    <div class="info-body">
+        <div id="favoritesList"></div>
+    </div>
+</div>
+
+<!-- ================= About page ================= -->
+<div class="info-page" id="page-about">
+    <div class="info-topbar">
+        <button class="page-back" data-close="about"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="info-topbar-title">About</div>
+    </div>
+    <div class="info-body">
+        <div class="info-card" style="text-align:center;">
+            <div style="width:60px;height:60px;border-radius:16px;background:var(--navy);display:flex;align-items:center;justify-content:center;margin:0 auto 12px;">
+                <span style="color:var(--gold);font-family:'Poppins',sans-serif;font-weight:800;font-size:13px;">DIU</span>
+            </div>
+            <p style="font-weight:700;font-size:15px;color:var(--ink);">DIU Faculty Finder</p>
+            <p style="font-size:12px;color:var(--sub);margin-top:2px;">Version 1.0.0</p>
+        </div>
+        <div class="info-card">
+            <h4>About This App</h4>
+            <p>Find any DIU faculty member in seconds. DIU Faculty Finder is a simple directory app built to help Daffodil International University students quickly find any faculty member's department, room number, email, and contact details — all in one place, without digging through multiple web pages.</p>
+            <p style="margin-top:10px;">Built with care for the Faculty of Science & Information Technology (FSIT), covering the CSE, SWE, ITM, MCT, and CIS departments — this app is a student project aimed at making campus life a little easier.</p>
+        </div>
+    </div>
+</div>
+
+<!-- ================= Contact / Help page ================= -->
+<div class="info-page" id="page-contact">
+    <div class="info-topbar">
+        <button class="page-back" data-close="contact"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="info-topbar-title">Contact / Help</div>
+    </div>
+    <div class="info-body">
+        <div class="info-card">
+            <h4>Reach Us Directly</h4>
+            <a class="contact-row" href="mailto:diufacultyfinder@gmail.com">
+                <div class="detail-icon" style="background:var(--navy);"><svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z" stroke="#fff" stroke-width="1.6"/><path d="M3 6l9 7 9-7" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+                <div><div class="detail-label">Email</div><div class="detail-value">diufacultyfinder@gmail.com</div></div>
+            </a>
+        </div>
+        <div class="info-card">
+            <h4>Send a Message</h4>
+            <form id="contactForm">
+                <div class="cf-field">
+                    <label>Your Name</label>
+                    <input type="text" id="cf_name" required />
+                </div>
+                <div class="cf-field">
+                    <label>Your Email</label>
+                    <input type="email" id="cf_email" placeholder="so we can reply to you" required />
+                </div>
+                <div class="cf-field">
+                    <label>Message</label>
+                    <textarea id="cf_message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="submit-btn" id="cfSubmitBtn">Send</button>
+                <p id="cfStatusMsg" style="display:none;font-size:12px;font-weight:600;margin-top:8px;"></p>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- ================= Settings page ================= -->
+<div class="info-page" id="page-settings">
+    <div class="info-topbar">
+        <button class="page-back" data-close="settings"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="info-topbar-title">Settings</div>
+    </div>
+    <div class="info-body">
+        <div class="info-card">
+            <div class="settings-row">
+                <div><div class="s-label">Dark Mode</div><div class="s-sub">Easier on the eyes at night</div></div>
+                <button class="toggle-switch" id="darkModeToggle"><span class="knob"></span></button>
+            </div>
+            <div class="settings-row">
+                <div><div class="s-label">Notifications</div><div class="s-sub">Faculty & app updates</div></div>
+                <button class="toggle-switch" id="notifToggle"><span class="knob"></span></button>
+            </div>
+        </div>
+        <div class="info-card">
+            <h4>Theme Color</h4>
+            <div class="theme-row" id="themeRow">
+                <div class="theme-swatch active" data-navy="#003366" data-gold="#FFCC00" style="background:linear-gradient(90deg,#003366 50%,#FFCC00 50%);" title="Navy & Gold"></div>
+                <div class="theme-swatch" data-navy="#6B1E2B" data-gold="#E8B33D" style="background:linear-gradient(90deg,#6B1E2B 50%,#E8B33D 50%);" title="Maroon & Gold"></div>
+                <div class="theme-swatch" data-navy="#0F3D2E" data-gold="#D9C36A" style="background:linear-gradient(90deg,#0F3D2E 50%,#D9C36A 50%);" title="Forest & Gold"></div>
+                <div class="theme-swatch" data-navy="#3B2A66" data-gold="#C9CDD6" style="background:linear-gradient(90deg,#3B2A66 50%,#C9CDD6 50%);" title="Purple & Silver"></div>
+                <div class="theme-swatch" data-navy="#1B2A3A" data-gold="#4FB8A6" style="background:linear-gradient(90deg,#1B2A3A 50%,#4FB8A6 50%);" title="Slate & Teal"></div>
+            </div>
+        </div>
+        <div class="info-card">
+            <h4>Font Size</h4>
+            <div class="fs-btn-row">
+                <button class="fs-btn" data-size="sm">Small</button>
+                <button class="fs-btn" data-size="md">Medium</button>
+                <button class="fs-btn" data-size="lg">Large</button>
+            </div>
+        </div>
+        <div class="info-card">
+            <h4>Backup & Restore</h4>
+            <p style="margin-bottom:12px;">Save your favorites, added teachers, profile, and settings to a file — useful before uninstalling the app.</p>
+            <button type="button" class="submit-btn" id="backupDataBtn" style="width:100%;margin-bottom:8px;">📤 Backup Data</button>
+            <button type="button" class="fs-btn" id="restoreDataBtn" style="width:100%;">📥 Restore Data</button>
+        </div>
+        <div class="info-card">
+            <h4>App Version</h4>
+            <p>DIU Faculty Finder — v1.0.1 (duplicate-fix build)</p>
+        </div>
+        <div class="info-card" id="ownerDataCard" style="display:none;">
+            <h4>Data Maintenance (Owner Only)</h4>
+            <p style="margin-bottom:10px;">If duplicate teacher entries ever show up (e.g. from adding the
+                same person twice, or importing the same CSV more than once), tap below to remove them.</p>
+            <button type="button" class="submit-btn" id="cleanupDuplicatesBtn" style="width:100%;">Clean Up Duplicates Now</button>
+        </div>
+    </div>
+</div>
+
+<!-- ================= Meet the Developer page ================= -->
+<div class="info-page" id="page-maker">
+    <div class="info-topbar">
+        <button class="page-back" data-close="maker"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="info-topbar-title">Meet the Developer</div>
+    </div>
+    <div class="info-body" style="padding:0 0 20px;">
+        <!-- Hero banner -->
+        <div class="maker-hero">
+            <div class="maker-avatar" style="background:linear-gradient(150deg,#0a5ab0,#003366);">AS.E</div>
+            <!-- EDIT ME: update with your real details -->
+            <div class="maker-name">Aysha Siddika Esha</div>
+            <span class="maker-role-badge">Creator & Lead Developer</span>
+            <div class="maker-highlight">
+                <p><strong>Sole designer & developer</strong> — conceptualized, designed, and built this app end-to-end.</p>
+            </div>
+            <div class="maker-social-row">
+                <a class="maker-social-btn" href="mailto:siddika241-15-290@diu.edu.bd" aria-label="Email">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><path d="M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z" stroke="#fff" stroke-width="1.6"/><path d="M3 6l9 7 9-7" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg>
+                </a>
+                <a class="maker-social-btn" href="https://www.linkedin.com/in/aysha-siddika-esha-39a4641b1" target="_blank" aria-label="LinkedIn">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="#fff" stroke-width="1.6"/><path d="M7.5 10v6.5M7.5 7.2v.1M11.5 16.5V13c0-1.4 1-2.4 2.2-2.4S16 11.6 16 13v3.5" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg>
+                </a>
+            </div>
+        </div>
+
+        <!-- Quick info card, right below the hero -->
+        <div class="maker-quickcard">
+            <div class="maker-quickrow">
+                <div class="detail-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M4 21V7l8-4 8 4v14" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/><path d="M9 21v-6h6v6" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+                <div class="detail-text">
+                    <div class="detail-label">Department / Batch</div>
+                    <div class="detail-value">CSE, Batch 66_K, Daffodil International University</div>
+                </div>
+            </div>
+            <a class="maker-quickrow" href="mailto:siddika241-15-290@diu.edu.bd">
+                <div class="detail-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><path d="M4 5h16a1 1 0 011 1v12a1 1 0 01-1 1H4a1 1 0 01-1-1V6a1 1 0 011-1z" stroke="#fff" stroke-width="1.6"/><path d="M3 6l9 7 9-7" stroke="#fff" stroke-width="1.6" stroke-linejoin="round"/></svg></div>
+                <div class="detail-text">
+                    <div class="detail-label">Email</div>
+                    <div class="detail-value">siddika241-15-290@diu.edu.bd</div>
+                </div>
+            </a>
+            <a class="maker-quickrow" href="https://www.linkedin.com/in/aysha-siddika-esha-39a4641b1" target="_blank">
+                <div class="detail-icon"><svg width="15" height="15" viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="#fff" stroke-width="1.6"/><path d="M7.5 10v6.5M7.5 7.2v.1M11.5 16.5V13c0-1.4 1-2.4 2.2-2.4S16 11.6 16 13v3.5" stroke="#fff" stroke-width="1.6" stroke-linecap="round"/></svg></div>
+                <div class="detail-text">
+                    <div class="detail-label">LinkedIn</div>
+                    <div class="detail-value">linkedin.com/in/aysha-siddika-esha</div>
+                </div>
+            </a>
+        </div>
+
+        <!-- Team contribution -->
+        <div style="padding:0 20px;">
+            <p class="maker-section-label">Other Contributors</p>
+            <div class="info-card team-card">
+
+                <div class="team-member">
+                    <div class="team-avatar" style="background:linear-gradient(150deg,#c99400,#8a6800);">IN</div>
+                    <div class="team-info">
+                        <div class="t-name">Israt Jahan Nishe</div>
+                        <span class="t-role">Consultation & Data Entry</span>
+                        <p class="t-desc">Contributed to project discussions and helped collect and enter faculty data.</p>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-avatar" style="background:linear-gradient(150deg,#0a5ab0,#003366);">KI</div>
+                    <div class="team-info">
+                        <div class="t-name">Kasfia Mridula Iffat</div>
+                        <span class="t-role">Discussion & Data Entry</span>
+                        <p class="t-desc">Took part in project discussions and entered faculty data.</p>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-avatar" style="background:linear-gradient(150deg,#c99400,#8a6800);">AA</div>
+                    <div class="team-info">
+                        <div class="t-name">Anusha Anjum</div>
+                        <span class="t-role">Data Entry</span>
+                        <p class="t-desc">Collected and entered faculty information into the system.</p>
+                    </div>
+                </div>
+
+                <div class="team-member">
+                    <div class="team-avatar" style="background:linear-gradient(150deg,#0a5ab0,#003366);">TS</div>
+                    <div class="team-info">
+                        <div class="t-name">Tasnim Sultana</div>
+                        <span class="t-role">Room Number Research & Data Entry</span>
+                        <p class="t-desc">Located faculty room numbers and entered the data.</p>
+                    </div>
+                </div>
+
+                <p class="maker-footnote">
+                    This app was built as a Computer Science & Engineering (CSE) student project to help organize and centralize DIU faculty information.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ================= Rate this App page ================= -->
+<div class="info-page" id="page-rateapp">
+    <div class="info-topbar">
+        <button class="page-back" data-close="rateapp"><svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M15 18l-6-6 6-6" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+        <div class="info-topbar-title">Rate this App</div>
+    </div>
+    <div class="info-body">
+        <div class="info-card" style="text-align:center;">
+            <p style="font-weight:700;font-size:15px;color:var(--ink);">How's your experience?</p>
+            <p style="font-size:12.5px;color:var(--sub);margin-top:2px;">Tap the stars, and tell us what to improve.</p>
+            <div class="star-row" id="rateStars">
+                <span class="star" data-val="1">★</span>
+                <span class="star" data-val="2">★</span>
+                <span class="star" data-val="3">★</span>
+                <span class="star" data-val="4">★</span>
+                <span class="star" data-val="5">★</span>
+            </div>
+        </div>
+        <div class="info-card">
+            <h4>Feedback (optional)</h4>
+            <div class="cf-field">
+                <textarea id="rateFeedback" rows="4" placeholder="What did you like, or what should we fix?"></textarea>
+            </div>
+            <button type="button" class="submit-btn" id="submitRatingBtn">Submit Rating</button>
+            <p id="rateThanksMsg" style="display:none;color:#1E8E5A;font-size:12px;font-weight:600;margin-top:8px;">✓ Thanks for your feedback!</p>
+        </div>
+    </div>
+</div>
+
+<!-- ================= Logout confirm modal ================= -->
+<div class="confirm-overlay" id="logoutConfirmOverlay">
+    <div class="confirm-box">
+        <h3>Log out?</h3>
+        <p>You'll need to log in again to use the app.</p>
+        <div class="confirm-actions">
+            <button class="confirm-cancel" id="logoutCancelBtn">Cancel</button>
+            <button class="confirm-ok" id="logoutOkBtn">Logout</button>
+        </div>
+    </div>
+</div>
+
+<script>
+    /* ===================================================================
+       OWNER-ONLY ACCESS — only this email can Add / Edit / Delete faculty
+       or Import CSV. Everyone else only gets read-only search/browse.
+    =================================================================== */
+    const OWNER_EMAIL = "siddika241-15-290@diu.edu.bd";
+    let isOwner = false;
+
+    // Hides all admin-only controls (Add / Import CSV FABs, and the
+    // Edit/Delete buttons inside the faculty detail sheet) for anyone
+    // who isn't logged in with the owner's email.
+    function applyOwnerAccessControl() {
+      const adminOnlyIds = ["fabAdd", "fabImportCsv", "dEditBtn", "dDeleteBtn", "ownerDataCard"];
+      adminOnlyIds.forEach(id => {
+        const el = document.getElementById(id);
+        if (el) el.style.display = isOwner ? "" : "none";
+      });
+    }
+
+    /* ===================================================================
+       FACULTY DATA — now loaded from assets/teachers-data.js, which must
+       define a global `const FACULTY_DATA = [ {...}, {...}, ... ];`
+       array with the exact same shape as before (name, title, dept, room,
+       email, webpage, phone, color, online, gender). That external file
+       is loaded via <script src="assets/teachers-data.js"> in <head>,
+       BEFORE this script block runs, so FACULTY_DATA is already available
+       here. If that file is ever missing/blank, this app still runs (with
+       an empty list) instead of crashing.
+    =================================================================== */
+    const faculty = (typeof FACULTY_DATA !== "undefined" && Array.isArray(FACULTY_DATA))
+      ? FACULTY_DATA.slice()
+      : [];
+
+    /* ---- Load any teachers added earlier from this device (persists across app restarts) ---- */
+    const STORAGE_KEY = "diu_added_faculty";
+    const DEFAULT_FACULTY_COUNT = faculty.length; // entries before this index are the built-in list
+
+    // ---- Apply any saved edits to the built-in faculty (keyed by their original position) ----
+    const EDITS_KEY = "diu_faculty_edits";
+    let facultyEdits = {};
+    try {
+      facultyEdits = JSON.parse(localStorage.getItem(EDITS_KEY) || "{}");
+      Object.keys(facultyEdits).forEach(idx => {
+        if (faculty[idx]) Object.assign(faculty[idx], facultyEdits[idx]);
+      });
+    } catch (e) { facultyEdits = {}; }
+
+    // ---- Track deletions of built-in faculty (keyed by their original position) ----
+    const DELETIONS_KEY = "diu_faculty_deletions";
+    let deletedDefaultIdxs = [];
+    try {
+      deletedDefaultIdxs = JSON.parse(localStorage.getItem(DELETIONS_KEY) || "[]");
+    } catch (e) { deletedDefaultIdxs = []; }
+
+    // addedFaculty stays in outer scope (not a local const) so Add Teacher, CSV Import,
+    // and Edit Info can all mutate the SAME array and re-save it correctly.
+    let addedFaculty = [];
+    try {
+      const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || "[]");
+      if (Array.isArray(saved) && saved.length) {
+        addedFaculty = saved;
+        faculty.push(...addedFaculty); // faculty[i] and addedFaculty[i - DEFAULT_FACULTY_COUNT] are the same object
+      }
+    } catch (e) { /* ignore corrupted storage */ }
+
+    // Remove any built-in entries the user has deleted before (in reverse order so
+    // earlier indices don't shift while we splice out later ones).
+    if (deletedDefaultIdxs.length) {
+      [...deletedDefaultIdxs].sort((a, b) => b - a).forEach(idx => {
+        if (idx < DEFAULT_FACULTY_COUNT) faculty[idx] = null; // mark, don't splice yet (keeps index math simple)
+      });
+      // Actually remove the marked (null) built-in entries now, compacting the array.
+      for (let i = faculty.length - 1; i >= 0; i--) {
+        if (faculty[i] === null) faculty.splice(i, 1);
+      }
+    }
+
+    /* ---------- Duplicate removal ----------
+       Same person = same email (case-insensitive) — checked first, since
+       it's the most reliable identifier regardless of small differences in
+       how the name is typed. If email is missing/N/A, falls back to phone
+       number (digits only, ignoring spaces/dashes/country-code prefix).
+       If phone is also missing, falls back to name + department + room.
+       This check runs automatically every time the app opens (see
+       dedupeFacultyArray() below), so even built-in duplicates baked into
+       assets/teachers-data.js stay removed permanently — surviving app
+       uninstall/reinstall too, since it's detected fresh from the data
+       every time, not from a "remembered deletion" flag in storage. */
+    function normalizePhone(raw) {
+      let digits = (raw || "").replace(/\D/g, ""); // keep digits only
+      if (digits.startsWith("880") && digits.length > 10) digits = digits.slice(3); // strip country code
+      return digits;
+    }
+    // Shared department/institution hotline numbers (used by faculty who don't have
+    // a personal cellphone on file). These are NOT unique to one person, so they must
+    // never be used to detect "duplicate" teachers — otherwise every teacher sharing
+    // the hotline would incorrectly collapse into a single entry. Add any other shared
+    // hotline numbers here (normalized: digits only, with the leading "880" stripped).
+    const SHARED_HOTLINE_NUMBERS = new Set(["9617901233"]);
+    function dedupeKey(f) {
+      const email = (f.email || "").trim().toLowerCase();
+      if (email && email !== "n/a") return "email:" + email;
+
+      const phone = normalizePhone(f.phone);
+      if (phone && phone.toLowerCase() !== "na" && phone.length >= 6 && !SHARED_HOTLINE_NUMBERS.has(phone)) {
+        return "phone:" + phone;
+      }
+
+      const name = (f.name || "").trim().toLowerCase().replace(/\s+/g, " ");
+      return "namedept:" + name + "|" + (f.dept || "").toLowerCase() + "|" + (f.room || "").toLowerCase();
+    }
+
+    function dedupeFacultyArray() {
+      const seen = new Set();
+      const kept = [];
+      let removedCount = 0;
+      for (const f of faculty) {
+        const key = dedupeKey(f);
+        if (seen.has(key)) { removedCount++; continue; }
+        seen.add(key);
+        kept.push(f);
+      }
+      if (removedCount > 0) {
+        faculty.length = 0;
+        faculty.push(...kept);
+        addedFaculty = addedFaculty.filter(f => faculty.includes(f));
+        try { localStorage.setItem(STORAGE_KEY, JSON.stringify(addedFaculty)); } catch (e) {}
+      }
+      return removedCount;
+    }
+    dedupeFacultyArray();
+
+    const listEl = document.getElementById("facultyList");
+    const countEl = document.getElementById("countLabel");
+    const searchInput = document.getElementById("searchInput");
+    const chipRow = document.getElementById("chipRow");
+    let activeFilter = "all";
+
+    const deptLabel = { cse: "CSE", swe: "SWE", itm: "ITM", mct: "MCT", cis: "CIS" };
+    const deptFull = {
+      cse: "Computer Science & Engineering (CSE)",
+      swe: "Software Engineering (SWE)",
+      itm: "Information Technology & Management (ITM)",
+      mct: "Multimedia & Creative Technology (MCT)",
+      cis: "Computing & Information System (CIS)"
+    };
+
+    /* ---------- Designation hierarchy (for "Sort by Designation") ----------
+       Order requested: Dean -> Associate Dean -> Professor -> Associate
+       Professor -> Assistant Professor -> Lecturer (Senior Scale) -> Lecturer.
+       Checked from most-specific to least-specific (e.g. "Associate Dean"
+       before plain "Dean", "Associate/Assistant Professor" before plain
+       "Professor") so a title isn't matched to the wrong, broader rank.
+       Anything that doesn't match a known title falls to the bottom,
+       alphabetically. */
+    const DESIGNATION_ORDER = [
+      { rank: 1, test: t => t.includes("associate dean") ? false : t.includes("dean") },
+      { rank: 2, test: t => t.includes("associate dean") },
+      { rank: 4, test: t => t.includes("associate professor") },
+      { rank: 5, test: t => t.includes("assistant professor") },
+      { rank: 3, test: t => t.includes("professor") }, // plain "Professor" only (associate/assistant matched above already)
+      { rank: 6, test: t => t.includes("senior scale") || t.includes("lecturer (senior scale)") },
+      { rank: 7, test: t => t.includes("lecturer") }
+    ];
+    function designationRank(title) {
+      const t = (title || "").trim().toLowerCase();
+      for (const entry of DESIGNATION_ORDER) {
+        if (entry.test(t)) return entry.rank;
+      }
+      return 99; // unknown/unlisted designation — goes to the end
+    }
+
+    function initials(name) {
+      const clean = name.replace(/^dr\.?\s+/i, "").replace(/^md\.?\s+/i, "").trim();
+      const parts = clean.split(/\s+/).filter(Boolean);
+      if (parts.length === 1) return parts[0].slice(0, 2).toUpperCase();
+      return (parts[0][0] + parts[parts.length - 1][0]).toUpperCase();
+    }
+
+    /* Generic figure icon shown on faculty cards & the detail screen —
+       one common silhouette for male faculty, a different one for female. */
+    function genderIcon(gender) {
+      if (gender === "female") {
+        return `<svg viewBox="0 0 40 40" width="62%" height="62%" xmlns="http://www.w3.org/2000/svg">
+          <path d="M20 6c-6 0-10 4.2-10 10 0 2.6.9 4.8 2.3 6.5-1 .6-1.8 1.4-1.8 2.5 0 1.6 2 2.6 4 3.1-.6.9-1 2-1 3.2h13c0-1.2-.4-2.3-1-3.2 2-.5 4-1.5 4-3.1 0-1.1-.8-1.9-1.8-2.5C29.1 20.8 30 18.6 30 16c0-5.8-4-10-10-10z" fill="#fff"/>
+          <path d="M8 34c0-7 5.4-11.5 12-11.5S32 27 32 34" fill="#fff"/>
+        </svg>`;
+      }
+      return `<svg viewBox="0 0 40 40" width="58%" height="58%" xmlns="http://www.w3.org/2000/svg">
+        <circle cx="20" cy="15" r="7" fill="#fff"/>
+        <path d="M6 34c0-8 6-13 14-13s14 5 14 13" fill="#fff"/>
+      </svg>`;
+    }
+
+    /* ---------- Favorites ---------- */
+    function getFavorites() {
+      try { return JSON.parse(localStorage.getItem("diu_favorites") || "[]"); } catch (e) { return []; }
+    }
+    function isFavorite(name) { return getFavorites().includes(name); }
+    function toggleFavorite(name) {
+      const favs = getFavorites();
+      const idx = favs.indexOf(name);
+      if (idx === -1) favs.push(name); else favs.splice(idx, 1);
+      try { localStorage.setItem("diu_favorites", JSON.stringify(favs)); } catch (e) {}
+      renderList();
+      if (document.getElementById("page-favorites").classList.contains("show")) renderFavorites();
+      checkFavoriteMilestone();
+    }
+
+    let currentSort = "az";
+    try { currentSort = localStorage.getItem("diu_sort") || "az"; } catch (e) {}
+
+    function buildCard(f) {
+      return `
+        <div class="faculty-card" onclick="openDetail(${f._idx})">
+          <div class="fav-btn" onclick="event.stopPropagation(); toggleFavorite('${f.name.replace(/'/g, "\\'")}')">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="${isFavorite(f.name) ? '#FFCC00' : 'none'}"><path d="M12 3.5l2.9 6 6.6.9-4.8 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.8-4.6 6.6-.9z" stroke="${isFavorite(f.name) ? '#FFCC00' : '#B8C2CE'}" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          </div>
+          <div class="avatar-wrap">
+            <div class="avatar-sq avatar-${f.color || 'navy'}" style="display:flex;align-items:center;justify-content:center;">${genderIcon(f.gender)}</div>
+            <div class="status-dot ${f.online ? "online" : "offline"}"></div>
+          </div>
+          <div class="card-info">
+            <h4>${f.name}</h4>
+            <p>${f.title} · ${deptLabel[f.dept] || f.dept.toUpperCase()} Department</p>
+            <span class="room-badge">${f.room}</span>
+          </div>
+        </div>
+      `;
+    }
+
+    function renderList() {
+      const query = searchInput.value.trim().toLowerCase();
+
+      let filtered = faculty
+        .map((f, i) => ({ ...f, _idx: i }))
+        .filter(f => {
+          const matchesFilter = activeFilter === "all" || f.dept === activeFilter;
+          const matchesSearch =
+            !query ||
+            f.name.toLowerCase().includes(query) ||
+            f.dept.toLowerCase().includes(query) ||
+            (f.room || "").toLowerCase().includes(query);
+          return matchesFilter && matchesSearch;
+        });
+
+      if (currentSort === "az") filtered.sort((a, b) => a.name.localeCompare(b.name));
+      else if (currentSort === "za") filtered.sort((a, b) => b.name.localeCompare(a.name));
+      else if (currentSort === "designation") {
+        filtered.sort((a, b) => {
+          const rankDiff = designationRank(a.title) - designationRank(b.title);
+          if (rankDiff !== 0) return rankDiff;
+          return a.name.localeCompare(b.name); // same rank -> alphabetical tiebreaker
+        });
+      }
+
+      countEl.textContent = `${filtered.length} Faculty Member${filtered.length === 1 ? "" : "s"}`;
+
+      if (filtered.length === 0) {
+  const hasQueryOrFilter = query || activeFilter !== "all";
+  listEl.innerHTML = `
+    <div class="empty-state-rich">
+      <div class="es-icon">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+          <circle cx="10.5" cy="10.5" r="6.5" stroke="#003366" stroke-width="1.8"/>
+          <path d="M20 20l-4.8-4.8" stroke="#003366" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M8 10.5h5" stroke="#FFCC00" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+      </div>
+      <h4>No faculty found</h4>
+      <p>${hasQueryOrFilter
+        ? "Try a different name, department, or room number — or clear your search."
+        : "Tap the + button to add your first teacher."}</p>
+      ${hasQueryOrFilter ? `<button class="es-action" id="esResetBtn">Clear Search & Filters</button>` : ""}
+    </div>`;
+  const resetBtn = document.getElementById("esResetBtn");
+  if (resetBtn) {
+    resetBtn.addEventListener("click", () => {
+      searchInput.value = "";
+      activeFilter = "all";
+      chipRow.querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
+      chipRow.querySelector('[data-filter="all"]').classList.add("active");
+      renderList();
+    });
+  }
+  return;
+}
+      listEl.innerHTML = filtered.map(buildCard).join("");
+    }
+
+    /* ---------- Favorites page ---------- */
+    function renderFavorites() {
+      const favs = getFavorites();
+      const favList = document.getElementById("favoritesList");
+      const items = faculty
+        .map((f, i) => ({ ...f, _idx: i }))
+        .filter(f => favs.includes(f.name));
+
+      if (items.length === 0) {
+        favList.innerHTML = `
+  <div class="empty-state-rich">
+    <div class="es-icon">
+      <svg width="38" height="38" viewBox="0 0 24 24" fill="none"><path d="M12 3.5l2.9 6 6.6.9-4.8 4.6 1.1 6.5-5.8-3.1-5.8 3.1 1.1-6.5-4.8-4.6 6.6-.9z" stroke="#FFCC00" stroke-width="1.6" stroke-linejoin="round"/></svg>
+    </div>
+    <h4>No favorites yet</h4>
+    <p>No teachers are currently favorited. Tap a card icon to add one!</p>
+  </div>`;
+        return;
+      }
+      favList.innerHTML = items.map(buildCard).join("");
+    }
+
+    /* ---------- Sort dropdown ---------- */
+    const sortBtn = document.getElementById("sortBtn");
+    const sortMenu = document.getElementById("sortMenu");
+    sortBtn.addEventListener("click", (e) => {
+      e.stopPropagation();
+      sortMenu.classList.toggle("show");
+    });
+    document.addEventListener("click", () => sortMenu.classList.remove("show"));
+    const sortLabels = { az: "Name (A–Z)", za: "Name (Z–A)", designation: "Designation" };
+    document.querySelectorAll(".sort-option").forEach(opt => {
+      if (opt.dataset.sort === currentSort) opt.classList.add("active");
+      opt.addEventListener("click", () => {
+        currentSort = opt.dataset.sort;
+        try { localStorage.setItem("diu_sort", currentSort); } catch (e) {}
+        document.querySelectorAll(".sort-option").forEach(o => o.classList.remove("active"));
+        opt.classList.add("active");
+        sortBtn.textContent = "Sort: " + sortLabels[currentSort] + " ▾";
+        sortMenu.classList.remove("show");
+        renderList();
+      });
+    });
+    sortBtn.textContent = "Sort: " + sortLabels[currentSort] + " ▾";
+
+
+    /* ---------- Faculty detail page ---------- */
+    const detailOverlay = document.getElementById("detailOverlay");
+
+    function setRow(rowEl, valueId, value, hrefBuilder) {
+      const valEl = document.getElementById(valueId);
+      if (!value || value === "N/A") {
+        rowEl.style.display = "none";
+        return;
+      }
+      rowEl.style.display = "flex";
+      valEl.textContent = value;
+      if (hrefBuilder) rowEl.href = hrefBuilder(value);
+    }
+
+    let currentDetailIdx = null;
+    function openDetail(idx) {
+      const f = faculty[idx];
+      if (!f) return;
+      currentDetailIdx = idx;
+
+      document.getElementById("dAvatar").className = "detail-avatar avatar-" + (f.color || "navy");
+      document.getElementById("dAvatar").style.display = "flex";
+      document.getElementById("dAvatar").style.alignItems = "center";
+      document.getElementById("dAvatar").style.justifyContent = "center";
+      document.getElementById("dAvatar").innerHTML = genderIcon(f.gender);
+      document.getElementById("dName").textContent = f.name;
+      document.getElementById("dTitle").textContent = f.title;
+      document.getElementById("dDept").textContent = (deptLabel[f.dept] || f.dept.toUpperCase()) + " Department";
+
+      setRow(document.getElementById("dRoomRow"), "dRoomVal", f.room);
+      setRow(document.getElementById("dDeptRow"), "dDeptVal", deptFull[f.dept] || f.dept.toUpperCase());
+      setRow(document.getElementById("dPhoneRow"), "dPhoneVal", f.phone, v => "tel:" + v.replace(/\s+/g, ""));
+      setRow(document.getElementById("dEmailRow"), "dEmailVal", f.email, v => "mailto:" + v);
+      setRow(document.getElementById("dWebRow"), "dWebVal", f.webpage, v => v);
+
+      const emailBtn = document.getElementById("dSendEmailBtn");
+      const callBtn = document.getElementById("dCallBtn");
+      const meetingBtn = document.getElementById("dMeetingBtn");
+      const shareBtn = document.getElementById("dShareBtn");
+      emailBtn.style.display = (f.email && f.email !== "N/A") ? "flex" : "none";
+      callBtn.style.display = (f.phone && f.phone !== "N/A") ? "flex" : "none";
+      meetingBtn.style.display = (f.email && f.email !== "N/A") ? "flex" : "none";
+      emailBtn.onclick = () => { if (f.email && f.email !== "N/A") window.location.href = "mailto:" + f.email; };
+      callBtn.onclick = () => { if (f.phone && f.phone !== "N/A") window.location.href = "tel:" + f.phone.replace(/\s+/g, ""); };
+
+     meetingBtn.onclick = () => {
+  if (!f.email || f.email === "N/A") return;
+
+  meetingBtn.disabled = true;
+  const originalLabel = meetingBtn.innerHTML;
+  meetingBtn.innerHTML = "Sending...";
+
+  const honorific = f.gender === "female" ? "Madam" : "Sir";
+  const messageBody =
+    `Respected ${f.name} ${honorific},\n\nI would like to request a short meeting with you. Please let me know a convenient time.\n\nThank you.\n\n— Sent via DIU Faculty Finder`;
+
+  emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_MEETING_TEMPLATE_ID, {
+    to_email: f.email,
+    title: `Meeting Request — ${f.name}`,
+    name: currentUserName || "A student",
+    email: currentUserEmail || "diufacultyfinder@gmail.com",
+    message: messageBody
+  }, EMAILJS_PUBLIC_KEY).then(() => {
+    meetingBtn.innerHTML = "✓ Meeting Request Sent";
+    setTimeout(() => {
+      meetingBtn.innerHTML = originalLabel;
+      meetingBtn.disabled = false;
+    }, 2500);
+ }).catch((err) => {
+    console.error("EmailJS Meeting Request error:", err);
+    meetingBtn.innerHTML = originalLabel;
+    meetingBtn.disabled = false;
+    alert("Couldn't send the request — check your internet connection and try again.");
+  });
+};
+      shareBtn.onclick = () => {
+        const shareText = `${f.name}\n${f.title} · ${(deptLabel[f.dept] || f.dept).toUpperCase()} Department\nRoom: ${f.room}\nEmail: ${f.email}\nPhone: ${f.phone}`;
+        if (window.Android && window.Android.shareText) {
+          window.Android.shareText(shareText); // opens the native Android share sheet
+        } else if (navigator.share) {
+          navigator.share({ title: f.name, text: shareText }).catch(() => {});
+        } else {
+          window.location.href = "mailto:?subject=" + encodeURIComponent(f.name) + "&body=" + encodeURIComponent(shareText);
+        }
+      };
+
+      detailOverlay.classList.add("show");
+
+      // Also tells native Android side which faculty was opened (optional hook
+      // for a future native FacultyDetailActivity, or analytics).
+      if (window.Android && window.Android.onFacultyClick) {
+        window.Android.onFacultyClick(f.email);
+      }
+    }
+
+    document.getElementById("detailCloseBtn").addEventListener("click", () => {
+      detailOverlay.classList.remove("show");
+    });
+
+    /* ---------- Add Teacher / Edit Teacher (shares one sheet) ---------- */
+    const addOverlay = document.getElementById("addOverlay");
+    const addForm = document.getElementById("addForm");
+    const addSheetTitle = document.getElementById("addSheetTitle");
+    const addSubmitBtn = document.getElementById("addSubmitBtn");
+    let editingIdx = null; // null = Add mode; a faculty[] index = Edit mode
+
+    document.getElementById("fabAdd").addEventListener("click", () => {
+      if (!isOwner) { alert("Only the app owner can add faculty."); return; }
+      editingIdx = null;
+      addForm.reset();
+      addSheetTitle.textContent = "Add New Teacher";
+      addSubmitBtn.textContent = "Add Teacher";
+      addOverlay.classList.add("show");
+    });
+    document.getElementById("addCloseBtn").addEventListener("click", () => addOverlay.classList.remove("show"));
+    document.getElementById("addCancelBtn").addEventListener("click", () => addOverlay.classList.remove("show"));
+
+    document.getElementById("duplicateWarnOkBtn").addEventListener("click", () => {
+      document.getElementById("duplicateWarnOverlay").classList.remove("show");
+    });
+
+    // Reusable helper for showing a small styled result/info popup instead of
+    // the browser's plain alert(). iconType: "success" (green check) or "warn" (amber triangle).
+    function showInfoModal(title, text, iconType) {
+      document.getElementById("infoResultTitle").textContent = title;
+      document.getElementById("infoResultText").textContent = text;
+      const iconWrap = document.getElementById("infoResultIconWrap");
+      if (iconType === "warn") {
+        iconWrap.style.background = "#FFF6DA";
+        iconWrap.innerHTML = `<svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M12 3.5L2 20h20L12 3.5z" stroke="#C99400" stroke-width="1.8" stroke-linejoin="round"/><path d="M12 9.5v4.5M12 17v.1" stroke="#C99400" stroke-width="2" stroke-linecap="round"/></svg>`;
+      } else {
+        iconWrap.style.background = "#E6F6EC";
+        iconWrap.innerHTML = `<svg width="26" height="26" viewBox="0 0 24 24" fill="none"><path d="M5 13l4 4L19 7" stroke="#1E8E5A" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+      }
+      document.getElementById("infoResultOverlay").classList.add("show");
+    }
+    document.getElementById("infoResultOkBtn").addEventListener("click", () => {
+      document.getElementById("infoResultOverlay").classList.remove("show");
+    });
+
+    // Opens the same sheet pre-filled with the currently-viewed faculty member's
+    // info, so wrong details (e.g. from a bad CSV import) can be corrected in place.
+    document.getElementById("dEditBtn").addEventListener("click", () => {
+      if (!isOwner) { alert("Only the app owner can edit faculty info."); return; }
+      const f = faculty[currentDetailIdx];
+      if (!f) return;
+      editingIdx = currentDetailIdx;
+
+      document.getElementById("f_name").value = f.name === "N/A" ? "" : f.name || "";
+      document.getElementById("f_title").value = f.title === "N/A" ? "" : f.title || "";
+      document.getElementById("f_dept").value = f.dept || "cse";
+      document.getElementById("f_gender").value = f.gender || "male";
+      document.getElementById("f_room").value = f.room === "N/A" ? "" : f.room || "";
+      document.getElementById("f_email").value = f.email === "N/A" ? "" : f.email || "";
+      document.getElementById("f_phone").value = f.phone === "N/A" ? "" : f.phone || "";
+      document.getElementById("f_webpage").value = f.webpage === "N/A" ? "" : f.webpage || "";
+
+      addSheetTitle.textContent = "Edit Teacher Info";
+      addSubmitBtn.textContent = "Save Changes";
+      addOverlay.classList.add("show");
+    });
+
+    addForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+
+      const formValues = {
+        name: document.getElementById("f_name").value.trim(),
+        title: document.getElementById("f_title").value.trim() || "N/A",
+        dept: document.getElementById("f_dept").value,
+        gender: document.getElementById("f_gender").value,
+        room: document.getElementById("f_room").value.trim() || "N/A",
+        email: document.getElementById("f_email").value.trim() || "N/A",
+        webpage: document.getElementById("f_webpage").value.trim() || "N/A",
+        phone: document.getElementById("f_phone").value.trim() || "N/A"
+      };
+
+      if (!formValues.name) return;
+
+      if (editingIdx !== null) {
+        // ---- EDIT MODE: update the existing entry in place ----
+        const target = faculty[editingIdx];
+        Object.assign(target, formValues);
+
+        if (editingIdx < DEFAULT_FACULTY_COUNT) {
+          // Built-in teacher: store the override separately, keyed by position,
+          // so it survives restarts without touching the built-in list itself.
+          facultyEdits[editingIdx] = formValues;
+          try { localStorage.setItem(EDITS_KEY, JSON.stringify(facultyEdits)); } catch (e) {}
+        } else {
+          // User-added/CSV-imported teacher: target is the same object reference
+          // that lives inside addedFaculty, so it's already updated — just re-save.
+          try { localStorage.setItem(STORAGE_KEY, JSON.stringify(addedFaculty)); } catch (e) {}
+        }
+
+        addOverlay.classList.remove("show");
+        renderList();
+        if (detailOverlay.classList.contains("show")) openDetail(editingIdx); // refresh the open detail view
+        editingIdx = null;
+        return;
+      }
+
+      // ---- ADD MODE: create a brand-new teacher ----
+      const newTeacher = Object.assign({ color: faculty.length % 2 === 0 ? "navy" : "gold", online: true }, formValues);
+
+      // Duplicate check: same name + email (or name + dept + room if no email) already in the list?
+      const newKey = dedupeKey(newTeacher);
+      const isDuplicate = faculty.some(f => dedupeKey(f) === newKey);
+      if (isDuplicate) {
+        addOverlay.classList.remove("show");
+        document.getElementById("duplicateWarnText").textContent =
+          `"${newTeacher.name}" already exists in the list (same email/phone/room match found). Not adding again.`;
+        document.getElementById("duplicateWarnOverlay").classList.add("show");
+        return;
+      }
+
+      faculty.push(newTeacher);
+      addedFaculty.push(newTeacher);
+
+      // Persist only the user-added teachers (not the built-in list) so a future
+      // update to the built-in faculty array never overwrites what the user added.
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(addedFaculty));
+      } catch (e) { /* storage full or unavailable — new teacher still shows this session */ }
+
+      addOverlay.classList.remove("show");
+      renderList();
+    });
+
+    /* ---------- Delete Teacher ---------- */
+    const deleteConfirmOverlay = document.getElementById("deleteConfirmOverlay");
+    const deleteConfirmName = document.getElementById("deleteConfirmName");
+    let deleteTargetIdx = null;
+
+    document.getElementById("dDeleteBtn").addEventListener("click", () => {
+      if (!isOwner) { alert("Only the app owner can delete faculty."); return; }
+      const f = faculty[currentDetailIdx];
+      if (!f) return;
+      deleteTargetIdx = currentDetailIdx;
+      deleteConfirmName.textContent = `"${f.name}" will be permanently removed from the list on this device.`;
+      deleteConfirmOverlay.classList.add("show");
+    });
+
+    document.getElementById("deleteCancelBtn").addEventListener("click", () => {
+      deleteConfirmOverlay.classList.remove("show");
+      deleteTargetIdx = null;
+    });
+
+    document.getElementById("deleteOkBtn").addEventListener("click", () => {
+      if (deleteTargetIdx === null) return;
+      const idx = deleteTargetIdx;
+      const target = faculty[idx];
+
+      if (idx < DEFAULT_FACULTY_COUNT) {
+        // Built-in teacher: remember this position as deleted so it stays gone
+        // across restarts (the source array itself is never modified).
+        if (!deletedDefaultIdxs.includes(idx)) {
+          deletedDefaultIdxs.push(idx);
+          try { localStorage.setItem(DELETIONS_KEY, JSON.stringify(deletedDefaultIdxs)); } catch (e) {}
+        }
+        // Also drop any saved edit for this position — no point keeping it.
+        if (facultyEdits[idx]) {
+          delete facultyEdits[idx];
+          try { localStorage.setItem(EDITS_KEY, JSON.stringify(facultyEdits)); } catch (e) {}
+        }
+      } else {
+        // User-added/CSV-imported teacher: remove from addedFaculty and re-save.
+        const ai = addedFaculty.indexOf(target);
+        if (ai !== -1) addedFaculty.splice(ai, 1);
+        try { localStorage.setItem(STORAGE_KEY, JSON.stringify(addedFaculty)); } catch (e) {}
+      }
+
+      faculty.splice(idx, 1);
+
+      // Also remove them from favorites, if they were starred.
+      try {
+        const favs = getFavorites();
+        const fi = favs.indexOf(target.name);
+        if (fi !== -1) { favs.splice(fi, 1); localStorage.setItem("diu_favorites", JSON.stringify(favs)); }
+      } catch (e) {}
+
+      deleteConfirmOverlay.classList.remove("show");
+      detailOverlay.classList.remove("show");
+      deleteTargetIdx = null;
+      renderList();
+    });
+
+    /* ---------- Import CSV (bulk add teachers) ---------- */
+    const DEPT_KEYS = ["cse", "swe", "itm", "mct", "cis"];
+
+    // Simple state-machine CSV parser: handles quoted fields with commas/newlines inside.
+    function parseCSV(text) {
+      const rows = [];
+      let row = [], field = "", inQuotes = false;
+      for (let i = 0; i < text.length; i++) {
+        const c = text[i];
+        if (inQuotes) {
+          if (c === '"') {
+            if (text[i + 1] === '"') { field += '"'; i++; }
+            else inQuotes = false;
+          } else field += c;
+        } else {
+          if (c === '"') inQuotes = true;
+          else if (c === ',') { row.push(field); field = ""; }
+          else if (c === '\n') { row.push(field); rows.push(row); row = []; field = ""; }
+          else if (c === '\r') { /* skip, \n handles the line break */ }
+          else field += c;
+        }
+      }
+      if (field.length || row.length) { row.push(field); rows.push(row); }
+      // drop fully-blank rows
+      return rows.filter(r => r.length && r.some(c => c.trim() !== ""));
+    }
+
+    // Maps a department cell ("CSE", "Software Engineering", etc.) to the app's dept key.
+    function mapDept(raw) {
+      const val = (raw || "").trim().toLowerCase();
+      if (DEPT_KEYS.includes(val)) return val;
+      for (const key of DEPT_KEYS) {
+        if (val && (deptFull[key] || "").toLowerCase().includes(val)) return key;
+      }
+      return "cse"; // fallback if the CSV's department text doesn't match anything known
+    }
+
+    // CSV column order expected: name, designation, department, room, email, website, phone
+    function handleCsvImport(text) {
+      let rows;
+      try { rows = parseCSV(text); } catch (e) {
+        showCsvResult(0, 0, ["Couldn't parse this file — make sure it's a valid CSV."], 0);
+        return;
+      }
+      if (!rows.length) { showCsvResult(0, 0, ["The CSV file is empty."], 0); return; }
+
+      // Skip the header row if row 1 looks like column titles, not a real teacher.
+      let startIdx = 0;
+      const firstCell = (rows[0][0] || "").trim().toLowerCase();
+      if (firstCell === "name" || firstCell.includes("full name")) startIdx = 1;
+
+      let imported = 0;
+      let skippedDuplicates = 0;
+      const duplicateNames = [];
+      const errors = [];
+
+      // Keys already in the app (built-in + previously added), so we never re-add the same person.
+      const existingKeys = new Set(faculty.map(dedupeKey));
+
+      for (let i = startIdx; i < rows.length; i++) {
+        const cols = rows[i];
+        const name = (cols[0] || "").trim();
+        if (!name) { errors.push(`Row ${i + 1}: missing name, skipped.`); continue; }
+
+        const newTeacher = {
+          name: name,
+          title: (cols[1] || "").trim() || "N/A",
+          dept: mapDept(cols[2]),
+          gender: "male",
+          room: (cols[3] || "").trim() || "N/A",
+          email: (cols[4] || "").trim() || "N/A",
+          webpage: (cols[5] || "").trim() || "N/A",
+          phone: (cols[6] || "").trim() || "N/A",
+          color: faculty.length % 2 === 0 ? "navy" : "gold",
+          online: true
+        };
+
+        const key = dedupeKey(newTeacher);
+        if (existingKeys.has(key)) { skippedDuplicates++; duplicateNames.push(name); continue; }
+        existingKeys.add(key);
+
+        faculty.push(newTeacher);
+        addedFaculty.push(newTeacher);
+        imported++;
+      }
+
+      try {
+        localStorage.setItem(STORAGE_KEY, JSON.stringify(addedFaculty));
+      } catch (e) {
+        errors.push("Warning: couldn't save to device storage (it may be full) — imported teachers will disappear when the app closes.");
+      }
+
+      renderList();
+      showCsvResult(imported, rows.length - startIdx, errors, skippedDuplicates, duplicateNames);
+    }
+
+    function showCsvResult(imported, total, errors, skippedDuplicates, duplicateNames) {
+      let summary = `Imported ${imported} of ${total} row(s).`;
+      if (skippedDuplicates) summary += ` ⚠️ ${skippedDuplicates} duplicate teacher(s) skipped (already in the list).`;
+      document.getElementById("csvResultSummary").textContent = summary;
+      const errBox = document.getElementById("csvResultErrors");
+      let errHtml = errors.length ? errors.map(e => `<div>• ${e}</div>`).join("") : "";
+      if (duplicateNames && duplicateNames.length) {
+        errHtml += `<div style="color:#8A6D00;margin-top:${errors.length ? "8px" : "0"};">Duplicate: ${duplicateNames.join(", ")}</div>`;
+      }
+      errBox.innerHTML = errHtml;
+      document.getElementById("csvResultOverlay").classList.add("show");
+    }
+
+    document.getElementById("fabImportCsv").addEventListener("click", () => {
+      if (!isOwner) { alert("Only the app owner can import faculty via CSV."); return; }
+      document.getElementById("csvFileInput").click();
+    });
+    document.getElementById("csvFileInput").addEventListener("change", (e) => {
+      if (!isOwner) { e.target.value = ""; return; }
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = (evt) => handleCsvImport(evt.target.result);
+      reader.onerror = () => showCsvResult(0, 0, ["Could not read the selected file."]);
+      reader.readAsText(file);
+      e.target.value = ""; // lets the user re-pick the same file again later
+    });
+    document.getElementById("csvResultCloseBtn").addEventListener("click", () => {
+      document.getElementById("csvResultOverlay").classList.remove("show");
+    });
+    document.getElementById("csvResultOkBtn").addEventListener("click", () => {
+      document.getElementById("csvResultOverlay").classList.remove("show");
+    });
+
+    chipRow.addEventListener("click", (e) => {
+      const chip = e.target.closest(".chip");
+      if (!chip) return;
+      chipRow.querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
+      chip.classList.add("active");
+      activeFilter = chip.dataset.filter;
+      renderList();
+    });
+
+    searchInput.addEventListener("input", renderList);
+
+    /* ---------- Welcome name (set by logged-in user, not hardcoded) ---------- */
+    let currentUserName = "User";
+    let currentUserEmail = "";
+
+    (function setGreetName() {
+      try {
+        if (window.Android && window.Android.getUserName) {
+          const n = window.Android.getUserName();
+          if (n && n.trim()) currentUserName = n.trim();
+        }
+        if (window.Android && window.Android.getUserEmail) {
+          const e = window.Android.getUserEmail();
+          if (e && e.trim()) currentUserEmail = e.trim();
+        }
+        if (!window.Android) {
+          const override = localStorage.getItem("diu_user_name_override");
+          if (override) currentUserName = override;
+        }
+      } catch (e) { /* Android bridge not available (e.g. testing in a browser) */ }
+
+      // Only the app owner's account can add/edit/delete faculty or import CSV.
+      isOwner = currentUserEmail.trim().toLowerCase() === OWNER_EMAIL;
+      applyOwnerAccessControl();
+
+      const parts = currentUserName.split(/\s+/).filter(Boolean);
+      const initialsStr = parts.length > 1
+        ? (parts[0][0] + parts[parts.length - 1][0]).toUpperCase()
+        : currentUserName.slice(0, 2).toUpperCase();
+
+      document.getElementById("greetName").textContent = currentUserName;
+      document.getElementById("greetAvatar").textContent = initialsStr;
+      document.getElementById("drawerName").textContent = currentUserName;
+      document.getElementById("drawerEmail").textContent = currentUserEmail || "—";
+      document.getElementById("drawerAvatar").textContent = initialsStr;
+      document.getElementById("profileName").textContent = currentUserName;
+      document.getElementById("profileEmail").textContent = currentUserEmail || "Email not set";
+      document.getElementById("profileAvatar").textContent = initialsStr;
+
+      // Restore a saved profile photo, if the user uploaded one earlier.
+      try {
+        const savedPhoto = localStorage.getItem("diu_profile_photo");
+        if (savedPhoto) {
+          document.getElementById("drawerAvatar").innerHTML = `<img src="${savedPhoto}" />`;
+          document.getElementById("profileAvatar").innerHTML = `<img src="${savedPhoto}" />`;
+          document.getElementById("greetAvatar").innerHTML = `<img src="${savedPhoto}" />`;
+        }
+      } catch (e) { /* ignore */ }
+    })();
+
+    /* ================= Sidebar drawer open/close ================= */
+    const drawerOverlay = document.getElementById("drawerOverlay");
+    document.getElementById("hamburgerBtn").addEventListener("click", () => drawerOverlay.classList.add("show"));
+    drawerOverlay.addEventListener("click", (e) => {
+      if (e.target === drawerOverlay) drawerOverlay.classList.remove("show");
+    });
+
+    /* ================= Sub-pages (Profile/About/Contact/Settings/Maker) ================= */
+    document.querySelectorAll("[data-open]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        drawerOverlay.classList.remove("show");
+        document.getElementById("page-" + btn.dataset.open).classList.add("show");
+        if (btn.dataset.open === "favorites") renderFavorites();
+      });
+    });
+    document.querySelectorAll("[data-close]").forEach(btn => {
+      btn.addEventListener("click", () => {
+        document.getElementById("page-" + btn.dataset.close).classList.remove("show");
+      });
+    });
+
+    /* ================= Logout (with confirm) ================= */
+    const logoutConfirmOverlay = document.getElementById("logoutConfirmOverlay");
+    document.getElementById("logoutBtn").addEventListener("click", () => {
+      drawerOverlay.classList.remove("show");
+      logoutConfirmOverlay.classList.add("show");
+    });
+    document.getElementById("logoutCancelBtn").addEventListener("click", () => {
+      logoutConfirmOverlay.classList.remove("show");
+    });
+    document.getElementById("logoutOkBtn").addEventListener("click", () => {
+      logoutConfirmOverlay.classList.remove("show");
+      if (window.Android && window.Android.logout) {
+        window.Android.logout(); // Java side clears session (if any) and opens LoginActivity
+      } else {
+        alert("Logged out. (Testing in browser — no Android app to return to.)");
+      }
+    });
+
+    /* ================= Profile: Name (updates Welcome greeting everywhere) ================= */
+    function refreshNameEverywhere(name) {
+      currentUserName = name;
+      const parts = name.split(/\s+/).filter(Boolean);
+      const initialsStr = parts.length > 1
+        ? (parts[0][0] + parts[parts.length - 1][0]).toUpperCase()
+        : name.slice(0, 2).toUpperCase();
+      document.getElementById("greetName").textContent = name;
+      document.getElementById("drawerName").textContent = name;
+      document.getElementById("profileName").textContent = name;
+      // Only overwrite the circle text if no photo has been set (photo <img> stays as-is).
+      if (!document.getElementById("greetAvatar").querySelector("img")) document.getElementById("greetAvatar").textContent = initialsStr;
+      if (!document.getElementById("drawerAvatar").querySelector("img")) document.getElementById("drawerAvatar").textContent = initialsStr;
+      if (!document.getElementById("profileAvatar").querySelector("img")) document.getElementById("profileAvatar").textContent = initialsStr;
+    }
+
+    const profileNameInput = document.getElementById("profileNameInput");
+    document.getElementById("page-profile").addEventListener("transitionend", () => {
+      // Keep the input in sync with the latest name whenever the Profile page is opened.
+    });
+    document.getElementById("greetAvatar").addEventListener("click", () => {
+      profileNameInput.value = currentUserName === "User" ? "" : currentUserName;
+      document.getElementById("page-profile").classList.add("show");
+    });
+    document.getElementById("saveNameBtn").addEventListener("click", () => {
+      const newName = profileNameInput.value.trim();
+      if (!newName) return;
+      try {
+        if (window.Android && window.Android.setUserName) {
+          window.Android.setUserName(newName); // persists in SharedPreferences so it survives app restarts
+        } else {
+          localStorage.setItem("diu_user_name_override", newName); // fallback for browser testing
+        }
+      } catch (e) {}
+      refreshNameEverywhere(newName);
+      const msg = document.getElementById("nameSavedMsg");
+      msg.style.display = "block";
+      setTimeout(() => { msg.style.display = "none"; }, 2500);
+    });
+
+    /* ================= Profile: Student ID (saved on-device) ================= */
+    const studentIdInput = document.getElementById("studentIdInput");
+    try { studentIdInput.value = localStorage.getItem("diu_student_id") || ""; } catch (e) {}
+    document.getElementById("saveStudentIdBtn").addEventListener("click", () => {
+      try { localStorage.setItem("diu_student_id", studentIdInput.value.trim()); } catch (e) {}
+      const msg = document.getElementById("studentIdSavedMsg");
+      msg.style.display = "block";
+      setTimeout(() => { msg.style.display = "none"; }, 2000);
+    });
+
+    /* ================= Profile: Phone (saved on-device) ================= */
+    const phoneInput = document.getElementById("phoneInput");
+    try { phoneInput.value = localStorage.getItem("diu_phone") || ""; } catch (e) {}
+    document.getElementById("savePhoneBtn").addEventListener("click", () => {
+      try { localStorage.setItem("diu_phone", phoneInput.value.trim()); } catch (e) {}
+      const msg = document.getElementById("phoneSavedMsg");
+      msg.style.display = "block";
+      setTimeout(() => { msg.style.display = "none"; }, 2000);
+    });
+
+    /* ================= Profile: Address (saved on-device) ================= */
+    const addressInput = document.getElementById("addressInput");
+    try { addressInput.value = localStorage.getItem("diu_address") || ""; } catch (e) {}
+    document.getElementById("saveAddressBtn").addEventListener("click", () => {
+      try { localStorage.setItem("diu_address", addressInput.value.trim()); } catch (e) {}
+      const msg = document.getElementById("addressSavedMsg");
+      msg.style.display = "block";
+      setTimeout(() => { msg.style.display = "none"; }, 2000);
+    });
+
+    /* ================= Profile: Blood Group (saved on-device) ================= */
+    const bloodGroupInput = document.getElementById("bloodGroupInput");
+    try { bloodGroupInput.value = localStorage.getItem("diu_blood_group") || ""; } catch (e) {}
+    document.getElementById("saveBloodGroupBtn").addEventListener("click", () => {
+      try { localStorage.setItem("diu_blood_group", bloodGroupInput.value); } catch (e) {}
+      const msg = document.getElementById("bloodGroupSavedMsg");
+      msg.style.display = "block";
+      setTimeout(() => { msg.style.display = "none"; }, 2000);
+    });
+
+    /* ================= Profile: photo upload (stored on-device only) ================= */
+    document.getElementById("profilePhotoBtn").addEventListener("click", () => {
+      document.getElementById("profilePhotoInput").click();
+    });
+    document.getElementById("profilePhotoInput").addEventListener("change", (e) => {
+      const file = e.target.files[0];
+      if (!file) return;
+      const reader = new FileReader();
+      reader.onload = () => {
+        const dataUrl = reader.result;
+        document.getElementById("profileAvatar").innerHTML = `<img src="${dataUrl}" />`;
+        document.getElementById("drawerAvatar").innerHTML = `<img src="${dataUrl}" />`;
+        document.getElementById("greetAvatar").innerHTML = `<img src="${dataUrl}" />`;
+        try { localStorage.setItem("diu_profile_photo", dataUrl); } catch (e) { /* image too large for storage */ }
+      };
+      reader.readAsDataURL(file);
+    });
+
+    /* ================= EmailJS setup — sends mail directly, no mail app needed =================
+       IMPORTANT (fix for "Meeting Request always lands in the owner's inbox"):
+       EmailJS Templates each have their OWN fixed "To Email" field, set inside the
+       EmailJS dashboard (not in this code). Contact Form and Rate-this-App should
+       always go to the app owner, so they keep using EMAILJS_TEMPLATE_ID, whose
+       "To Email" in the dashboard is hardcoded to the owner's address.
+
+       Meeting Request needs to go to a DIFFERENT person every time (whichever
+       teacher the student tapped), so it CANNOT reuse that same template — a
+       fixed "To Email" can only ever point at one inbox. It needs its own
+       EmailJS template whose "To Email" field is set to the merge tag
+       {{to_email}} (not a literal address), so the recipient is decided
+       per-message from the to_email param sent below.
+
+       ACTION NEEDED IN THE EMAILJS DASHBOARD (emailjs.com -> Email Templates):
+         1. Create a new template (e.g. duplicate the existing one).
+         2. In that new template's "To Email" field, type exactly: {{to_email}}
+         3. Copy its Template ID and paste it below as EMAILJS_MEETING_TEMPLATE_ID.
+       Until step 3 is done with a REAL template ID, meeting requests will keep
+       going to whatever inbox is hardcoded in EMAILJS_TEMPLATE_ID's template. */
+    const EMAILJS_SERVICE_ID = "service_o93thgq";
+    const EMAILJS_TEMPLATE_ID = "template_zjfs02s";                 // Contact form + Rate this App -> always to owner
+    const EMAILJS_MEETING_TEMPLATE_ID = "template_teiedbu"; // Meeting Request -> per-teacher, "To Email" is set to {{to_email}} in EmailJS dashboard
+    const EMAILJS_PUBLIC_KEY = "hW_GNBtL3n0d9GzN4";
+    try { emailjs.init({ publicKey: EMAILJS_PUBLIC_KEY }); } catch (e) { /* SDK not loaded yet, guarded at send time too */ }
+
+    /* ================= Contact form — sends directly via EmailJS ================= */
+    document.getElementById("contactForm").addEventListener("submit", (e) => {
+      e.preventDefault();
+      const name = document.getElementById("cf_name").value.trim();
+      const email = document.getElementById("cf_email").value.trim();
+      const message = document.getElementById("cf_message").value.trim();
+      const statusMsg = document.getElementById("cfStatusMsg");
+      const submitBtn = document.getElementById("cfSubmitBtn");
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending...";
+      statusMsg.style.display = "none";
+
+      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+        title: "New message from " + name,
+        name: name,
+        email: email,
+        message: message
+      }, EMAILJS_PUBLIC_KEY).then(() => {
+        statusMsg.style.color = "#1E8E5A";
+        statusMsg.textContent = "✓ Message sent! We'll get back to you soon.";
+        statusMsg.style.display = "block";
+        document.getElementById("contactForm").reset();
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Send";
+      }).catch((err) => {
+        console.error("EmailJS Contact Form error: status=" + (err && err.status) + " text=" + (err && err.text) + " raw=" + JSON.stringify(err));
+        statusMsg.style.color = "#D8302F";
+        statusMsg.textContent = "Couldn't send — check your internet connection and try again.";
+        statusMsg.style.display = "block";
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Send";
+      });
+    });
+
+    /* ================= Settings: Dark Mode ================= */
+    const darkModeToggle = document.getElementById("darkModeToggle");
+    function applyDarkMode(on) {
+      document.body.classList.toggle("dark", on);
+      darkModeToggle.classList.toggle("on", on);
+    }
+    try { applyDarkMode(localStorage.getItem("diu_dark_mode") === "1"); } catch (e) {}
+    darkModeToggle.addEventListener("click", () => {
+      const on = !document.body.classList.contains("dark");
+      applyDarkMode(on);
+      try { localStorage.setItem("diu_dark_mode", on ? "1" : "0"); } catch (e) {}
+    });
+
+    /* ================= Settings: Notifications (preference only, no backend yet) ================= */
+    const notifToggle = document.getElementById("notifToggle");
+    function applyNotif(on) { notifToggle.classList.toggle("on", on); }
+    try { applyNotif(localStorage.getItem("diu_notif") !== "0"); } catch (e) { applyNotif(true); }
+    notifToggle.addEventListener("click", () => {
+      const on = !notifToggle.classList.contains("on");
+      applyNotif(on);
+      try { localStorage.setItem("diu_notif", on ? "1" : "0"); } catch (e) {}
+    });
+
+    /* ================= Settings: Clean Up Duplicates (owner only) ================= */
+    const cleanupBtn = document.getElementById("cleanupDuplicatesBtn");
+    if (cleanupBtn) {
+      cleanupBtn.addEventListener("click", () => {
+        if (!isOwner) { showInfoModal("Not allowed", "Only the app owner can do this.", "warn"); return; }
+        const removed = dedupeFacultyArray();
+        renderList();
+        showInfoModal(
+          removed > 0 ? "Cleanup complete" : "Already clean",
+          removed > 0
+            ? `Removed ${removed} duplicate ${removed === 1 ? "entry" : "entries"}.`
+            : "No duplicates found — your list is already clean.",
+          "success"
+        );
+      });
+    }
+
+    /* ================= Backup & Restore ================= */
+    function exportBackup() {
+      try {
+        const backupData = {};
+        for (let i = 0; i < localStorage.length; i++) {
+          const key = localStorage.key(i);
+          if (key && key.indexOf("diu_") === 0) {
+            backupData[key] = localStorage.getItem(key);
+          }
+        }
+        backupData._exportDate = new Date().toISOString();
+        backupData._appVersion = "1.0.1";
+        const jsonString = JSON.stringify(backupData, null, 2);
+
+        if (window.Android && window.Android.exportBackup) {
+          window.Android.exportBackup(jsonString);
+        } else {
+          alert("Backup only works inside the installed app.");
+        }
+      } catch (e) {
+        alert("Couldn't create backup: " + e.message);
+      }
+    }
+
+    function restoreBackup(jsonString) {
+      try {
+        const data = JSON.parse(jsonString);
+        let restoredCount = 0;
+        Object.keys(data).forEach(key => {
+          if (key.indexOf("diu_") === 0) {
+            localStorage.setItem(key, data[key]);
+            restoredCount++;
+          }
+        });
+        if (restoredCount === 0) {
+          alert("This file doesn't look like a valid DIU Faculty Finder backup.");
+          return;
+        }
+        alert(`Restored ${restoredCount} item(s). The app will now reload.`);
+        location.reload();
+      } catch (e) {
+        alert("Invalid or corrupted backup file.");
+      }
+    }
+
+    document.getElementById("backupDataBtn").addEventListener("click", exportBackup);
+    document.getElementById("restoreDataBtn").addEventListener("click", () => {
+      if (window.Android && window.Android.openRestorePicker) {
+        window.Android.openRestorePicker();
+      } else {
+        alert("Restore only works inside the installed app.");
+      }
+    });
+    /* ================= Settings: Font size ================= */
+    function applyFontSize(size) {
+      document.documentElement.style.fontSize = size === "sm" ? "93%" : size === "lg" ? "112%" : "100%";
+      document.querySelectorAll(".fs-btn").forEach(b => b.classList.toggle("active", b.dataset.size === size));
+    }
+    let savedSize = "md";
+    try { savedSize = localStorage.getItem("diu_font_size") || "md"; } catch (e) {}
+    applyFontSize(savedSize);
+    document.querySelectorAll(".fs-btn").forEach(b => {
+      b.addEventListener("click", () => {
+        applyFontSize(b.dataset.size);
+        try { localStorage.setItem("diu_font_size", b.dataset.size); } catch (e) {}
+      });
+    });
+
+    /* ================= Settings: Theme Color ================= */
+    const root = document.documentElement;
+    function applyTheme(navy, gold) {
+      root.style.setProperty("--navy", navy);
+      root.style.setProperty("--navy-deep", navy);
+      root.style.setProperty("--gold", gold);
+    }
+    try {
+      const savedNavy = localStorage.getItem("diu_theme_navy");
+      const savedGold = localStorage.getItem("diu_theme_gold");
+      if (savedNavy && savedGold) {
+        applyTheme(savedNavy, savedGold);
+        document.querySelectorAll(".theme-swatch").forEach(s => {
+          s.classList.toggle("active", s.dataset.navy === savedNavy);
+        });
+      }
+    } catch (e) {}
+    document.querySelectorAll(".theme-swatch").forEach(swatch => {
+      swatch.addEventListener("click", () => {
+        const navy = swatch.dataset.navy, gold = swatch.dataset.gold;
+        applyTheme(navy, gold);
+        document.querySelectorAll(".theme-swatch").forEach(s => s.classList.remove("active"));
+        swatch.classList.add("active");
+        try {
+          localStorage.setItem("diu_theme_navy", navy);
+          localStorage.setItem("diu_theme_gold", gold);
+        } catch (e) {}
+      });
+    });
+
+    /* ================= QR Code (per faculty member) ================= */
+    const qrOverlay = document.getElementById("qrOverlay");
+    document.getElementById("dQrBtn").addEventListener("click", () => {
+      const f = faculty[currentDetailIdx];
+      if (!f) return;
+      document.getElementById("qrName").textContent = f.name;
+      const holder = document.getElementById("qrCanvasHolder");
+      holder.innerHTML = "";
+      try {
+        const info = `Name: ${f.name}\nDesignation: ${f.title}\nDept: ${(deptLabel[f.dept] || f.dept).toUpperCase()}\nRoom: ${f.room}\nEmail: ${f.email}\nPhone: ${f.phone}`;
+        const qr = qrcode(0, "M");
+        qr.addData(info);
+        qr.make();
+        holder.innerHTML = qr.createImgTag(5, 8);
+      } catch (e) {
+        holder.innerHTML = `<p style="color:var(--sub);font-size:12px;">Couldn't generate QR code. Please try again.</p>`;
+      }
+      qrOverlay.classList.add("show");
+    });
+    document.getElementById("qrCloseBtn").addEventListener("click", () => qrOverlay.classList.remove("show"));
+
+    /* ================= Rate this App ================= */
+    let selectedRating = 0;
+    const rateStars = document.querySelectorAll("#rateStars .star");
+    rateStars.forEach(star => {
+      star.addEventListener("click", () => {
+        selectedRating = parseInt(star.dataset.val, 10);
+        rateStars.forEach(s => s.classList.toggle("filled", parseInt(s.dataset.val, 10) <= selectedRating));
+      });
+    });
+    document.getElementById("submitRatingBtn").addEventListener("click", () => {
+      if (selectedRating === 0) { alert("Please tap a star to rate the app first."); return; }
+      const feedback = document.getElementById("rateFeedback").value.trim();
+      const submitBtn = document.getElementById("submitRatingBtn");
+      const thanksMsg = document.getElementById("rateThanksMsg");
+
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Sending...";
+      thanksMsg.style.display = "none";
+
+      emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, {
+        title: selectedRating + "-star app rating",
+        name: currentUserName || "A user",
+        email: currentUserEmail || "diufacultyfinder@gmail.com",
+        message: `Rating: ${selectedRating}/5\n\nFeedback:\n${feedback || "(none)"}`
+      }, EMAILJS_PUBLIC_KEY).then(() => {
+        thanksMsg.style.color = "#1E8E5A";
+        thanksMsg.textContent = "✓ Thanks for your feedback!";
+        thanksMsg.style.display = "block";
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Submit Rating";
+      }).catch((err) => {
+        console.error("EmailJS Rating error: status=" + (err && err.status) + " text=" + (err && err.text) + " raw=" + JSON.stringify(err));
+        thanksMsg.style.color = "#D8302F";
+        thanksMsg.textContent = "Couldn't send — check your internet connection and try again.";
+        thanksMsg.style.display = "block";
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Submit Rating";
+      });
+    });
+
+    /* ================= Voice Search ================= */
+    const voiceBtn = document.getElementById("voiceSearchBtn");
+    const SpeechRecognitionApi = window.SpeechRecognition || window.webkitSpeechRecognition;
+    if (SpeechRecognitionApi) {
+      const recognizer = new SpeechRecognitionApi();
+      recognizer.lang = "en-US";
+      recognizer.interimResults = false;
+      recognizer.maxAlternatives = 1;
+
+      recognizer.onresult = (e) => {
+        const transcript = e.results[0][0].transcript;
+        searchInput.value = transcript;
+        renderList();
+      };
+      recognizer.onerror = () => { voiceBtn.classList.remove("listening"); };
+      recognizer.onend = () => { voiceBtn.classList.remove("listening"); };
+
+      voiceBtn.addEventListener("click", () => {
+        voiceBtn.classList.add("listening");
+        try { recognizer.start(); } catch (e) { voiceBtn.classList.remove("listening"); }
+      });
+    } else {
+      voiceBtn.addEventListener("click", () => {
+        alert("Voice search isn't supported on this device/browser.");
+      });
+    }
+
+    /* ================= Easter Egg: Favorite milestone badge ================= */
+    function checkFavoriteMilestone() {
+      const count = getFavorites().length;
+      const milestones = [5, 10, 20];
+      if (!milestones.includes(count)) return;
+
+      const seenKey = "diu_badge_seen_" + count;
+      try {
+        if (localStorage.getItem(seenKey)) return;
+        localStorage.setItem(seenKey, "1");
+      } catch (e) { return; }
+
+      const badge = document.createElement("div");
+      badge.className = "milestone-badge";
+      badge.innerHTML = `
+        <div class="milestone-badge-icon">🎉</div>
+        <div class="milestone-badge-text">
+          <div class="milestone-badge-title">${count} Favorites!</div>
+          <div class="milestone-badge-sub">You're really getting to know DIU's faculty.</div>
+        </div>
+      `;
+      document.body.appendChild(badge);
+      requestAnimationFrame(() => badge.classList.add("show"));
+      setTimeout(() => {
+        badge.classList.remove("show");
+        setTimeout(() => badge.remove(), 300);
+      }, 3200);
+    }
+
+    renderList();
+</script>
+
+</body>
+</html>

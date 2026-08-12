@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="#0A2540">
+
+    <!-- Logo at the Top -->
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="230dp"
+        android:layout_height="135dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="20dp"
+        android:contentDescription="DIU Logo"
+        android:src="@drawable/diu_logo" />
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Account"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Name Field -->
+    <EditText
+        android:id="@+id/regName"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/input_background"
+        android:hint="Full Name"
+        android:paddingStart="15dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000000" />
+
+    <!-- Student ID Field -->
+    <EditText
+        android:id="@+id/regEmail"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/input_background"
+        android:hint="Student ID"
+        android:paddingStart="15dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000000" />
+
+    <!-- Real Email Field (used for Forgot Password) -->
+    <EditText
+        android:id="@+id/regRealEmail"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/input_background"
+        android:hint="Email Address"
+        android:inputType="textEmailAddress"
+        android:paddingStart="15dp"
+        android:layout_marginBottom="15dp"
+        android:textColor="#000000" />
+
+    <!-- Password Field -->
+    <EditText
+        android:id="@+id/regPassword"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@drawable/input_background"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:paddingStart="15dp"
+        android:layout_marginBottom="30dp"
+        android:textColor="#000000" />
+
+    <!-- Register Button -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:text="REGISTER"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="18sp" />
+
+</LinearLayout>

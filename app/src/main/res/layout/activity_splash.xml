@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#003366"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <ImageView
+        android:id="@+id/splashLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/diu_logo"
+        android:contentDescription="DIU Faculty Finder logo"
+        android:alpha="0" />
+
+    <TextView
+        android:id="@+id/splashTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="DIU Faculty Finder"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:alpha="0" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="Find. Connect. Collaborate."
+        android:textColor="#A0B0C0"
+        android:textSize="13sp"
+        android:id="@+id/splashTagline"
+        android:alpha="0" />
+
+    <ProgressBar
+        android:id="@+id/splashProgress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="34dp"
+        android:indeterminateTint="#FFCC00"
+        android:alpha="0" />
+
+</LinearLayout>
