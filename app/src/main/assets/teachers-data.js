@@ -17,7 +17,7 @@ const FACULTY_DATA = [
     "room": "KT-711",
     "email": "deanfsit@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/fokhray.html",
-    "phone": "8801713493250",
+    "phone": "01713493250",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -29,7 +29,7 @@ const FACULTY_DATA = [
     "room": "KT-738",
     "email": "bcdas@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/bimal.html",
-    "phone": "8801847334809",
+    "phone": "01847334809",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -41,7 +41,7 @@ const FACULTY_DATA = [
     "room": "KT-205",
     "email": "headcse@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/rashed-haider-noori.html",
-    "phone": "8801847140016",
+    "phone": "01847140016",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -53,7 +53,7 @@ const FACULTY_DATA = [
     "room": "KT-214 (B)",
     "email": "advisor.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/dradnan.html",
-    "phone": "8801796583615",
+    "phone": "01796583615",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -65,7 +65,7 @@ const FACULTY_DATA = [
     "room": "KT-308(A)",
     "email": "fernaz.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/fernaz.html",
-    "phone": "8801886411541",
+    "phone": "01886411541",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -77,7 +77,7 @@ const FACULTY_DATA = [
     "room": "KT-745",
     "email": "chayti.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/chayti.html",
-    "phone": "8801533391908",
+    "phone": "01533391908",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -89,7 +89,7 @@ const FACULTY_DATA = [
     "room": "KT-702(B)",
     "email": "faisal.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/faisalcse.html",
-    "phone": "8801829882463",
+    "phone": "01829882463",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -101,7 +101,7 @@ const FACULTY_DATA = [
     "room": "KT-310",
     "email": "saiful.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/saiful-islam.html",
-    "phone": "8801989089279",
+    "phone": "01989089279",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -113,7 +113,7 @@ const FACULTY_DATA = [
     "room": "KT-317",
     "email": "dewan.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/raza.html",
-    "phone": "8801730967205",
+    "phone": "01730967205",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -125,7 +125,7 @@ const FACULTY_DATA = [
     "room": "KT- 316",
     "email": "mayen.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mayen.html",
-    "phone": "8801402113506",
+    "phone": "01402113506",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -137,7 +137,7 @@ const FACULTY_DATA = [
     "room": "KT-506(A)",
     "email": "nuruzzaman.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/nuruzzaman.html",
-    "phone": "88 01612032781",
+    "phone": "01612032781",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -149,7 +149,7 @@ const FACULTY_DATA = [
     "room": "KT-805",
     "email": "parvin.cse@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/masuma.html",
-    "phone": "88 01716217371",
+    "phone": "01716217371",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -161,7 +161,7 @@ const FACULTY_DATA = [
     "room": "KT- 805",
     "email": "shirin.ged@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shirin.html",
-    "phone": "88 01914466996",
+    "phone": "01914466996",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -173,7 +173,7 @@ const FACULTY_DATA = [
     "room": "KT-506 (B)",
     "email": "tanvir.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shah-md-tanvir.html",
-    "phone": "88 01712560297",
+    "phone": "01712560297",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -185,7 +185,7 @@ const FACULTY_DATA = [
     "room": "KT-720",
     "email": "hena.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/hena.html",
-    "phone": "88 01719472885",
+    "phone": "01719472885",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -197,7 +197,7 @@ const FACULTY_DATA = [
     "room": "KT-725",
     "email": "tusher.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/tusher.html",
-    "phone": "88 01675193182",
+    "phone": "01675193182",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -209,7 +209,7 @@ const FACULTY_DATA = [
     "room": "KT-309(B)",
     "email": "abbas.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/abbas.html",
-    "phone": "88 01924196829",
+    "phone": "01924196829",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -221,7 +221,7 @@ const FACULTY_DATA = [
     "room": "KT-721",
     "email": "samia@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/samia.html",
-    "phone": "88 01915638046",
+    "phone": "01915638046",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -233,7 +233,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "shuva.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shuva.html",
-    "phone": "88 01817008852",
+    "phone": "01817008852",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -245,7 +245,7 @@ const FACULTY_DATA = [
     "room": "KT-733",
     "email": "monirul@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/monirul.html",
-    "phone": "88 01811481649",
+    "phone": "01811481649",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -257,7 +257,7 @@ const FACULTY_DATA = [
     "room": "KT-705",
     "email": "fatema.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/johora.html",
-    "phone": "88 01315689508",
+    "phone": "01315689508",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -269,7 +269,7 @@ const FACULTY_DATA = [
     "room": "KT- DSA Office",
     "email": "amit.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/amit-cse.html",
-    "phone": "8801718384336",
+    "phone": "01718384336",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -281,7 +281,7 @@ const FACULTY_DATA = [
     "room": "KT-309-A",
     "email": "mdalamgirkabir.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/alamgirkabir.html",
-    "phone": "8801897644942",
+    "phone": "01897644942",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -293,7 +293,7 @@ const FACULTY_DATA = [
     "room": "KT- 316/09",
     "email": "mushfiqur.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mushfiqur-cse.html",
-    "phone": "88 01714218217",
+    "phone": "01714218217",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -305,7 +305,7 @@ const FACULTY_DATA = [
     "room": "KT- 316",
     "email": "jahangir.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/jahangir-cse.html",
-    "phone": "88 01741378269",
+    "phone": "01741378269",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -317,7 +317,7 @@ const FACULTY_DATA = [
     "room": "KT-317",
     "email": "shahadat.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shahadatcse.html",
-    "phone": "88 01624823181",
+    "phone": "01624823181",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -329,7 +329,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "N/A",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/bibhuti-roy.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -341,7 +341,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "N/A",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/balba.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -353,7 +353,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "N/A",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/subramanya.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -365,7 +365,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "N/A",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/ruslan.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -377,7 +377,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "N/A",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/zhyldyzbek.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -389,7 +389,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "N/A",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/alimoni.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -401,7 +401,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "lrahman@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/drmlutfar.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -413,7 +413,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "N/A",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/drjamal.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -425,7 +425,7 @@ const FACULTY_DATA = [
     "room": "KT-214 (A)",
     "email": "monjur.morshed@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/monzurmorshed.html",
-    "phone": "88 01712046474",
+    "phone": "01712046474",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -437,7 +437,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "N/A",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/touhid.html",
-    "phone": "88 01847140016",
+    "phone": "01847140016",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -449,7 +449,7 @@ const FACULTY_DATA = [
     "room": "KT-205",
     "email": "aheadcse2@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/aminul.html",
-    "phone": "88 01847140129",
+    "phone": "01847140129",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -461,7 +461,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "ajit.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/ajit.html",
-    "phone": "88 01711145041",
+    "phone": "01711145041",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -473,7 +473,7 @@ const FACULTY_DATA = [
     "room": "Scholar's Home",
     "email": "kamrul.ged@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/kamrul.html",
-    "phone": "8801711069636",
+    "phone": "01711069636",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -485,7 +485,7 @@ const FACULTY_DATA = [
     "room": "KT-209",
     "email": "zahid.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/zahid-hasan.html",
-    "phone": "88 01672580748",
+    "phone": "01672580748",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -497,7 +497,7 @@ const FACULTY_DATA = [
     "room": "KT-308(B)",
     "email": "moon@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/nazmun-nessa-moon.html",
-    "phone": "88 01798145670",
+    "phone": "01798145670",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -509,7 +509,7 @@ const FACULTY_DATA = [
     "room": "KT-301",
     "email": "fizar.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/fizar.html",
-    "phone": "88 01775695814",
+    "phone": "01775695814",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -521,7 +521,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "aheadcse3@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/narayan.html",
-    "phone": "88 01717379897",
+    "phone": "01717379897",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -533,7 +533,7 @@ const FACULTY_DATA = [
     "room": "KT-508",
     "email": "naznin.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/naznin.html",
-    "phone": "88 01911540341",
+    "phone": "01911540341",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -545,7 +545,7 @@ const FACULTY_DATA = [
     "room": "KT-309 (A)",
     "email": "arif.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/arif-mahmud.html",
-    "phone": "88 01896034252",
+    "phone": "01896034252",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -557,7 +557,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "drsohidul.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/drsohidul.html",
-    "phone": "88 01621244344",
+    "phone": "01621244344",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -569,7 +569,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "N/A",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mahmudurcse.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -581,7 +581,7 @@ const FACULTY_DATA = [
     "room": "KT-212",
     "email": "abdus.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/sattar_cse.html",
-    "phone": "88 01818392800",
+    "phone": "01818392800",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -593,7 +593,7 @@ const FACULTY_DATA = [
     "room": "KT- 728",
     "email": "ali.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/alihossain.html",
-    "phone": "88 01913909055",
+    "phone": "01913909055",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -605,7 +605,7 @@ const FACULTY_DATA = [
     "room": "KT-818",
     "email": "anuz@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/anuz.html",
-    "phone": "8801847334749",
+    "phone": "01847334749",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -617,7 +617,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "headrme@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/akhtaruzzaman.html",
-    "phone": "88 01754823989",
+    "phone": "01754823989",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -629,7 +629,7 @@ const FACULTY_DATA = [
     "room": "KT-739",
     "email": "rana.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/drmasud.html",
-    "phone": "88 01712204281",
+    "phone": "01712204281",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -641,7 +641,7 @@ const FACULTY_DATA = [
     "room": "KT-817",
     "email": "sparvez@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/salekparvez.html",
-    "phone": "88 01552327706",
+    "phone": "01552327706",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -653,7 +653,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "anis-diu@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/anisur.html",
-    "phone": "8801711329196",
+    "phone": "01711329196",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -665,7 +665,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "fariha.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/fariha.html",
-    "phone": "88 01717121371",
+    "phone": "01717121371",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -677,7 +677,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "rifat.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/rifat.html",
-    "phone": "88 01723256560",
+    "phone": "01723256560",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -689,7 +689,7 @@ const FACULTY_DATA = [
     "room": "KT-735",
     "email": "sadekur.cse@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/sadek.html",
-    "phone": "88 01676379698",
+    "phone": "01676379698",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -701,7 +701,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "protima.ged@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/protima.html",
-    "phone": "8801991195534",
+    "phone": "01991195534",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -713,7 +713,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "halim.ged@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/halim.html",
-    "phone": "8801847140151",
+    "phone": "01847140151",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -725,7 +725,7 @@ const FACULTY_DATA = [
     "room": "KT-705",
     "email": "fatema.ged@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/zohora.html",
-    "phone": "88 01672230677",
+    "phone": "01672230677",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -737,7 +737,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "fahad.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/Fahad.html",
-    "phone": "88 01712937997",
+    "phone": "01712937997",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -749,7 +749,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "reduan.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/reduanul.html",
-    "phone": "88 01710571662",
+    "phone": "01710571662",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -761,7 +761,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "aniruddha.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/rakshit.html",
-    "phone": "88 01830055234",
+    "phone": "01830055234",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -773,7 +773,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "jueal.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/jueal.html",
-    "phone": "88 01911142859",
+    "phone": "01911142859",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -785,7 +785,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "tania.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/Tania-Khatun.html",
-    "phone": "88 01685069742",
+    "phone": "01685069742",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -797,7 +797,7 @@ const FACULTY_DATA = [
     "room": "KT-211",
     "email": "sazzad.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/sazzadur.html",
-    "phone": "88 01625983595",
+    "phone": "01625983595",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -809,7 +809,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "akhi.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/amatul.html",
-    "phone": "88 01676436075",
+    "phone": "01676436075",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -821,7 +821,7 @@ const FACULTY_DATA = [
     "room": "KT- 317",
     "email": "sharminakter.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/sharmin-cse.html",
-    "phone": "88 01798625502",
+    "phone": "01798625502",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -833,7 +833,7 @@ const FACULTY_DATA = [
     "room": "KT-731",
     "email": "masumbillah.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/masumbillahcse.html",
-    "phone": "88 01604457697",
+    "phone": "01604457697",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -845,7 +845,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "sharun.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/sharun.html",
-    "phone": "88 01730599307",
+    "phone": "01730599307",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -857,7 +857,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "amir.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/amirsohel.html",
-    "phone": "88 01688752572",
+    "phone": "01688752572",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -869,7 +869,7 @@ const FACULTY_DATA = [
     "room": "KT- 316",
     "email": "assaduzzaman.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/assaduzzaman.html",
-    "phone": "88 01824089009",
+    "phone": "01824089009",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -881,7 +881,7 @@ const FACULTY_DATA = [
     "room": "KT-805",
     "email": "fahibafarhin.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/fahiba.html",
-    "phone": "88 01997969102",
+    "phone": "01997969102",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -893,7 +893,7 @@ const FACULTY_DATA = [
     "room": "KT-202",
     "email": "dipu.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/dipu.html",
-    "phone": "88 01725568350",
+    "phone": "01725568350",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -905,7 +905,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "fahed.cse@daffodiluniversity.ae",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/alafahad.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -917,7 +917,7 @@ const FACULTY_DATA = [
     "room": "Undefined",
     "email": "mosfiqur.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mosfiqur.html",
-    "phone": "88 01719795316",
+    "phone": "01719795316",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -929,7 +929,7 @@ const FACULTY_DATA = [
     "room": "KT-317",
     "email": "rasedul.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/rasedulcse.html",
-    "phone": "88 01746255511",
+    "phone": "01746255511",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -941,7 +941,7 @@ const FACULTY_DATA = [
     "room": "KT- 505",
     "email": "ssk28.ged@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shabnam.html",
-    "phone": "88 01716074469",
+    "phone": "01716074469",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -953,7 +953,7 @@ const FACULTY_DATA = [
     "room": "KT- 316",
     "email": "shayla.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shayla-cse.html",
-    "phone": "88 01787689999",
+    "phone": "01787689999",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -965,7 +965,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "safiqul@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/safiqul.html",
-    "phone": "88 01749263072",
+    "phone": "01749263072",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -977,7 +977,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "arifmazumder@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mazumder.html",
-    "phone": "88017839138444",
+    "phone": "017839138444",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -989,7 +989,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "smhaque@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/msarwar.html",
-    "phone": "8801687929255",
+    "phone": "01687929255",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1001,7 +1001,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "mhasan@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mhasan.htm",
-    "phone": "8801723439343",
+    "phone": "01723439343",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -1013,7 +1013,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "morshed@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/jabed.html",
-    "phone": "8801712147033",
+    "phone": "01712147033",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1025,7 +1025,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "monir.cse@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/abmonir.html",
-    "phone": "8801755509012",
+    "phone": "01755509012",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -1037,7 +1037,7 @@ const FACULTY_DATA = [
     "room": "KT-505",
     "email": "abdullah.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/Abdullah_cse.html",
-    "phone": "8801881445828",
+    "phone": "01881445828",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1049,7 +1049,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "seraj.mostafa@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mostafa.html",
-    "phone": "8801847140102",
+    "phone": "01847140102",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -1061,7 +1061,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "shaon.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shaon.html",
-    "phone": "8801717950030",
+    "phone": "01717950030",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1073,7 +1073,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "nusratjahan.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/nusratjahan.html",
-    "phone": "8801716916153",
+    "phone": "01716916153",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -1085,7 +1085,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "marouf.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/ahmed-al-marouf.html",
-    "phone": "8801911784448",
+    "phone": "01911784448",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1097,7 +1097,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "azizul.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/azizul.html",
-    "phone": "8801673562638",
+    "phone": "01673562638",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -1109,7 +1109,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "mahfujur.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mahfuj.html",
-    "phone": "8801827593387",
+    "phone": "01827593387",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1121,7 +1121,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "zakia.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/zakia-zaman.html",
-    "phone": "8801732122175",
+    "phone": "01732122175",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -1133,7 +1133,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "eshita.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/eshita.html",
-    "phone": "8801750307888",
+    "phone": "01750307888",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1145,7 +1145,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "sharmin.ged@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/sharmin_ged.html",
-    "phone": "88 01757593556",
+    "phone": "01757593556",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -1157,7 +1157,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "sanzid.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/sanzidul.html",
-    "phone": "8801864007005",
+    "phone": "01864007005",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1169,7 +1169,7 @@ const FACULTY_DATA = [
     "room": "KT- 705",
     "email": "tapasyrabeya.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/tapasy.html",
-    "phone": "8801533134319",
+    "phone": "01533134319",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -1181,7 +1181,7 @@ const FACULTY_DATA = [
     "room": "KT-805",
     "email": "aliza.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/aliza.html",
-    "phone": "8801715918474",
+    "phone": "01715918474",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -1193,7 +1193,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "zerintumpa.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/zerin.html",
-    "phone": "8801835531409",
+    "phone": "01835531409",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -1205,7 +1205,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "zakiasultana.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/zakia-cse.html",
-    "phone": "8801676304194",
+    "phone": "01676304194",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -1217,7 +1217,7 @@ const FACULTY_DATA = [
     "room": "KT-705",
     "email": "lamia.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/lamia_cse.html",
-    "phone": "8801819652162",
+    "phone": "01819652162",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -1229,7 +1229,7 @@ const FACULTY_DATA = [
     "room": "KT--505",
     "email": "anika.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/anika.html",
-    "phone": "8801686595548",
+    "phone": "01686595548",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -1241,7 +1241,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "imtiazkarim.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/imtiaz_cse.htm",
-    "phone": "8801912380894",
+    "phone": "01912380894",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -1253,7 +1253,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "enamul.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/enamul.html",
-    "phone": "8801705565936",
+    "phone": "01705565936",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1265,7 +1265,7 @@ const FACULTY_DATA = [
     "room": "KT-317",
     "email": "aynul.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/aynul.html",
-    "phone": "8801674834062",
+    "phone": "01674834062",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -1277,7 +1277,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "mahade.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mahade.html",
-    "phone": "8801671648062",
+    "phone": "01671648062",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1289,7 +1289,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "annita.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/priyoti.html",
-    "phone": "8801521217002",
+    "phone": "01521217002",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -1301,7 +1301,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "majidur.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/majidur.html",
-    "phone": "8801975291437",
+    "phone": "01975291437",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1313,7 +1313,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "montasir.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/montasir.html",
-    "phone": "8801718268856",
+    "phone": "01718268856",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -1325,7 +1325,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "dilshadur.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/dilshadur.html",
-    "phone": "8801521455234",
+    "phone": "01521455234",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1337,7 +1337,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "afia.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/afia.html",
-    "phone": "8801742099991",
+    "phone": "01742099991",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -1349,7 +1349,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "khalid.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/khalid.html",
-    "phone": "8801878653709",
+    "phone": "01878653709",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1361,7 +1361,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "antara.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/antara_cse.html",
-    "phone": "8801926202136",
+    "phone": "01926202136",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -1373,7 +1373,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "imtiazul.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/nurimtiaz.html",
-    "phone": "8801956435624",
+    "phone": "01956435624",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1385,7 +1385,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "afsana.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/afsana-cse.html",
-    "phone": "8801622652274",
+    "phone": "01622652274",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -1397,7 +1397,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "saif.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/saif.html",
-    "phone": "8801765455133",
+    "phone": "01765455133",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1409,7 +1409,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "shahidullah.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shahidullah.html",
-    "phone": "8801830478671",
+    "phone": "01830478671",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -1421,7 +1421,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "tajim.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/tajim.html",
-    "phone": "8801781076199",
+    "phone": "01781076199",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1433,7 +1433,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "zarintasnim.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shejuti.html",
-    "phone": "8801622672977",
+    "phone": "01622672977",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -1445,7 +1445,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "hasin.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/hasin.html",
-    "phone": "8801787626636",
+    "phone": "01787626636",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -1457,7 +1457,7 @@ const FACULTY_DATA = [
     "room": "KT-805",
     "email": "atiasanjida.ged@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/atia.html",
-    "phone": "8801750340091",
+    "phone": "01750340091",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -1469,7 +1469,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "saima.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/afrin-cse.html",
-    "phone": "8801550552385",
+    "phone": "01550552385",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -1481,7 +1481,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "shahana.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shahana.html",
-    "phone": "8801672860365",
+    "phone": "01672860365",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -1493,7 +1493,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "kaosain.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/akbar.html",
-    "phone": "8801711872286",
+    "phone": "01711872286",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1505,7 +1505,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "asifuzzaman.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/Asif.html",
-    "phone": "8801611202829",
+    "phone": "01611202829",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -1517,7 +1517,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "faisalahmed.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/faisal-cse.html",
-    "phone": "8801776107653",
+    "phone": "01776107653",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1529,7 +1529,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "fahmidahossain.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/fahmidacse.html",
-    "phone": "8801777599680",
+    "phone": "01777599680",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -1541,7 +1541,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "tahmina.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/priya.html",
-    "phone": "8801679357283",
+    "phone": "01679357283",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -1553,7 +1553,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "abu.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/abukaisar.html",
-    "phone": "8801676882085",
+    "phone": "01676882085",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -1565,7 +1565,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "zabirul.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/zabirul.html",
-    "phone": "8801521307471",
+    "phone": "01521307471",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1577,7 +1577,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "nahid.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/nahidhasan.html",
-    "phone": "8801534561707",
+    "phone": "01534561707",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -1589,7 +1589,7 @@ const FACULTY_DATA = [
     "room": "KT- 317",
     "email": "ferdouse.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/foysalcse.html",
-    "phone": "8801620857287",
+    "phone": "01620857287",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1601,7 +1601,7 @@ const FACULTY_DATA = [
     "room": "KT-726",
     "email": "farihajahan.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/farihacse.html",
-    "phone": "8801793819157",
+    "phone": "01793819157",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -1613,7 +1613,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "chowdhury.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/abida.html",
-    "phone": "8801767677265",
+    "phone": "01767677265",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -1625,7 +1625,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "tazib.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/tazib.html",
-    "phone": "8801681983227",
+    "phone": "01681983227",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -1637,7 +1637,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "tanimahmed.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/tanim.html",
-    "phone": "8801627891115",
+    "phone": "01627891115",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1649,7 +1649,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "krishno.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/krishno.html",
-    "phone": "8801786147796",
+    "phone": "01786147796",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -1661,7 +1661,7 @@ const FACULTY_DATA = [
     "room": "KT- 505",
     "email": "dip.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/partha.html",
-    "phone": "8801753798708",
+    "phone": "01753798708",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1673,7 +1673,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "moynul.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/moynul.html",
-    "phone": "8801732377803",
+    "phone": "01732377803",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -1685,7 +1685,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "asifhossain.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/asifcse.html",
-    "phone": "8801671165355",
+    "phone": "01671165355",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1697,7 +1697,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "nushratria.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/ria.html",
-    "phone": "88 01521201557",
+    "phone": "01521201557",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -1709,7 +1709,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "shantarani.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shanta.html",
-    "phone": "88 01956754319",
+    "phone": "01956754319",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -1721,7 +1721,7 @@ const FACULTY_DATA = [
     "room": "KT-505",
     "email": "mhassan.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mahedi.html",
-    "phone": "88 01301728260",
+    "phone": "01301728260",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -1733,7 +1733,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "tasnimtabassum.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/tabassumcse.html",
-    "phone": "88 01916484735",
+    "phone": "01916484735",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -1745,7 +1745,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "bithi.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/bithi.html",
-    "phone": "88 01629665310",
+    "phone": "01629665310",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -1757,7 +1757,7 @@ const FACULTY_DATA = [
     "room": "KT-505",
     "email": "ashrafulislam.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/ashrafulcse.html",
-    "phone": "88 01680161225",
+    "phone": "01680161225",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1769,7 +1769,7 @@ const FACULTY_DATA = [
     "room": "KT-727",
     "email": "zannatulmawa.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/zannatul.html",
-    "phone": "88 01878045829",
+    "phone": "01878045829",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -1781,7 +1781,7 @@ const FACULTY_DATA = [
     "room": "KT-723",
     "email": "tanvirulislam.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/tanvirulcse.html",
-    "phone": "88 01636458757",
+    "phone": "01636458757",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1793,7 +1793,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "nusratkhan.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/nusratkhan.html",
-    "phone": "88 01644461629",
+    "phone": "01644461629",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -1805,7 +1805,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "akash.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/akash.html",
-    "phone": "88 01772966496",
+    "phone": "01772966496",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1817,7 +1817,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "shakhawath.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shakhawath.html",
-    "phone": "88 01521502591",
+    "phone": "01521502591",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -1829,7 +1829,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "asifurrahim.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/asifur.html",
-    "phone": "88 01621714558",
+    "phone": "01621714558",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1841,7 +1841,7 @@ const FACULTY_DATA = [
     "room": "KT-805",
     "email": "monarul.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/monarul.html",
-    "phone": "88 01796950211",
+    "phone": "01796950211",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -1853,7 +1853,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "zahim.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/zahim.html",
-    "phone": "88 01736393334",
+    "phone": "01736393334",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1865,7 +1865,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "muntakim.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/muntakim.html",
-    "phone": "88 01703941730",
+    "phone": "01703941730",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -1877,7 +1877,7 @@ const FACULTY_DATA = [
     "room": "KT-807",
     "email": "habiba.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/ummehabiba.html",
-    "phone": "88 01985750715",
+    "phone": "01985750715",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -1889,7 +1889,7 @@ const FACULTY_DATA = [
     "room": "KT-316",
     "email": "remal.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/rakin.html",
-    "phone": "88 01878007916",
+    "phone": "01878007916",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -1901,7 +1901,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "hasnur.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/hasnur.html",
-    "phone": "88 01838638487",
+    "phone": "01838638487",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -1913,7 +1913,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "lameya.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/lameya.html",
-    "phone": "88 01711006594",
+    "phone": "01711006594",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -1925,7 +1925,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "shayery.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/afsanajerin.html",
-    "phone": "88 01736373222",
+    "phone": "01736373222",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -1937,7 +1937,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "saba.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/salma.html",
-    "phone": "88 01783776787",
+    "phone": "01783776787",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -1949,7 +1949,7 @@ const FACULTY_DATA = [
     "room": "KT-705",
     "email": "shakil.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shakilcse.html",
-    "phone": "88 01646329726",
+    "phone": "01646329726",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1961,7 +1961,7 @@ const FACULTY_DATA = [
     "room": "KT-316",
     "email": "kafi.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/alkafi.html",
-    "phone": "88 01776026693",
+    "phone": "01776026693",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -1973,7 +1973,7 @@ const FACULTY_DATA = [
     "room": "KT--705",
     "email": "sakib.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/sakibmahmood.html",
-    "phone": "88 01676233267",
+    "phone": "01676233267",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -1985,7 +1985,7 @@ const FACULTY_DATA = [
     "room": "KT-807 (A)",
     "email": "oyshi.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/nushrat.html",
-    "phone": "88 01755931076",
+    "phone": "01755931076",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -1997,7 +1997,7 @@ const FACULTY_DATA = [
     "room": "KT-505",
     "email": "zobair.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/jakaria.html",
-    "phone": "88 01770730735",
+    "phone": "01770730735",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2009,7 +2009,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "polash.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shohidul.html",
-    "phone": "88 01711281551",
+    "phone": "01711281551",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2021,7 +2021,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "asraf.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/asrafcse.html",
-    "phone": "88 01796218589",
+    "phone": "01796218589",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2033,7 +2033,7 @@ const FACULTY_DATA = [
     "room": "KT-807 (C)",
     "email": "mehadihasan.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mehadi.html",
-    "phone": "8801521579271",
+    "phone": "01521579271",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2045,7 +2045,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "jannatmitu.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/sadiacse.html",
-    "phone": "88 01795582152",
+    "phone": "01795582152",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -2057,7 +2057,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "ahmedjoy.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/bulbulcse.html",
-    "phone": "88 01516709636",
+    "phone": "01516709636",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2069,7 +2069,7 @@ const FACULTY_DATA = [
     "room": "KT-807 (B)",
     "email": "faiza.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/faiza.html",
-    "phone": "88 01611632683",
+    "phone": "01611632683",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -2081,7 +2081,7 @@ const FACULTY_DATA = [
     "room": "KT-745",
     "email": "ashafuddaula.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/ashaf.html",
-    "phone": "88 01851968889",
+    "phone": "01851968889",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2093,7 +2093,7 @@ const FACULTY_DATA = [
     "room": "KT-805",
     "email": "noor.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/noormuhammad.html",
-    "phone": "88 01750203529",
+    "phone": "01750203529",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2105,7 +2105,7 @@ const FACULTY_DATA = [
     "room": "KT-745",
     "email": "ashikelahe.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/ashikcse.html",
-    "phone": "88 01773825220",
+    "phone": "01773825220",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2117,7 +2117,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "abdullahsakib.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/abdullahcse.html",
-    "phone": "88 01997363306",
+    "phone": "01997363306",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2129,7 +2129,7 @@ const FACULTY_DATA = [
     "room": "KT-745",
     "email": "anupkumar.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/anupcse.html",
-    "phone": "88 01874066015",
+    "phone": "01874066015",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2141,7 +2141,7 @@ const FACULTY_DATA = [
     "room": "KT-807(C)",
     "email": "husnemubarak.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/husnemubarak.html",
-    "phone": "88 01601181201",
+    "phone": "01601181201",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2153,7 +2153,7 @@ const FACULTY_DATA = [
     "room": "KT-745",
     "email": "arpitaghose.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/arpitacse.html",
-    "phone": "88 01408893604",
+    "phone": "01408893604",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -2165,7 +2165,7 @@ const FACULTY_DATA = [
     "room": "KT-745",
     "email": "saida.ds@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/saida.html",
-    "phone": "88 01701044100",
+    "phone": "01701044100",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -2177,7 +2177,7 @@ const FACULTY_DATA = [
     "room": "KT-745",
     "email": "islam.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/atikul.html",
-    "phone": "88 01767322010",
+    "phone": "01767322010",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2189,7 +2189,7 @@ const FACULTY_DATA = [
     "room": "KT-316 (Room-03)",
     "email": "almamun.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/almamun.html",
-    "phone": "88 01789221262",
+    "phone": "01789221262",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2201,7 +2201,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "obaidullah.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/obaidullah.html",
-    "phone": "88 01726261746",
+    "phone": "01726261746",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2213,7 +2213,7 @@ const FACULTY_DATA = [
     "room": "KT-317-7",
     "email": "safwanmarzouq.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/safwan.html",
-    "phone": "88 01622889649",
+    "phone": "01622889649",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2225,7 +2225,7 @@ const FACULTY_DATA = [
     "room": "KT-316",
     "email": "shahrinkhan.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shahrin.html",
-    "phone": "88 01782799769",
+    "phone": "01782799769",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -2237,7 +2237,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "mahmudulislam.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/rakibcse.html",
-    "phone": "88 01781941877",
+    "phone": "01781941877",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2249,7 +2249,7 @@ const FACULTY_DATA = [
     "room": "KT-745",
     "email": "alamin.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/alamincse.html",
-    "phone": "88 01709514927",
+    "phone": "01709514927",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2261,7 +2261,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "jihanparvaj.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/jihancse.html",
-    "phone": "88 01914865312",
+    "phone": "01914865312",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2273,7 +2273,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "jawadhossain.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/jawad.html",
-    "phone": "88 01834129910",
+    "phone": "01834129910",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2285,7 +2285,7 @@ const FACULTY_DATA = [
     "room": "KT-505",
     "email": "khatun.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/rabeyacse.html",
-    "phone": "88 01759962948",
+    "phone": "01759962948",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -2297,7 +2297,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "tasfia.ce@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/tasfia.html",
-    "phone": "88 01919878007",
+    "phone": "01919878007",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -2309,7 +2309,7 @@ const FACULTY_DATA = [
     "room": "KT-745",
     "email": "abirsaha.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/abirsaha.html",
-    "phone": "88 01302435110",
+    "phone": "01302435110",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2321,7 +2321,7 @@ const FACULTY_DATA = [
     "room": "807(C)",
     "email": "shadmanrabby.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shadman.html",
-    "phone": "88 01717474129",
+    "phone": "01717474129",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2333,7 +2333,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "abdullahalshafi.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/alshafi.html",
-    "phone": "88 01521526679",
+    "phone": "01521526679",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2345,7 +2345,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "alveeehsan.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/alveehsan.html",
-    "phone": "88 01797244955",
+    "phone": "01797244955",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2357,7 +2357,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "nishattasnim.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/tasnimcse.html",
-    "phone": "88 01708378125",
+    "phone": "01708378125",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -2369,7 +2369,7 @@ const FACULTY_DATA = [
     "room": "KT-745",
     "email": "rowzatulzannat.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/rowzatul.html",
-    "phone": "88 01761072816",
+    "phone": "01761072816",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -2381,7 +2381,7 @@ const FACULTY_DATA = [
     "room": "KT-203(B), KT-702(B)",
     "email": "zion.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/zion.html",
-    "phone": "88 01750458479",
+    "phone": "01750458479",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2393,7 +2393,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "shahriarhossainshanto.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shahriarcse.html",
-    "phone": "88 01630299010",
+    "phone": "01630299010",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2405,7 +2405,7 @@ const FACULTY_DATA = [
     "room": "KT-702(B)",
     "email": "jamilulhuqjami.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/jami.html",
-    "phone": "88 01733614110",
+    "phone": "01733614110",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2417,7 +2417,7 @@ const FACULTY_DATA = [
     "room": "KT-502(B)",
     "email": "mdhefzulhossainpapon.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/papon.html",
-    "phone": "88 01307524087",
+    "phone": "01307524087",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2429,7 +2429,7 @@ const FACULTY_DATA = [
     "room": "KT-702(B)",
     "email": "rimiakter.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/rimiakter.html",
-    "phone": "88 01842629790",
+    "phone": "01842629790",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -2441,7 +2441,7 @@ const FACULTY_DATA = [
     "room": "KT-502(B)",
     "email": "nafiz.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/nafizahmed.html",
-    "phone": "88 01611234050",
+    "phone": "01611234050",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2453,7 +2453,7 @@ const FACULTY_DATA = [
     "room": "KT-805",
     "email": "nahid.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/nahidged.html",
-    "phone": "88 01621040079",
+    "phone": "01621040079",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -2465,7 +2465,7 @@ const FACULTY_DATA = [
     "room": "KT-505",
     "email": "sultana.cse0502.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/tamannacse.html",
-    "phone": "88 01686766403",
+    "phone": "01686766403",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -2477,7 +2477,7 @@ const FACULTY_DATA = [
     "room": "KT-502(B)",
     "email": "syedeftasumalam.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/eftasum.html",
-    "phone": "88 01624830751",
+    "phone": "01624830751",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2489,7 +2489,7 @@ const FACULTY_DATA = [
     "room": "Kat-807",
     "email": "monthasirdelwarafnan.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/monthasir.html",
-    "phone": "88 01890332718",
+    "phone": "01890332718",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2501,7 +2501,7 @@ const FACULTY_DATA = [
     "room": "KT-807(C)",
     "email": "shoumikdebnath.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shoumik.html",
-    "phone": "88 01745329963",
+    "phone": "01745329963",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2513,7 +2513,7 @@ const FACULTY_DATA = [
     "room": "KT-745",
     "email": "smsharifhasan.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/sharifhasan.html",
-    "phone": "88 01674102030",
+    "phone": "01674102030",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2525,7 +2525,7 @@ const FACULTY_DATA = [
     "room": "KT-702(B)",
     "email": "angshumanrashid.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/angshuman.html",
-    "phone": "88 01680133775",
+    "phone": "01680133775",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2537,7 +2537,7 @@ const FACULTY_DATA = [
     "room": "KT-702(B)",
     "email": "taslimaakhter.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/taslimacse.html",
-    "phone": "88 01750156668",
+    "phone": "01750156668",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -2549,7 +2549,7 @@ const FACULTY_DATA = [
     "room": "KT-502(B)",
     "email": "mohammedsamikhan.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/samikhan.html",
-    "phone": "88 01834407262",
+    "phone": "01834407262",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2561,7 +2561,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "kamrulhasantuhin.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/tuhincse.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2573,7 +2573,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "zamialzunaedfarabe.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/farabe.html",
-    "phone": "88 01814723740",
+    "phone": "01814723740",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2585,7 +2585,7 @@ const FACULTY_DATA = [
     "room": "KT-502(B)",
     "email": "prantoprotimchoudhury.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/protim.html",
-    "phone": "88 01737043436",
+    "phone": "01737043436",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2597,7 +2597,7 @@ const FACULTY_DATA = [
     "room": "KT-502(B)",
     "email": "muhammadaburayan.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/aburayan.html",
-    "phone": "88 01834353971",
+    "phone": "01834353971",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2609,7 +2609,7 @@ const FACULTY_DATA = [
     "room": "KT-715",
     "email": "abdullaharrafi.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/raficse.html",
-    "phone": "88 01780455736",
+    "phone": "01780455736",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2621,7 +2621,7 @@ const FACULTY_DATA = [
     "room": "KT-805",
     "email": "shakibhossain.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shakibcse.html",
-    "phone": "88 01617692269",
+    "phone": "01617692269",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2633,7 +2633,7 @@ const FACULTY_DATA = [
     "room": "KT-805",
     "email": "mohiuddinmuhi.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mohiuddincse.html",
-    "phone": "88 01978085811",
+    "phone": "01978085811",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2645,7 +2645,7 @@ const FACULTY_DATA = [
     "room": "KT-807(C)",
     "email": "monjuaktermou.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mou.html",
-    "phone": "88 01770612774",
+    "phone": "01770612774",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -2657,7 +2657,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "polin.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/polin.html",
-    "phone": "88 01686206999",
+    "phone": "01686206999",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -2669,7 +2669,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "afjal.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/afjal.html",
-    "phone": "88 01869045878",
+    "phone": "01869045878",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2681,7 +2681,7 @@ const FACULTY_DATA = [
     "room": "KT- 317",
     "email": "firoz.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/firoz.htm",
-    "phone": "88 01705726026",
+    "phone": "01705726026",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2693,7 +2693,7 @@ const FACULTY_DATA = [
     "room": "KT- 705",
     "email": "isratjahan.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/israt-cse.html",
-    "phone": "8 01794362263",
+    "phone": "01794362263",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -2705,7 +2705,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "nishat.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/nishat_cse.html",
-    "phone": "88 01944634564",
+    "phone": "01944634564",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -2717,7 +2717,7 @@ const FACULTY_DATA = [
     "room": "KT- 505",
     "email": "mosharraf.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mosharraf.html",
-    "phone": "88 01923240000",
+    "phone": "01923240000",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2729,7 +2729,7 @@ const FACULTY_DATA = [
     "room": "NT- 316",
     "email": "bakaul.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/masumcse.html",
-    "phone": "88 01620705168",
+    "phone": "01620705168",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2741,7 +2741,7 @@ const FACULTY_DATA = [
     "room": "KT-805",
     "email": "hossain.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shamimcse.html",
-    "phone": "88 01773248641",
+    "phone":"01773248641",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2753,7 +2753,7 @@ const FACULTY_DATA = [
     "room": "KT-728",
     "email": "shahjalal.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shahjalalcse.html",
-    "phone": "88 01718287450",
+    "phone": "01718287450",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2765,7 +2765,7 @@ const FACULTY_DATA = [
     "room": "KT- 505",
     "email": "umaid.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/umaid.html",
-    "phone": "88 01764390924",
+    "phone": "01764390924",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2777,7 +2777,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "tanzinaafroz.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/rimi.html",
-    "phone": "88 01716405475",
+    "phone": "01716405475",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -2789,7 +2789,7 @@ const FACULTY_DATA = [
     "room": "KT-505",
     "email": "mamun.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mamuncse.html",
-    "phone": "88 01754481294",
+    "phone": "01754481294",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2801,7 +2801,7 @@ const FACULTY_DATA = [
     "room": "KT-705",
     "email": "syada.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/syada.html",
-    "phone": "88 01636817791",
+    "phone": "01636817791",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -2813,7 +2813,7 @@ const FACULTY_DATA = [
     "room": "KT-705",
     "email": "mizanurrahman.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mizanurcse.html",
-    "phone": "8801751726350",
+    "phone": "01751726350",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2825,7 +2825,7 @@ const FACULTY_DATA = [
     "room": "KT-- 736",
     "email": "rabbany.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/rabbany.html",
-    "phone": "88 01919774996",
+    "phone": "01919774996",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2837,7 +2837,7 @@ const FACULTY_DATA = [
     "room": "KT-745",
     "email": "roniislam.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/ronicse.html",
-    "phone": "88 01781054348",
+    "phone": "01781054348",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2849,7 +2849,7 @@ const FACULTY_DATA = [
     "room": "KT- 734",
     "email": "raselsarker.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/rahmatul.html",
-    "phone": "88 01761918875",
+    "phone": "01761918875",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2861,7 +2861,7 @@ const FACULTY_DATA = [
     "room": "KT- 505",
     "email": "nadim.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mahimul.htm",
-    "phone": "88 01776364728",
+    "phone": "01776364728",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2873,7 +2873,7 @@ const FACULTY_DATA = [
     "room": "KT-741",
     "email": "shihab.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shihab-cse.html",
-    "phone": "88 01521218168",
+    "phone": "01521218168",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2885,7 +2885,7 @@ const FACULTY_DATA = [
     "room": "KT-317 (1)",
     "email": "humayet.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/humayet.htm",
-    "phone": "88 01762759528",
+    "phone": "01762759528",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2897,7 +2897,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "ashiq797@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/ashiq.html",
-    "phone": "88 01717421811",
+    "phone": "01717421811",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2909,7 +2909,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "rashida@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/rashida.htm",
-    "phone": "88 01912308819",
+    "phone": "01912308819",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -2921,7 +2921,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "shariful_phy@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/sharif.html",
-    "phone": "88 01911711571",
+    "phone": "01911711571",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2933,7 +2933,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "sowgat@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/sowgat.htm",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2945,7 +2945,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "habib.cse@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/habibur.html",
-    "phone": "88 01723710888",
+    "phone": "01723710888",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -2957,7 +2957,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "tafiq.cse@daffodilvarsity.edu.bd",
     "webpage": "lhttps://faculty.daffodilvarsity.edu.bd/profile/cse/tafiqur.htm",
-    "phone": "88 01847140063",
+    "phone": "01847140063",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -2969,7 +2969,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "israt.cse@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/israt-ferdous.html",
-    "phone": "88 01732675955",
+    "phone": "01732675955",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -2981,7 +2981,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "tasmia.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/tasmia-tasrin.html",
-    "phone": "88 01631145874",
+    "phone": "01631145874",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -2993,7 +2993,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "masud.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/masud-rabbani.html",
-    "phone": "88 01923887080",
+    "phone": "01923887080",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3005,7 +3005,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "mustakimsunny.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mustakim-al-helal.html",
-    "phone": "88 01670900169",
+    "phone": "01670900169",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3017,7 +3017,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "nasrin.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/nasrin-akter.html",
-    "phone": "88 01816602129",
+    "phone": "01816602129",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -3029,7 +3029,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "farhana.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/farhana-irin.html",
-    "phone": "88 01672660487",
+    "phone": "01672660487",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -3041,7 +3041,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "maruf.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/almaruf.html",
-    "phone": "88 01745357578",
+    "phone": "01745357578",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3053,7 +3053,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "tansin@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/tansin.html",
-    "phone": "88 01681676824",
+    "phone": "01681676824",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -3065,7 +3065,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "amena.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/amena.html",
-    "phone": "88 01744713669",
+    "phone": "01744713669",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -3077,7 +3077,7 @@ const FACULTY_DATA = [
     "room": "KT-807B",
     "email": "mizanur.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mizanurahman.html",
-    "phone": "88 01755273840",
+    "phone": "01755273840",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3086,10 +3086,10 @@ const FACULTY_DATA = [
     "name": "Md. Yousuf Ali",
     "title": "Lecturer",
     "dept": "cse",
-    "room": "N/A",
+    "room": "leave",
     "email": "yousuf.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/yousufali.html",
-    "phone": "88 01521308273",
+    "phone": "01521308273",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3101,7 +3101,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "sadaflira.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/liracse.html",
-    "phone": "88 01540900900",
+    "phone": "01540900900",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -3113,7 +3113,7 @@ const FACULTY_DATA = [
     "room": "KT-807(C)",
     "email": "fahimahsan.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/fahimahsan.html",
-    "phone": "88 01623798944",
+    "phone": "01623798944",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3125,7 +3125,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "alamrafi.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/jubayarcse.html",
-    "phone": "88 01707587089",
+    "phone": "01707587089",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3137,7 +3137,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "showmick.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/showmick.html",
-    "phone": "88 01797049590",
+    "phone": "01797049590",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3149,7 +3149,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "faiyazhossain.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mirfaiyaz.html",
-    "phone": "88 01892776932",
+    "phone": "01892776932",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3161,7 +3161,7 @@ const FACULTY_DATA = [
     "room": "KT-745",
     "email": "taufik.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/taufikhasan.html",
-    "phone": "88 01720530253",
+    "phone": "01720530253",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3173,7 +3173,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "fardowsi.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/fardowsi.html",
-    "phone": "88 01875923333",
+    "phone": "01875923333",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -3185,7 +3185,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "kridita.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/kridita.html",
-    "phone": "88 01820357572",
+    "phone": "01820357572",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -3197,7 +3197,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "jotirmoy.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/jotirmoy.html",
-    "phone": "88 01766610974",
+    "phone": "01766610974",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3209,7 +3209,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "santo.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mahabul.html",
-    "phone": "88 01601139174",
+    "phone": "01601139174",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3221,7 +3221,7 @@ const FACULTY_DATA = [
     "room": "KT- 316",
     "email": "alam.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mdjahangir.html",
-    "phone": "88 01709516301",
+    "phone": "01709516301",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3233,7 +3233,7 @@ const FACULTY_DATA = [
     "room": "KT - 745",
     "email": "shishir.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shishir.html",
-    "phone": "88 01872721286",
+    "phone": "01872721286",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -3245,7 +3245,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "bhattacharya.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shaswata.html",
-    "phone": "88 01858108129",
+    "phone": "01858108129",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3257,7 +3257,7 @@ const FACULTY_DATA = [
     "room": "KT-745",
     "email": "riya.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/riya.html",
-    "phone": "88 01982908767",
+    "phone": "01982908767",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -3269,7 +3269,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "nawshin.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/nawshin-cse.html",
-    "phone": "88 01624293322",
+    "phone": "01624293322",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -3281,7 +3281,7 @@ const FACULTY_DATA = [
     "room": "KT-745",
     "email": "liza.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/liza-cse.html",
-    "phone": "88 01776477976",
+    "phone": "01776477976",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -3293,7 +3293,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "toma.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/toma-cse.html",
-    "phone": "88 01773540000",
+    "phone": "01773540000",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -3305,7 +3305,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "aman.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/amanullah.html",
-    "phone": "88 01733870748",
+    "phone": "01733870748",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3317,7 +3317,7 @@ const FACULTY_DATA = [
     "room": "502-B",
     "email": "sovon.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/touhidul-cse.html",
-    "phone": "88 01675904655",
+    "phone": "01675904655",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3329,7 +3329,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "sourav.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/sourav-cse.html",
-    "phone": "88 01303266825",
+    "phone": "01303266825",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3341,7 +3341,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "mustafizur.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mushfiqurcse.html",
-    "phone": "88 01819186871",
+    "phone": "01819186871",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3353,7 +3353,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "sanjida.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/sanjida.html",
-    "phone": "88 01705894883",
+    "phone": "01705894883",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3365,7 +3365,7 @@ const FACULTY_DATA = [
     "room": "KT-702B",
     "email": "sadaf.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/sadaf.html",
-    "phone": "88 01716530961",
+    "phone": "01716530961",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3377,7 +3377,7 @@ const FACULTY_DATA = [
     "room": "KT-502(B)",
     "email": "ahmed.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/tanjir.html",
-    "phone": "88 01995329324",
+    "phone": "01995329324",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3389,7 +3389,7 @@ const FACULTY_DATA = [
     "room": "KT-702(B)",
     "email": "rahman.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/mehefujur.html",
-    "phone": "88 01521763308",
+    "phone": "01521763308",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3401,7 +3401,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "zarif.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/zarif.html",
-    "phone": "88 01740087267",
+    "phone": "01740087267",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3413,7 +3413,7 @@ const FACULTY_DATA = [
     "room": "KT - 702B",
     "email": "shahariarsarkar.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shahariar-cse.html",
-    "phone": "88 01624943334",
+    "phone": "01624943334",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3425,7 +3425,7 @@ const FACULTY_DATA = [
     "room": "KT-745",
     "email": "nazianuzhat.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/nazia.html",
-    "phone": "88 01839166426",
+    "phone": "01839166426",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -3437,7 +3437,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "sayeda.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/sayeda.html",
-    "phone": "88 01318522709",
+    "phone": "01318522709",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -3449,7 +3449,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "tasmiah.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/tasmiah.html",
-    "phone": "88 01718888611",
+    "phone": "01718888611",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -3461,7 +3461,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "mohammadrony.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/rony.html",
-    "phone": "88 01918479761",
+    "phone": "01918479761",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3473,7 +3473,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "pallabibiswas.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/pallabi.html",
-    "phone": "88 01794956679",
+    "phone": "01794956679",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -3485,7 +3485,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "tamannaakter.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/tamanna-cse.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -3497,7 +3497,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "imtiajhossain.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/imtiaj.html",
-    "phone": "88 01755922256",
+    "phone": "01755922256",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3509,7 +3509,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "yamina.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/yamina.html",
-    "phone": "88 01873110066",
+    "phone": "01873110066",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -3521,7 +3521,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "nosibaarifin.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/arifin.html",
-    "phone": "88 01993984424",
+    "phone": "01993984424",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -3533,7 +3533,7 @@ const FACULTY_DATA = [
     "room": "KT - 745",
     "email": "subarna.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/subarna.html",
-    "phone": "88 01778644324",
+    "phone": "01778644324",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -3545,7 +3545,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "ridoysarkar.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/ridoy-cse.html",
-    "phone": "88 01729412082",
+    "phone": "01729412082",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3557,7 +3557,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "najeeb.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/najeeb.html",
-    "phone": "88 01862275768",
+    "phone": "01862275768",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3569,7 +3569,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "shadman.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/shadman-cse.html",
-    "phone": "88 01303203392",
+    "phone": "01303203392",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3581,7 +3581,7 @@ const FACULTY_DATA = [
     "room": "KT-502(B)",
     "email": "likhon.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/emad.html",
-    "phone": "88 01747367808",
+    "phone": "01747367808",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3593,7 +3593,7 @@ const FACULTY_DATA = [
     "room": "KT-807",
     "email": "taslim.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/taslimarif.html",
-    "phone": "88 01794430968",
+    "phone": "01794430968",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3605,7 +3605,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "sudipto.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/sudipto.html",
-    "phone": "88 01735493331",
+    "phone": "01735493331",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3617,7 +3617,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "moumita.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/tabassum.html",
-    "phone": "88 01765709011",
+    "phone": "01765709011",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -3629,7 +3629,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "eisty.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/eisty.html",
-    "phone": "88 01737471100",
+    "phone": "01737471100",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3641,7 +3641,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "nadira.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/nadira.html",
-    "phone": "88 01926054787",
+    "phone": "01926054787",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -3653,7 +3653,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "sadat.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/sadat.html",
-    "phone": "8801674514252",
+    "phone": "01674514252",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3665,7 +3665,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "salim.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/nazmul-hoq.html",
-    "phone": "88 01675678201",
+    "phone": "01675678201",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3677,7 +3677,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "rabeya.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/rabeya-akhter.html",
-    "phone": "88 01675653680",
+    "phone": "01675653680",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -3689,7 +3689,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "muhaiminul.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/Muhaiminul.html",
-    "phone": "88 01737098387",
+    "phone": "01737098387",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3701,7 +3701,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "tasmim.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/Tasmin_cse.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -3713,7 +3713,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "bashira.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/Anima.html",
-    "phone": "88 01815930720",
+    "phone": "01815930720",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -3725,7 +3725,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "umme.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/Hafsa.html",
-    "phone": "88 01623227524",
+    "phone": "01623227524",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -3737,7 +3737,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "fahmida.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/Fahmida-Afrin.html",
-    "phone": "88 01706068157",
+    "phone": "01706068157",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -3749,7 +3749,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "rayhan.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/rayhan-amin.html",
-    "phone": "88 01764752244",
+    "phone": "01764752244",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3761,7 +3761,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "Soumik.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/Soumik.html",
-    "phone": "88 01676993067",
+    "phone": "01676993067",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3773,7 +3773,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "farhan.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/asmfarhan.html",
-    "phone": "88 01776020334",
+    "phone": "01776020334",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3785,7 +3785,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "nafis.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/neehal.html",
-    "phone": "88 01521220782",
+    "phone": "01521220782",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3797,7 +3797,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "umama.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/umama.html",
-    "phone": "88 01680653235",
+    "phone": "01680653235",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -3809,7 +3809,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "ananta.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/ananta.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -3821,7 +3821,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "dhiman.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/dhiman.html",
-    "phone": "88 01940838818",
+    "phone": "01940838818",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3833,7 +3833,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "Syeda.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/tanjila.html",
-    "phone": "88 01988284658",
+    "phone": "01988284658",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -3845,7 +3845,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "shadaab.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/bashir.html",
-    "phone": "88 01754577937",
+    "phone": "01754577937",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -3857,7 +3857,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "eshtiak.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/eshtiak.html",
-    "phone": "88 01955483532",
+    "phone": "01955483532",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3869,7 +3869,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "sejuti.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/sejuti.html",
-    "phone": "88 01952860428",
+    "phone": "01952860428",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -3881,7 +3881,7 @@ const FACULTY_DATA = [
     "room": "KT-607",
     "email": "imranmahmud@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/imahmud.htm",
-    "phone": "8801847140117",
+    "phone": "01847140117",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3893,7 +3893,7 @@ const FACULTY_DATA = [
     "room": "KT-607",
     "email": "islam.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/rubaiyat.html",
-    "phone": "8801711593262",
+    "phone": "01711593262",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3905,7 +3905,7 @@ const FACULTY_DATA = [
     "room": "KT-605",
     "email": "drhasan.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/drsmhasan.ht",
-    "phone": "8801722418230",
+    "phone": "01722418230",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3917,7 +3917,7 @@ const FACULTY_DATA = [
     "room": "KT-523",
     "email": "abdulkader.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/abdulkader.html",
-    "phone": "8801722241303",
+    "phone": "01722241303",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3929,7 +3929,7 @@ const FACULTY_DATA = [
     "room": "KT-523",
     "email": "drshahin.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/drkamrul.htm",
-    "phone": "88 01936724404",
+    "phone": "01936724404",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3941,7 +3941,7 @@ const FACULTY_DATA = [
     "room": "KT-605",
     "email": "khaledsohel@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/sohel.html",
-    "phone": "8801713493251",
+    "phone": "01713493251",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3953,7 +3953,7 @@ const FACULTY_DATA = [
     "room": "KT-805",
     "email": "shahina@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/shahina.html",
-    "phone": "8801957560944",
+    "phone": "01957560944",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -3965,7 +3965,7 @@ const FACULTY_DATA = [
     "room": "On Leave",
     "email": "Fahad.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/Fahad-Bin-Zamal.html",
-    "phone": "8801714410672",
+    "phone": "01714410672",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -3977,7 +3977,7 @@ const FACULTY_DATA = [
     "room": "On Leave",
     "email": "anwar.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/anwar-hossen.html",
-    "phone": "8801717976009",
+    "phone": "01717976009",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -3989,7 +3989,7 @@ const FACULTY_DATA = [
     "room": "On Leave",
     "email": "sadia.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/sadia.html",
-    "phone": "88 01973726768",
+    "phone": "01973726768",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -4001,7 +4001,7 @@ const FACULTY_DATA = [
     "room": "KT-605",
     "email": "toma.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/toma.html",
-    "phone": "88 01676078744",
+    "phone": "01676078744",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -4013,7 +4013,7 @@ const FACULTY_DATA = [
     "room": "KT-605",
     "email": "marzia.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/marzia-swe.html",
-    "phone": "88 01745482644",
+    "phone": "01745482644",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -4025,7 +4025,7 @@ const FACULTY_DATA = [
     "room": "KT-605",
     "email": "nadira.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/nadiraswe.html",
-    "phone": "88 01759339422",
+    "phone": "01759339422",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -4037,7 +4037,7 @@ const FACULTY_DATA = [
     "room": "KT-805",
     "email": "selim.swe0161.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/selimrezaswe.html",
-    "phone": "88 01719310512",
+    "phone": "01719310512",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4049,7 +4049,7 @@ const FACULTY_DATA = [
     "room": "KT-907",
     "email": "ayesha.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/ayesha-swe.html",
-    "phone": "88 01864081423",
+    "phone": "01864081423",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -4061,7 +4061,7 @@ const FACULTY_DATA = [
     "room": "Campus Store, 2nd Floor",
     "email": "debasis.cse0572.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/debasis-c.html",
-    "phone": "88 01710589096",
+    "phone": "01710589096",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4073,7 +4073,7 @@ const FACULTY_DATA = [
     "room": "On Leave",
     "email": "Khadija.ged@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/kobra.html",
-    "phone": "8801675256753",
+    "phone": "01675256753",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -4085,7 +4085,7 @@ const FACULTY_DATA = [
     "room": "On Leave",
     "email": "prianka.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/prianka.html",
-    "phone": "88 01796695222",
+    "phone": "01796695222",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -4097,7 +4097,7 @@ const FACULTY_DATA = [
     "room": "On Leave",
     "email": "khandker.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/qaiduzzaman.html",
-    "phone": "88 01685679768",
+    "phone": "01685679768",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4109,7 +4109,7 @@ const FACULTY_DATA = [
     "room": "On Leave",
     "email": "kaimujjaman.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/kaimujjaman.html",
-    "phone": "88 01764808130",
+    "phone": "01764808130",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4121,7 +4121,7 @@ const FACULTY_DATA = [
     "room": "KT-907",
     "email": "raiyanjanik.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/raiyan.html",
-    "phone": "88 01776314653",
+    "phone": "01776314653",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -4133,7 +4133,7 @@ const FACULTY_DATA = [
     "room": "KT-605",
     "email": "munira.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/munira-swe.html",
-    "phone": "88 01796674706",
+    "phone": "01796674706",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -4145,7 +4145,7 @@ const FACULTY_DATA = [
     "room": "KT-605",
     "email": "mazba.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/mazbaur.html",
-    "phone": "88 01796228391",
+    "phone": "01796228391",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4157,7 +4157,7 @@ const FACULTY_DATA = [
     "room": "KT-613",
     "email": "tasnim.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/masrufa.html",
-    "phone": "88 01553081243",
+    "phone": "01553081243",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -4169,7 +4169,7 @@ const FACULTY_DATA = [
     "room": "KT-908",
     "email": "zebon.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/zebon.html",
-    "phone": "88 01521438443",
+    "phone": "01521438443",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4181,7 +4181,7 @@ const FACULTY_DATA = [
     "room": "KT-908",
     "email": "suprove.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/suprove.html",
-    "phone": "88 01521539046",
+    "phone": "01521539046",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4193,7 +4193,7 @@ const FACULTY_DATA = [
     "room": "KT-907",
     "email": "ashrafiaesha.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/eshaswe.html",
-    "phone": "88 01316711223",
+    "phone": "01316711223",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -4205,7 +4205,7 @@ const FACULTY_DATA = [
     "room": "On Leave",
     "email": "nusratjahan.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/nusratswe.html",
-    "phone": "88 01734679702",
+    "phone": "01734679702",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -4217,7 +4217,7 @@ const FACULTY_DATA = [
     "room": "KT-907",
     "email": "rifa.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/rifatasfia.html",
-    "phone": "88 01737869274",
+    "phone": "01737869274",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -4229,7 +4229,7 @@ const FACULTY_DATA = [
     "room": "KT-908",
     "email": "ashikur.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/ashikurswe.html",
-    "phone": "88 01617277969",
+    "phone": "01617277969",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4241,7 +4241,7 @@ const FACULTY_DATA = [
     "room": "KT-908",
     "email": "mozammelul.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/mozammelul.html",
-    "phone": "88 01794190171",
+    "phone": "01794190171",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4253,7 +4253,7 @@ const FACULTY_DATA = [
     "room": "KT-908",
     "email": "shahriar.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/shahriarislam.htm",
-    "phone": "88 01723021777",
+    "phone": "01723021777",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4265,7 +4265,7 @@ const FACULTY_DATA = [
     "room": "KT-908",
     "email": "piyas.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/bibhasroy.html",
-    "phone": "88 01703428672",
+    "phone": "01703428672",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4277,7 +4277,7 @@ const FACULTY_DATA = [
     "room": "KT-908",
     "email": "fraihan.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/raihanswe.html",
-    "phone": "88 01956249285",
+    "phone": "01956249285",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4289,7 +4289,7 @@ const FACULTY_DATA = [
     "room": "KT-907",
     "email": "sultana.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/sumaia.html",
-    "phone": "88 01864646749",
+    "phone": "01864646749",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -4301,7 +4301,7 @@ const FACULTY_DATA = [
     "room": "KT-907",
     "email": "shahrinislam.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/shahrinswe.html",
-    "phone": "88 01779448961",
+    "phone": "01779448961",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -4313,7 +4313,7 @@ const FACULTY_DATA = [
     "room": "KT-705",
     "email": "jafrin.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/jafrinswe.html",
-    "phone": "88 01842208940",
+    "phone": "01842208940",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4325,7 +4325,7 @@ const FACULTY_DATA = [
     "room": "KT-907",
     "email": "maliha.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/malihaswe.html",
-    "phone": "88 01797088600",
+    "phone": "01797088600",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -4337,7 +4337,7 @@ const FACULTY_DATA = [
     "room": "KT-907",
     "email": "tisha.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/tishaswe.html",
-    "phone": "88 01881638899",
+    "phone": "01881638899",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -4349,7 +4349,7 @@ const FACULTY_DATA = [
     "room": "KT-907",
     "email": "chanda.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/parthochanda.html",
-    "phone": "88 01556628930",
+    "phone": "01556628930",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4361,7 +4361,7 @@ const FACULTY_DATA = [
     "room": "KT-907",
     "email": "izaz.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/tuhin.html",
-    "phone": "88 01918267179",
+    "phone": "01918267179",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4373,7 +4373,7 @@ const FACULTY_DATA = [
     "room": "KT-713",
     "email": "khalid.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/khalid-swe.html",
-    "phone": "88 01533519531",
+    "phone": "01533519531",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4385,7 +4385,7 @@ const FACULTY_DATA = [
     "room": "KT-908",
     "email": "mubashshir.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/ahnaf.html",
-    "phone": "88 01612563383",
+    "phone": "01612563383",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4397,7 +4397,7 @@ const FACULTY_DATA = [
     "room": "KT-907",
     "email": "fariha.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/quazifariha.html",
-    "phone": "88 01534816747",
+    "phone": "01534816747",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -4409,7 +4409,7 @@ const FACULTY_DATA = [
     "room": "KT-907",
     "email": "mohseu.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/niloy.html",
-    "phone": "88 01760479092",
+    "phone": "01760479092",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4421,7 +4421,7 @@ const FACULTY_DATA = [
     "room": "KT-908",
     "email": "shazzad.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/shazzad.html",
-    "phone": "88 01521558897",
+    "phone": "01521558897",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4433,7 +4433,7 @@ const FACULTY_DATA = [
     "room": "KT-713",
     "email": "nusrattazin.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/nusrat-swe.html",
-    "phone": "88 01779749972",
+    "phone": "01779749972",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -4445,7 +4445,7 @@ const FACULTY_DATA = [
     "room": "Register office",
     "email": "drnadir@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/nadir.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4457,7 +4457,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "tanvirzoha@gmail.com",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/zoha-pt.html",
-    "phone": "88 01755555560",
+    "phone": "01755555560",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4469,7 +4469,7 @@ const FACULTY_DATA = [
     "room": "3rd Floor, Library",
     "email": "librarian@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/drmilan-pt.html",
-    "phone": "88 01713493004",
+    "phone": "01713493004",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4481,7 +4481,7 @@ const FACULTY_DATA = [
     "room": "KT-602(A)",
     "email": "nusrat.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/nusrat-jahan.html",
-    "phone": "8801847334996",
+    "phone": "01847334996",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -4493,7 +4493,7 @@ const FACULTY_DATA = [
     "room": "KT-908",
     "email": "mahbub713@gmail.com",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/mahbubur_c.html",
-    "phone": "8801755508971",
+    "phone": "01755508971",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4505,7 +4505,7 @@ const FACULTY_DATA = [
     "room": "Campus Store, 2nd Floor",
     "email": "mahedi.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/mahedi-swe.html",
-    "phone": "8801758097971",
+    "phone": "01758097971",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4517,7 +4517,7 @@ const FACULTY_DATA = [
     "room": "KT-713",
     "email": "mamur.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/sayor.html",
-    "phone": "8801787054914",
+    "phone": "01787054914",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4529,7 +4529,7 @@ const FACULTY_DATA = [
     "room": "KT-713",
     "email": "shams.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/shams.html",
-    "phone": "8801704427800",
+    "phone": "01704427800",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4541,7 +4541,7 @@ const FACULTY_DATA = [
     "room": "KT-713",
     "email": "mahbubur.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/mahbubur.html",
-    "phone": "8801797368331",
+    "phone": "01797368331",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4553,7 +4553,7 @@ const FACULTY_DATA = [
     "room": "KT-713",
     "email": "nasimmahmud819@gmail.com",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/nasim-c.html",
-    "phone": "8801755132180",
+    "phone": "01755132180",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4565,7 +4565,7 @@ const FACULTY_DATA = [
     "room": "CDC Office",
     "email": "tonmoy.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/tonmoy-c.html",
-    "phone": "8801989388418",
+    "phone": "01989388418",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4577,7 +4577,7 @@ const FACULTY_DATA = [
     "room": "KT-617",
     "email": "fayazunnesa.cse0405.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/fayazunnesa-c.html",
-    "phone": "8801737216620",
+    "phone": "01737216620",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4589,7 +4589,7 @@ const FACULTY_DATA = [
     "room": "KT-713",
     "email": "hasan.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/rashidul.html",
-    "phone": "8801714969317",
+    "phone": "01714969317",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4601,7 +4601,7 @@ const FACULTY_DATA = [
     "room": "KT-908",
     "email": "tahminameem1999@gmail.com",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/meem-c.html",
-    "phone": "8801858014587",
+    "phone": "01858014587",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -4613,7 +4613,7 @@ const FACULTY_DATA = [
     "room": "KT-713",
     "email": "sakibmazumder.swe@gmail.com",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/sakib-c.html",
-    "phone": "8801623072047",
+    "phone": "01623072047",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4625,7 +4625,7 @@ const FACULTY_DATA = [
     "room": "KT-613",
     "email": "parvez.swe0141.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/shahriar-c.html",
-    "phone": "8801944829693",
+    "phone": "01944829693",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4637,7 +4637,7 @@ const FACULTY_DATA = [
     "room": "KT-908",
     "email": "arif.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/arif.html",
-    "phone": "8801723465155",
+    "phone": "01723465155",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4649,7 +4649,7 @@ const FACULTY_DATA = [
     "room": "KT-908",
     "email": "jafrin.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/muntasir.html",
-    "phone": "8801873372428",
+    "phone": "01873372428",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4661,7 +4661,7 @@ const FACULTY_DATA = [
     "room": "KT-908",
     "email": "faruk.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/faruk-swe.html",
-    "phone": "8801611193974",
+    "phone": "01611193974",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4673,7 +4673,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "razinrubaiya@gmail.com",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/rubaiya-c.html",
-    "phone": "8801747143225",
+    "phone": "01747143225",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -4685,7 +4685,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "shorna.swe0162.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/aklema-c.html",
-    "phone": "8801758548019",
+    "phone": "01758548019",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4697,7 +4697,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "diptadipayankar49@gmail.com",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/dipta-c.html",
-    "phone": "8801741117857",
+    "phone": "01741117857",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4709,7 +4709,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "muskaanahmed192205@gmail.com",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/muskaan-c.html",
-    "phone": "8801626817647",
+    "phone": "01626817647",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4721,7 +4721,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "ahnaf.swe.0200.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/mubashhsir-c.html",
-    "phone": "8801612563383",
+    "phone": "01612563383",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4733,7 +4733,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "hummah47@gmail.com",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/humira-c.html",
-    "phone": "8801521719473",
+    "phone": "01521719473",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -4745,7 +4745,7 @@ const FACULTY_DATA = [
     "room": "Campus Store, 2nd Floor",
     "email": "saidur.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/sm-saidur.html",
-    "phone": "8801324194133",
+    "phone": "01324194133",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4757,7 +4757,7 @@ const FACULTY_DATA = [
     "room": "Campus Store, 2nd Floor",
     "email": "tahmid.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/tahmid-swe.html",
-    "phone": "8801521754083",
+    "phone": "01521754083",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4769,7 +4769,7 @@ const FACULTY_DATA = [
     "room": "KT-705",
     "email": "himika.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/himika-swe.html",
-    "phone": "8801993808525",
+    "phone": "01993808525",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -4781,7 +4781,7 @@ const FACULTY_DATA = [
     "room": "KT-713",
     "email": "sadia.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/sadia-swe.html",
-    "phone": "8801797579591",
+    "phone": "01797579591",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -4793,7 +4793,7 @@ const FACULTY_DATA = [
     "room": "Campus Store, 2nd Floor",
     "email": "rashedul.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/rashedul-swe.html",
-    "phone": "8801771087871",
+    "phone": "01771087871",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4805,7 +4805,7 @@ const FACULTY_DATA = [
     "room": "Campus Store, 2nd Floor",
     "email": "rahat.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/rahat.html",
-    "phone": "8801324194133",
+    "phone": "01324194133",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4817,7 +4817,7 @@ const FACULTY_DATA = [
     "room": "Campus Store, 2nd Floor",
     "email": "mugdho.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/mugdho.html",
-    "phone": "8801962353752",
+    "phone": "01962353752",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4829,7 +4829,7 @@ const FACULTY_DATA = [
     "room": "KT-713",
     "email": "johora.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/fatema-swe.html",
-    "phone": "8801764277119",
+    "phone": "01764277119",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -4841,7 +4841,7 @@ const FACULTY_DATA = [
     "room": "CSE Faculty",
     "email": "sadaflira.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/liracse.html",
-    "phone": "8801540900900",
+    "phone": "01540900900",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -4853,7 +4853,7 @@ const FACULTY_DATA = [
     "room": "CSE Faculty",
     "email": "fardowsi.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/fardowsi.html",
-    "phone": "8801875923333",
+    "phone": "01875923333",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -4865,7 +4865,7 @@ const FACULTY_DATA = [
     "room": "CSE Faculty",
     "email": "santo.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/mahabul.html",
-    "phone": "8801601139174",
+    "phone": "01601139174",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4877,7 +4877,7 @@ const FACULTY_DATA = [
     "room": "CSE Faculty",
     "email": "kridita.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/kridita.html",
-    "phone": "8801820357572",
+    "phone": "01820357572",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -4889,7 +4889,7 @@ const FACULTY_DATA = [
     "room": "CSE Faculty",
     "email": "bhattacharya.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/shaswata.html",
-    "phone": "8801858108129",
+    "phone": "01858108129",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4901,7 +4901,7 @@ const FACULTY_DATA = [
     "room": "CSE Faculty",
     "email": "fahad.itm@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/fahad-pt.html",
-    "phone": "8801832469033",
+    "phone": "01832469033",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4913,7 +4913,7 @@ const FACULTY_DATA = [
     "room": "CSE Faculty",
     "email": "dewan.rme@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/ahnaftazwar.html",
-    "phone": "8801770689430",
+    "phone": "01770689430",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4925,7 +4925,7 @@ const FACULTY_DATA = [
     "room": "CSE Faculty",
     "email": "nosibaarifin.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/arifin.html",
-    "phone": "8801993984424",
+    "phone": "01993984424",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -4937,7 +4937,7 @@ const FACULTY_DATA = [
     "room": "CSE Faculty",
     "email": "imtiajhossain.cse@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/imtiaj.htm",
-    "phone": "8801755922256",
+    "phone": "01755922256",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4949,7 +4949,7 @@ const FACULTY_DATA = [
     "room": "CSE Faculty",
     "email": "santo.cis0043.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/santo-c.html",
-    "phone": "8801575014779",
+    "phone": "01575014779",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4961,7 +4961,7 @@ const FACULTY_DATA = [
     "room": "CSE Faculty",
     "email": "tashrif.swe.0196.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/tashrif.html",
-    "phone": "8801785651519",
+    "phone": "01785651519",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -4973,7 +4973,7 @@ const FACULTY_DATA = [
     "room": "AGS Faculty",
     "email": "shahriar.swe0166.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/shahriar-swe.html",
-    "phone": "8801711925637",
+    "phone": "01711925637",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -4985,7 +4985,7 @@ const FACULTY_DATA = [
     "room": "CSE Faculty",
     "email": "sumona.cse0552.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/sumona-afroz.html",
-    "phone": "8801791737639",
+    "phone": "01791737639",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -4997,7 +4997,7 @@ const FACULTY_DATA = [
     "room": "CSE Faculty",
     "email": "joya.eng0183.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/joya-swe.html",
-    "phone": "8801700968224",
+    "phone": "01700968224",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -5009,7 +5009,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "maksurathussain@gmail.com",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/jeba-c.html",
-    "phone": "8801954816959",
+    "phone": "01954816959",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -5021,7 +5021,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "zarin.cse0551.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/zarin-c.html",
-    "phone": "8801613094472",
+    "phone": "01613094472",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5033,7 +5033,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "syeedul.swe0245.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/syeedul-c.html",
-    "phone": "8801776963182",
+    "phone": "01776963182",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5045,7 +5045,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "naomi.swe0246.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/naomi-c.html",
-    "phone": "8801783691167",
+    "phone": "01783691167",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -5057,7 +5057,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "salmoon.cse0625.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/salmoon-c.html",
-    "phone": "8801920220418",
+    "phone": "01920220418",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -5069,7 +5069,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "fahmidjuboraj@gmail.com",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/juboraj-c.html",
-    "phone": "8801792527342",
+    "phone": "01792527342",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5081,7 +5081,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "wasema.swe0249.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/wasema-c.html",
-    "phone": "8801726833236",
+    "phone": "01726833236",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -5093,7 +5093,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "athoi.swe0251.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/farah-c.html",
-    "phone": "8801722635559",
+    "phone": "01722635559",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -5105,7 +5105,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "mobassira.swe0252.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/mobassira.html",
-    "phone": "8801746849839",
+    "phone": "01746849839",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -5117,7 +5117,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "rajib.swe0250.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/rajib-c.html",
-    "phone": "8801724937921",
+    "phone": "01724937921",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5129,7 +5129,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "minhazul.swe0253.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/minhazul-c.html",
-    "phone": "8801796021832",
+    "phone": "01796021832",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5141,7 +5141,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "sayone.swe0244.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/sayone-c.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -5153,7 +5153,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "pranto.swe0215.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/pranto-c.html",
-    "phone": "8801828353948",
+    "phone": "01828353948",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5165,7 +5165,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "muskan.swe.0202.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/muskan-c.html",
-    "phone": "8801626817647",
+    "phone": "01626817647",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -5177,7 +5177,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "maria.swe0219.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/maria-c.html",
-    "phone": "8801620000000",
+    "phone": "01620000000",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -5189,7 +5189,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "tahsin.swe0239.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/tahsin-c.html",
-    "phone": "8801771138861",
+    "phone": "01771138861",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -5201,7 +5201,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "afrin.swe.0198.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/afrin-swe.html",
-    "phone": "8801839218578",
+    "phone": "01839218578",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -5213,7 +5213,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "zannatun.swe.0197.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/zannatun-c.html",
-    "phone": "8801988858305",
+    "phone": "01988858305",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -5225,7 +5225,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "faisal.cse505.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/fahim-swe.html",
-    "phone": "8801778527920",
+    "phone": "01778527920",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5237,7 +5237,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "nurun.nabi.26th.ais.du.ac.bd@gmail.com",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/nabi-swe.html",
-    "phone": "8801631848362",
+    "phone": "01631848362",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5249,7 +5249,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "tasniahoq478@gmail.com",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/tasniahoq.html",
-    "phone": "8801624534068",
+    "phone": "01624534068",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5261,7 +5261,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "sagar.ba0534.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/sagar-c.html",
-    "phone": "8801774630784",
+    "phone": "01774630784",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5273,7 +5273,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "hamim.swe0260.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/saimimislam.html",
-    "phone": "8801641081006",
+    "phone": "01641081006",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5285,7 +5285,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "farhantanvir161@gmail.com",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/farhantanvir.html",
-    "phone": "8801875938171",
+    "phone": "01875938171",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5297,7 +5297,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "tasnimrahman126@gmail.com",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/tasnimrahman.html",
-    "phone": "8801317796537",
+    "phone": "01317796537",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -5309,7 +5309,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "rony.swe0224.c@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/rony-c.html",
-    "phone": "8801968744591",
+    "phone": "01968744591",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5321,7 +5321,7 @@ const FACULTY_DATA = [
     "room": "Floor Court, 208",
     "email": "shahrearmuiz88@gmail.com",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/muiz.html",
-    "phone": "8801409845057",
+    "phone": "01409845057",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5333,7 +5333,7 @@ const FACULTY_DATA = [
     "room": "KT -602(A)",
     "email": "headitm@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/itm/nusrat-jahan.html",
-    "phone": "8801847334996",
+    "phone": "01847334996",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -5345,7 +5345,7 @@ const FACULTY_DATA = [
     "room": "KT-607",
     "email": "imranmahmud@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/swe/imahmud.html",
-    "phone": "8801847140117",
+    "phone": "01847140117",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5357,7 +5357,7 @@ const FACULTY_DATA = [
     "room": "KT-742",
     "email": "ashikur.itm@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/itm/ashikur.html",
-    "phone": "8801312075927",
+    "phone": "01312075927",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5369,7 +5369,7 @@ const FACULTY_DATA = [
     "room": "KT-605",
     "email": "nafees.itm@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/itm/nafees.html",
-    "phone": "8801880829404",
+    "phone": "01880829404",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5381,7 +5381,7 @@ const FACULTY_DATA = [
     "room": "KT-745",
     "email": "fahad.itm@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/itm/fahad-pt.html",
-    "phone": "8801832469033",
+    "phone": "01832469033",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5393,7 +5393,7 @@ const FACULTY_DATA = [
     "room": "KT-705",
     "email": "deanfsit@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/fokhray.html",
-    "phone": "8801713493250",
+    "phone": "01713493250",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5405,7 +5405,7 @@ const FACULTY_DATA = [
     "room": "KT-738",
     "email": "bcdas@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cse/bimal.html",
-    "phone": "8801847334809",
+    "phone": "01847334809",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5417,7 +5417,7 @@ const FACULTY_DATA = [
     "room": "KT-745",
     "email": "akter.itm@diu.edu.bd",
     "webpage": "https://research.daffodilvarsity.edu.bd/researchers/itm/ms-moni-akter",
-    "phone": "88 01617378602",
+    "phone": "01617378602",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -5429,7 +5429,7 @@ const FACULTY_DATA = [
     "room": "KT-745",
     "email": "raian.itm@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/itm/raian.html",
-    "phone": "88 01860448766",
+    "phone": "01860448766",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5441,7 +5441,7 @@ const FACULTY_DATA = [
     "room": "Study leave",
     "email": "mdmasumbillah.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/itm/masumbillah.html",
-    "phone": "88 01708611106",
+    "phone": "01708611106",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5453,7 +5453,7 @@ const FACULTY_DATA = [
     "room": "KT-745",
     "email": "farhana.itm@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/itm/farhanaitm.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -5465,7 +5465,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "ramayah@usm.my",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/itm/ramayah.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5477,7 +5477,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "tanchengling@usm.my",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/itm/tan.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5489,7 +5489,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "N/A",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/itm/zouhair.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5501,7 +5501,7 @@ const FACULTY_DATA = [
     "room": "KT-745",
     "email": "cosmic.syc.3@gmail.com",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/itm/sazzatul.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5513,7 +5513,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "N/A",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/itm/annesha.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "navy",
     "online": true,
     "gender": "female"
@@ -5525,7 +5525,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "N/A",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/itm/saajid.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5537,7 +5537,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "N/A",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/itm/noman-itm.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5549,7 +5549,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "N/A",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/itm/aeyaz.htm",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5561,7 +5561,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "N/A",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/itm/shuvo-itm.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5573,7 +5573,7 @@ const FACULTY_DATA = [
     "room": "KT-1009",
     "email": "headmct@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/mct/salah-mct.html",
-    "phone": "8801847334769",
+    "phone": "01847334769",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5585,7 +5585,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "kislam@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/mct/kislam.html",
-    "phone": "8801819382879",
+    "phone": "01819382879",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5597,7 +5597,7 @@ const FACULTY_DATA = [
     "room": "Proctor Office",
     "email": "drallayear.mct@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/mct/Allayear.html",
-    "phone": "8801847334900",
+    "phone": "01847334900",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5609,7 +5609,7 @@ const FACULTY_DATA = [
     "room": "KT-1009",
     "email": "arifahmed@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/mct/aahmed.html",
-    "phone": "8801754824376",
+    "phone": "01754824376",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5621,7 +5621,7 @@ const FACULTY_DATA = [
     "room": "KT-1017(A)",
     "email": "hasan.mct@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/mct/samaun.html",
-    "phone": "8801847140101",
+    "phone": "01847140101",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5633,7 +5633,7 @@ const FACULTY_DATA = [
     "room": "KT-1011",
     "email": "mizan.mct@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/mct/mizanur-mct.html",
-    "phone": "8801711285050",
+    "phone": "01711285050",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5645,7 +5645,7 @@ const FACULTY_DATA = [
     "room": "KT-1011",
     "email": "jahid.mct@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/mct/jahidmct.html",
-    "phone": "88 01847334969",
+    "phone": "01847334969",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5657,7 +5657,7 @@ const FACULTY_DATA = [
     "room": "KT-1009",
     "email": "apurba.mct@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/mct/apurbamct.html",
-    "phone": "88 01728826400",
+    "phone": "01728826400",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5669,7 +5669,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "mirza.mct@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/mct/mohtashim.html",
-    "phone": "88 01719858641",
+    "phone": "01719858641",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5681,7 +5681,7 @@ const FACULTY_DATA = [
     "room": "KT-1014(B)",
     "email": "kayser.mct@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/mct/monowar.html",
-    "phone": "88 01785356699",
+    "phone": "01785356699",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5693,7 +5693,7 @@ const FACULTY_DATA = [
     "room": "KT-1014(B)",
     "email": "shafikul.mct@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/mct/shafikul.html",
-    "phone": "8801770494091",
+    "phone": "01770494091",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5705,7 +5705,7 @@ const FACULTY_DATA = [
     "room": "KT-1011",
     "email": "ahsanhabib1957@gmail.com",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/mct/ahsan.html",
-    "phone": "88 01675603356",
+    "phone": "01675603356",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5717,7 +5717,7 @@ const FACULTY_DATA = [
     "room": "KT-1014(B)",
     "email": "gfaruque@gmail.com",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/mct/golam-faruque.html",
-    "phone": "88 01711894353",
+    "phone": "01711894353",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5729,7 +5729,7 @@ const FACULTY_DATA = [
     "room": "KT-706",
     "email": "headcis@daffodilvarsity.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cis/sarowar.html",
-    "phone": "88 01713493253",
+    "phone": "01713493253",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5741,7 +5741,7 @@ const FACULTY_DATA = [
     "room": "Register Office",
     "email": "drnadir@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cis/nadir.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5753,7 +5753,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "biplob.cis@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cis/biplob-cis.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5765,7 +5765,7 @@ const FACULTY_DATA = [
     "room": "KT-706",
     "email": "nasimul.cis@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cis/nasimul.html",
-    "phone": "88 01712949753",
+    "phone": "01712949753",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5777,7 +5777,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "bikash.swe@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cis/bikashkumar.html",
-    "phone": "88 01737571758",
+    "phone": "01737571758",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5789,7 +5789,7 @@ const FACULTY_DATA = [
     "room": "KT-706",
     "email": "mehedi.cis@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cis/mehedicis.html",
-    "phone": "88 01761135844",
+    "phone": "01761135844",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5801,7 +5801,7 @@ const FACULTY_DATA = [
     "room": "KT-706",
     "email": "faruk.cis@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cis/farukhosen.html",
-    "phone": "88 01558954586",
+    "phone": "01558954586",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5813,7 +5813,7 @@ const FACULTY_DATA = [
     "room": "KT-705",
     "email": "sonia.cis@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cis/sonia.html",
-    "phone": "88 01682648071",
+    "phone": "01682648071",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -5825,7 +5825,7 @@ const FACULTY_DATA = [
     "room": "KT-705",
     "email": "Israfil.cis@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cis/israfil.html",
-    "phone": "88 01639701573",
+    "phone": "01639701573",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5837,7 +5837,7 @@ const FACULTY_DATA = [
     "room": "KT-1017",
     "email": "N/A",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cis/tamanna-cis.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "gold",
     "online": true,
     "gender": "female"
@@ -5849,7 +5849,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "N/A",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cis/ashiqul-pia.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5861,7 +5861,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "N/A",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cis/drmonjur.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "gold",
     "online": true,
     "gender": "male"
@@ -5873,7 +5873,7 @@ const FACULTY_DATA = [
     "room": "N/A",
     "email": "syed.islam@ecu.edu.au",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cis/drshamsul.html",
-    "phone": "8809617901233",
+    "phone": "09617901233",
     "color": "navy",
     "online": true,
     "gender": "male"
@@ -5885,31 +5885,7 @@ const FACULTY_DATA = [
     "room": "KT-706",
     "email": "azam.cis@diu.edu.bd",
     "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cis/azamkhan-cis.html",
-    "phone": "88 01715444441",
-    "color": "gold",
-    "online": true,
-    "gender": "male"
-  },
-  {
-    "name": "Professor Dr. Md. Fokhray Hossain",
-    "title": "Dean & Professor",
-    "dept": "cis",
-    "room": "KT-705",
-    "email": "deanfsit@daffodilvarsity.edu.bd",
-    "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cis/fokhray.html",
-    "phone": "88 01713493250",
-    "color": "navy",
-    "online": true,
-    "gender": "male"
-  },
-  {
-    "name": "Prof. Dr. Bimal Chandra Das",
-    "title": "Associate Dean & Professor",
-    "dept": "cis",
-    "room": "KT-742",
-    "email": "bcdas@daffodilvarsity.edu.bd",
-    "webpage": "https://faculty.daffodilvarsity.edu.bd/profile/cis/bimal.html",
-    "phone": "88 01847334809",
+    "phone": "01715444441",
     "color": "gold",
     "online": true,
     "gender": "male"
