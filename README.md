@@ -68,21 +68,19 @@ The application focuses on simplifying faculty discovery and improving communica
 
 ---
 
-
 ## 📸 Application Screenshots
 
 ### 🔐 Login Screen
-![Login Screen](photo_2026-08-12_16-42-38.jpg)
+![Login Screen](Screenshot%202026-11-18%20222132.png)
 
 ### 🏢 Faculty Directory
-![Faculty Directory](Screenshot%202026-11-18%20222302.png)
+![Faculty Directory](Screenshot%202026-11-18%20222239.png)
 
 ### 📱 Navigation Menu
-![Navigation Menu](Screenshot%202026-11-18%20222239.png)
+![Navigation Menu](Screenshot%202026-11-18%20222302.png)
 
-### 👨‍🏫 Faculty Details
-![Faculty Details](Screenshot%202026-11-18%20222132.png)
----
+### 👨‍🏫 Teacher Details
+![Teacher Details](photo_2026-08-12_16-42-38.jpg)
 
 ## 🚀 Getting Started
 
