@@ -68,23 +68,20 @@ The application focuses on simplifying faculty discovery and improving communica
 
 ---
 
+
 ## 📸 Application Screenshots
 
-### 1. Login Screen
-The login interface allows users to access the application.
+### 🔐 Login Screen
+![Login Screen](photo_2026-08-12_16-42-38.jpg)
 
-### 2. Faculty Directory
-Browse faculty members and search using names, departments, or room numbers.
+### 🏢 Faculty Directory
+![Faculty Directory](Screenshot%202026-11-18%20222302.png)
 
-### 3. Navigation Menu
-Access favorites, about, contact, settings, and other application options.
+### 📱 Navigation Menu
+![Navigation Menu](Screenshot%202026-11-18%20222239.png)
 
-### 4. Faculty Details
-Explore detailed faculty information, including designation, department, room number, and available contact information.
-
-### 5. Faculty Interaction
-Use available options to send emails, make calls, request meetings, share profiles, and view QR codes.
-
+### 👨‍🏫 Faculty Details
+![Faculty Details](Screenshot%202026-11-18%20222132.png)
 ---
 
 ## 🚀 Getting Started
